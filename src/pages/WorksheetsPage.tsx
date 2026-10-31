@@ -3,8 +3,9 @@ import { useSearchParams } from 'react-router-dom';
 import { ComingSoon } from '../components/ComingSoon';
 import { BigButton, Mascot } from '../components/ui';
 import { WorksheetSheet } from '../components/worksheet/WorksheetSheet';
-import { getQuestionBanks } from '../lib/content';
+import { bankId, getConcepts, getQuestionBanks } from '../lib/content';
 import { buildRound } from '../lib/questions';
+import { COLUMN_OPTIONS, FONT_SIZES, setWorksheetSettings, useWorksheetSettings } from '../lib/worksheetSettings';
 import { useClassification } from './ClassificationLayout';
 
 const COUNTS = [10, 20];
@@ -16,11 +17,18 @@ export default function WorksheetsPage() {
   const [count, setCount] = useState(COUNTS[0]);
   const [seed, setSeed] = useState(0);
   const [showKey, setShowKey] = useState(false);
+  const { fontSize, columns } = useWorksheetSettings();
 
-  const bank = banks.find((b) => b.conceptSlug === params.get('concept')) ?? banks[0];
+  const concepts = getConcepts(contentPath);
+
+  const inLesson = banks.filter((b) => b.conceptSlug === params.get('concept'));
+  const bank = inLesson.find((b) => b.set === params.get('set')) ?? inLesson[0] ?? banks[0];
   const questions = useMemo(() => (bank ? buildRound(bank, count) : []), [bank, count, seed]);
 
   if (!bank) return <ComingSoon what={`${classification.name} worksheets`} />;
+
+  const lesson = concepts.find((c) => c.slug === bank.conceptSlug)?.title ?? classification.name;
+  const subtitle = `${grade.name} · ${lesson}`;
 
   const chip = (active: boolean) =>
     `min-h-12 rounded-full border-4 px-5 font-display text-lg font-semibold shadow-chunky-sm transition-colors ${
@@ -34,15 +42,31 @@ export default function WorksheetsPage() {
           <Mascot size={64}>Pick a worksheet, then tap Print! 🖨️</Mascot>
         )}
 
-        {banks.length > 1 && (
-          <div className="flex flex-wrap gap-2" role="group" aria-label="Topic">
-            {banks.map((b) => (
-              <button key={b.conceptSlug} type="button" className={chip(b === bank)} onClick={() => setParams({ concept: b.conceptSlug })}>
-                {b.title}
-              </button>
+        {banks.length > 1 &&
+          concepts
+            .filter((c) => banks.some((b) => b.conceptSlug === c.slug))
+            .map((c) => (
+              <div key={c.slug} className="space-y-2">
+                <p className="font-display text-lg font-semibold">
+                  {c.emoji} {c.title}
+                </p>
+                <div className="flex flex-wrap gap-2" role="group" aria-label={c.title}>
+                  {banks
+                    .filter((b) => b.conceptSlug === c.slug)
+                    .map((b) => (
+                      <button
+                        key={bankId(b)}
+                        type="button"
+                        className={chip(b === bank)}
+                        aria-pressed={b === bank}
+                        onClick={() => setParams({ concept: b.conceptSlug, set: b.set })}
+                      >
+                        {b.emoji} {b.title}
+                      </button>
+                    ))}
+                </div>
+              </div>
             ))}
-          </div>
-        )}
 
         <div className="flex flex-wrap items-center gap-2">
           <span className="font-display text-lg text-ink-soft">Problems:</span>
@@ -56,6 +80,37 @@ export default function WorksheetsPage() {
           </button>
         </div>
 
+        <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Text size">
+          <span className="font-display text-lg text-ink-soft">Text size:</span>
+          {FONT_SIZES.map((f) => (
+            <button
+              key={f.value}
+              type="button"
+              className={chip(f.value === fontSize)}
+              style={{ fontSize: `min(${f.size}, 1.75rem)` }}
+              onClick={() => setWorksheetSettings({ fontSize: f.value })}
+              aria-pressed={f.value === fontSize}
+            >
+              {f.label}
+            </button>
+          ))}
+        </div>
+
+        <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Columns">
+          <span className="font-display text-lg text-ink-soft">Columns:</span>
+          {COLUMN_OPTIONS.map((c) => (
+            <button
+              key={c.value}
+              type="button"
+              className={chip(c.value === columns)}
+              onClick={() => setWorksheetSettings({ columns: c.value })}
+              aria-pressed={c.value === columns}
+            >
+              {c.label}
+            </button>
+          ))}
+        </div>
+
         <div className="flex flex-wrap gap-3">
           <BigButton color={`${colors.solid} ${colors.solidHover}`} onClick={() => window.print()}>
             🖨️ Print
@@ -67,9 +122,9 @@ export default function WorksheetsPage() {
       </div>
 
       <div className="print-area space-y-8">
-        <WorksheetSheet title={bank.title} subtitle={`${grade.name} · ${classification.name}`} questions={questions} />
+        <WorksheetSheet title={bank.title} subtitle={subtitle} questions={questions} fontSize={fontSize} columns={columns} />
         {showKey && (
-          <WorksheetSheet title={bank.title} subtitle={`${grade.name} · ${classification.name}`} questions={questions} answerKey />
+          <WorksheetSheet title={bank.title} subtitle={subtitle} questions={questions} fontSize={fontSize} columns={columns} answerKey />
         )}
       </div>
     </>

@@ -58,10 +58,18 @@ const conceptLoaders = import.meta.glob<ComponentType<MDXProps>>('/src/content/*
   import: 'default',
 });
 
-const questionBanks = import.meta.glob<QuestionBank>(['/src/content/**/practice/*.ts', '!**/*.test.ts'], {
-  eager: true,
-  import: 'default',
-});
+// A practice file exports one bank or an array of practice sets for its lesson.
+const questionBanks = Object.fromEntries(
+  Object.entries(
+    import.meta.glob<QuestionBank | QuestionBank[]>(['/src/content/**/practice/*.ts', '!**/*.test.ts'], {
+      eager: true,
+      import: 'default',
+    }),
+  ).map(([file, banks]) => [file, ([] as QuestionBank[]).concat(banks)]),
+);
+
+/** Unique id of a practice set within its classification, e.g. "addition-within-20/sums". */
+export const bankId = (bank: QuestionBank) => `${bank.conceptSlug}/${bank.set}`;
 
 const baseDir = ({ level, grade, subject, classification }: ContentPath) =>
   `/src/content/${level}/${grade}/${subject}/${classification}`;
@@ -85,7 +93,7 @@ export function getQuestionBanks(path: ContentPath): QuestionBank[] {
   const order = new Map(getConcepts(path).map((c, i) => [c.slug, i]));
   return Object.entries(questionBanks)
     .filter(([file]) => file.startsWith(dir))
-    .map(([, bank]) => bank)
+    .flatMap(([, banks]) => banks)
     .sort((a, b) => (order.get(a.conceptSlug) ?? 999) - (order.get(b.conceptSlug) ?? 999));
 }
 

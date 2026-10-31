@@ -2,7 +2,7 @@ import { useSearchParams } from 'react-router-dom';
 import { ComingSoon } from '../components/ComingSoon';
 import { PracticeRunner } from '../components/practice/PracticeRunner';
 import { Card, Mascot, Stars } from '../components/ui';
-import { getConcepts, getQuestionBanks } from '../lib/content';
+import { bankId, getConcepts, getQuestionBanks } from '../lib/content';
 import { progressKey, useProgress } from '../lib/progress';
 import { useClassification } from './ClassificationLayout';
 
@@ -15,9 +15,14 @@ export default function PracticePage() {
 
   if (banks.length === 0) return <ComingSoon what={`${classification.name} practice`} />;
 
-  const selected = banks.find((b) => b.conceptSlug === params.get('concept')) ?? (banks.length === 1 ? banks[0] : undefined);
+  // ?concept= narrows the picker to one lesson; ?set= picks one practice set in it.
+  const concept = params.get('concept');
+  const shown = concept && banks.some((b) => b.conceptSlug === concept) ? banks.filter((b) => b.conceptSlug === concept) : banks;
+  const selected = shown.find((b) => b.set === params.get('set')) ?? (shown.length === 1 ? shown[0] : undefined);
 
   if (!selected) {
+    const lessons = concepts.filter((c) => shown.some((b) => b.conceptSlug === c.slug));
+    let index = 0;
     return (
       <>
         {theme.showMascot && (
@@ -25,20 +30,39 @@ export default function PracticePage() {
             What do you want to practice?
           </Mascot>
         )}
-        <div className="grid gap-4 md:grid-cols-2">
-          {banks.map((b, i) => {
-            const emoji = concepts.find((c) => c.slug === b.conceptSlug)?.emoji ?? '🎯';
-            const stars = progress[progressKey(grade.id, subject.id, classification.id, b.conceptSlug)]?.stars ?? 0;
-            return (
-              <Card key={b.conceptSlug} to={`?concept=${b.conceptSlug}`} index={i} className="bg-white">
-                <div className="flex items-center gap-4 p-5">
-                  <span className={`grid h-16 w-16 place-items-center rounded-2xl ${colors.soft} text-4xl`}>{emoji}</span>
-                  <h2 className="flex-1 text-2xl font-bold">{b.title}</h2>
-                  <Stars count={stars} size="text-xl" />
-                </div>
-              </Card>
-            );
-          })}
+        {shown !== banks && (
+          <button
+            type="button"
+            onClick={() => setParams({})}
+            className="mb-4 min-h-12 rounded-full border-4 border-ink/10 bg-white px-5 font-display text-lg font-semibold shadow-chunky-sm"
+          >
+            ← All lessons
+          </button>
+        )}
+        <div className="space-y-8">
+          {lessons.map((lesson) => (
+            <section key={lesson.slug}>
+              <h2 className="mb-3 flex items-center gap-2 text-2xl font-bold">
+                <span aria-hidden>{lesson.emoji ?? '📘'}</span> {lesson.title}
+              </h2>
+              <div className="grid gap-4 md:grid-cols-2">
+                {shown
+                  .filter((b) => b.conceptSlug === lesson.slug)
+                  .map((b) => {
+                    const stars = progress[progressKey(grade.id, subject.id, classification.id, bankId(b))]?.stars ?? 0;
+                    return (
+                      <Card key={bankId(b)} to={`?concept=${b.conceptSlug}&set=${b.set}`} index={index++} className="bg-white">
+                        <div className="flex items-center gap-4 p-5">
+                          <span className={`grid h-16 w-16 place-items-center rounded-2xl ${colors.soft} text-4xl`}>{b.emoji ?? '🎯'}</span>
+                          <h3 className="flex-1 text-2xl font-bold">{b.title}</h3>
+                          <Stars count={stars} size="text-xl" />
+                        </div>
+                      </Card>
+                    );
+                  })}
+              </div>
+            </section>
+          ))}
         </div>
       </>
     );
@@ -49,7 +73,7 @@ export default function PracticePage() {
       {banks.length > 1 && (
         <button
           type="button"
-          onClick={() => setParams({})}
+          onClick={() => setParams({ concept: selected.conceptSlug })}
           className="mb-4 min-h-12 rounded-full border-4 border-ink/10 bg-white px-5 font-display text-lg font-semibold shadow-chunky-sm"
         >
           ← Pick another
@@ -57,12 +81,12 @@ export default function PracticePage() {
       )}
       <h2 className="mb-4 text-center text-3xl font-bold">{selected.title}</h2>
       <PracticeRunner
-        key={selected.conceptSlug}
+        key={bankId(selected)}
         bank={selected}
         progressId={{ grade: grade.id, subject: subject.id, classification: classification.id }}
         colors={colors}
         theme={theme}
-        worksheetsHref={`${base}/worksheets?concept=${selected.conceptSlug}`}
+        worksheetsHref={`${base}/worksheets?concept=${selected.conceptSlug}&set=${selected.set}`}
       />
     </>
   );

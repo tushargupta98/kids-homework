@@ -1,5 +1,6 @@
+import { setOf } from '../../../../../../lib/questions';
 import { pick, randInt, shuffle } from '../../../../../../lib/random';
-import type { Question, QuestionBank } from '../../../../../../types/practice';
+import type { Question } from '../../../../../../types/practice';
 
 const objects = ['🍎', '⭐', '🐟', '🎈', '🍪', '🐞'];
 
@@ -33,16 +34,11 @@ function trueFalse(): Question {
   return { type: 'true-false', prompt: `${a} + ${b} = ${shown}`, answer: correct, hint: 'Try making a ten first.' };
 }
 
-/** 6 fill-ins, 2 picture questions and 2 true/false per 10, shuffled. */
-export function generate(count: number): Question[] {
-  const makers = [fillIn, fillIn, fillIn, pictureChoice, trueFalse];
-  return shuffle(Array.from({ length: count }, (_, i) => makers[i % makers.length]()));
-}
+const slug = 'addition-within-20';
 
-const bank: QuestionBank = {
-  conceptSlug: 'addition-within-20',
-  title: 'Addition within 20',
-  generate,
-};
-
-export default bank;
+/** One practice set per kind of question. */
+export default [
+  setOf(slug, 'sums', 'Fill in the sum', '✏️', fillIn),
+  setOf(slug, 'pictures', 'Count the pictures', '🍎', pictureChoice),
+  setOf(slug, 'true-false', 'True or false?', '✅', trueFalse),
+];

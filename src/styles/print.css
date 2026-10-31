@@ -32,6 +32,11 @@
   .print-sheet + .print-sheet {
     break-before: page;
   }
+  /* Keep filled shapes (e.g. answer-key bubbles) when "Background graphics" is off. */
+  .print-sheet {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
   .print-avoid-break {
     break-inside: avoid;
   }

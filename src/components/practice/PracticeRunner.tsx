@@ -1,12 +1,14 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useMemo, useState } from 'react';
 import { burst } from '../../lib/celebrate';
+import { bankId } from '../../lib/content';
 import { progressKey, recordRound, starsForScore } from '../../lib/progress';
 import { answerLabel, buildRound, checkAnswer } from '../../lib/questions';
 import { sounds } from '../../lib/sound';
 import type { AgeTheme } from '../../theme/ageThemes';
 import type { SubjectPalette } from '../../theme/subjectColors';
 import type { QuestionBank } from '../../types/practice';
+import { ColumnProblem } from '../math/ColumnProblem';
 import { BigButton, Mascot, ReadAloudButton, StarBar } from '../ui';
 import { FillIn } from './FillIn';
 import { MultipleChoice } from './MultipleChoice';
@@ -70,7 +72,10 @@ export function PracticeRunner({ bank, progressId, colors, theme, worksheetsHref
 
   const next = () => {
     if (index + 1 >= questions.length) {
-      recordRound(progressKey(progressId.grade, progressId.subject, progressId.classification, bank.conceptSlug), stars);
+      const key = (id: string) => progressKey(progressId.grade, progressId.subject, progressId.classification, id);
+      // The set's own stars, plus the lesson's best across its sets.
+      recordRound(key(bankId(bank)), stars);
+      recordRound(key(bank.conceptSlug), stars);
       sounds.finish();
       if (theme.celebrate && stars >= 2) burst(true);
       setDone(true);
@@ -126,7 +131,19 @@ export function PracticeRunner({ bank, progressId, colors, theme, worksheetsHref
           </div>
 
           {q.visual && <div className="mb-4 text-center text-5xl leading-tight tracking-wide md:text-6xl">{q.visual}</div>}
-          <h2 className="mb-6 text-center text-3xl font-bold leading-snug md:text-4xl">{q.prompt}</h2>
+          {q.column ? (
+            <>
+              <h2 className="sr-only">{q.prompt}</h2>
+              <div className="mb-6 flex justify-center text-6xl md:text-7xl">
+                <ColumnProblem
+                  layout={q.column}
+                  answer={solved || revealed ? answerLabel(q) : <span className="text-ink/25">?</span>}
+                />
+              </div>
+            </>
+          ) : (
+            <h2 className="mb-6 text-center text-3xl font-bold leading-snug md:text-4xl">{q.prompt}</h2>
+          )}
 
           {q.type === 'multiple-choice' && (
             <MultipleChoice question={q} wrong={misses as string[]} solved={solved || revealed} onAnswer={answer} />

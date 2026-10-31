@@ -1,6 +1,7 @@
 import type { MDXComponents } from 'mdx/types';
 import { ReadAloudButton } from '../ui';
 import { Callout } from './Callout';
+import { CarryAddition, TensOnes } from './CarryAddition';
 import { Counters } from './Counters';
 import { NumberLine } from './NumberLine';
 import { TenFrame } from './TenFrame';
@@ -10,6 +11,8 @@ export const mdxComponents: MDXComponents = {
   TenFrame,
   NumberLine,
   Counters,
+  CarryAddition,
+  TensOnes,
   Callout,
   ReadAloud: ReadAloudButton,
   h1: (p) => <h2 className="text-3xl font-bold md:text-4xl" {...p} />,

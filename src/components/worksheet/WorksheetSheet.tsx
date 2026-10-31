@@ -1,5 +1,7 @@
 import type { Question } from '../../types/practice';
 import { answerLabel } from '../../lib/questions';
+import { FONT_SIZES, type WorksheetColumns, type WorksheetFontSize } from '../../lib/worksheetSettings';
+import { ColumnProblem } from '../math/ColumnProblem';
 import { Owl } from '../ui';
 
 interface Props {
@@ -7,17 +9,28 @@ interface Props {
   subtitle: string;
   questions: Question[];
   answerKey?: boolean;
+  fontSize?: WorksheetFontSize;
+  columns?: WorksheetColumns;
 }
 
-/** Renders "7 + 5 = ?" with a write-in box in place of the "?". */
+// Full class names so Tailwind generates them. Phones stay at one column on screen.
+const columnClasses = {
+  1: 'grid-cols-1',
+  2: 'grid-cols-1 sm:grid-cols-2 print:grid-cols-2',
+  3: 'grid-cols-1 sm:grid-cols-3 print:grid-cols-3',
+  4: 'grid-cols-2 sm:grid-cols-4 print:grid-cols-4',
+};
+
+/** Renders "7 + 5 = ?" with a write-in line in place of the "?". */
 function Prompt({ text, answer }: { text: string; answer?: string }) {
   const parts = text.split('?');
   if (parts.length < 2) return <>{text}</>;
   return (
     <>
       {parts[0]}
-      <span className="mx-1 inline-block h-[1.6em] min-w-[2.6em] translate-y-[0.3em] rounded-lg border-[3px] border-ink/60 px-1 text-center align-baseline font-bold">
-        {answer}
+      {/* Blank line to write on; a space keeps it the same height with or without the answer. */}
+      <span className="mx-1 inline-block min-w-[3em] border-b-[3px] border-ink/60 px-1 pb-[0.1em] text-center font-bold">
+        {answer ?? '\u00a0'}
       </span>
       {parts.slice(1).join('?')}
     </>
@@ -29,7 +42,7 @@ function Choices({ items, answer, showAnswer }: { items: string[]; answer: strin
     <div className="mt-2 flex flex-wrap gap-x-6 gap-y-2">
       {items.map((c) => (
         <span key={c} className="inline-flex items-center gap-2">
-          <span className={`inline-block h-6 w-6 rounded-full border-[3px] border-ink/60 ${showAnswer && c === answer ? 'bg-ink/70' : ''}`} />
+          <span className={`inline-block h-[1em] w-[1em] shrink-0 rounded-full border-[3px] border-ink/60 ${showAnswer && c === answer ? 'bg-ink/70' : ''}`} />
           {c}
         </span>
       ))}
@@ -37,8 +50,11 @@ function Choices({ items, answer, showAnswer }: { items: string[]; answer: strin
   );
 }
 
-export function WorksheetSheet({ title, subtitle, questions, answerKey }: Props) {
+export function WorksheetSheet({ title, subtitle, questions, answerKey, fontSize = 'medium', columns = 'auto' }: Props) {
   const allShortFillIns = questions.every((q) => q.type === 'fill-in' && q.prompt.length <= 14 && !q.visual);
+  const allColumn = questions.every((q) => q.column);
+  const cols = columns === 'auto' ? (allColumn ? 4 : allShortFillIns ? 2 : 1) : columns;
+  const size = FONT_SIZES.find((f) => f.value === fontSize)?.size;
   return (
     <section className="print-sheet mx-auto max-w-[8.5in] rounded-[2rem] border-4 border-ink/10 bg-white p-6 shadow-chunky md:p-10">
       <header className="mb-6 border-b-4 border-dashed border-ink/20 pb-4">
@@ -66,15 +82,20 @@ export function WorksheetSheet({ title, subtitle, questions, answerKey }: Props)
         )}
       </header>
 
-      <ol className={`grid gap-x-10 gap-y-6 text-2xl ${allShortFillIns ? 'grid-cols-1 sm:grid-cols-2 print:grid-cols-2' : 'grid-cols-1'}`}>
+      <ol className={`grid gap-x-8 gap-y-[1em] ${columnClasses[cols]}`} style={{ fontSize: size }}>
         {questions.map((q, i) => (
-          <li key={i} className="print-avoid-break flex gap-3">
-            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full border-2 border-ink/30 font-display text-lg font-semibold">
+          <li key={i} className="print-avoid-break flex min-w-0 gap-[0.5em] break-words">
+            <span className="grid h-[1.5em] w-[1.5em] shrink-0 place-items-center rounded-full border-2 border-ink/30 font-display text-[0.75em] font-semibold">
               {i + 1}
             </span>
-            <div className="flex-1 pt-0.5">
-              {q.visual && <div className="mb-1 text-3xl tracking-wide">{q.visual}</div>}
-              {q.type === 'fill-in' ? (
+            <div className="min-w-0 flex-1 pt-0.5">
+              {q.visual && <div className="mb-1 text-[1.25em] tracking-wide">{q.visual}</div>}
+              {q.column ? (
+                <>
+                  <span className="sr-only">{q.prompt}</span>
+                  <ColumnProblem layout={q.column} answer={answerKey ? answerLabel(q) : undefined} carrySpace />
+                </>
+              ) : q.type === 'fill-in' ? (
                 <>
                   <Prompt text={q.prompt} answer={answerKey ? String(q.answer) : undefined} />
                   {!q.prompt.includes('?') && (

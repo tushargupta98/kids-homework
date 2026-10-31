@@ -31,18 +31,27 @@ describe('content files', () => {
     }
   });
 
-  it('each question bank matches its file name and a concept lesson', () => {
+  it('each practice set matches its file name and a concept lesson', () => {
     for (const file of practice) {
       const p = parsePath(file);
-      expect(banks[file].conceptSlug, file).toBe(p.slug);
+      expect(banks[file].length, file).toBeGreaterThan(0);
+      for (const bank of banks[file]) expect(bank.conceptSlug, file).toBe(p.slug);
       expect(concepts).toContain(file.replace('/practice/', '/concepts/').replace(/\.ts$/, '.mdx'));
     }
   });
 
-  it('every bank produces valid, self-consistent questions', () => {
-    for (const [file, bank] of Object.entries(banks)) {
+  it('practice set ids are unique within a lesson', () => {
+    for (const [file, sets] of Object.entries(banks)) {
+      const ids = sets.map((b) => b.set);
+      expect(new Set(ids).size, file).toBe(ids.length);
+    }
+  });
+
+  it('every practice set produces valid, self-consistent questions of one type', () => {
+    for (const [file, bank] of Object.entries(banks).flatMap(([f, sets]) => sets.map((b) => [`${f}#${b.set}`, b] as const))) {
       const qs = buildRound(bank, 50);
       expect(qs.length, file).toBe(50);
+      expect(new Set(qs.map((q) => q.type)).size, `${file} mixes question types`).toBe(1);
       for (const q of qs) {
         expect(checkAnswer(q, q.type === 'true-false' ? q.answer : String(q.answer)), `${file}: ${q.prompt}`).toBe(true);
         if (q.type === 'multiple-choice') {
