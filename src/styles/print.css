@@ -1,0 +1,38 @@
+/* Worksheets print on US Letter. Site chrome is marked .no-print and removed. */
+@media print {
+  @page {
+    size: letter;
+    margin: 0.5in;
+  }
+  html,
+  body,
+  .bg-dots {
+    background: #fff !important;
+  }
+  html {
+    font-size: 13pt;
+  }
+  main {
+    padding: 0 !important;
+    max-width: none !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-area {
+    margin: 0 !important;
+  }
+  .print-sheet {
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+  }
+  .print-sheet + .print-sheet {
+    break-before: page;
+  }
+  .print-avoid-break {
+    break-inside: avoid;
+  }
+}

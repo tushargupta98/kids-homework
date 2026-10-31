@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+@import './print.css';
+
+@theme {
+  --font-display: 'Fredoka', ui-rounded, 'SF Pro Rounded', system-ui, sans-serif;
+  --font-body: 'Andika', ui-rounded, system-ui, sans-serif;
+
+  --color-cream: #fff8ec;
+  --color-ink: #2d2a32;
+  --color-ink-soft: #5b5563;
+
+  --shadow-chunky: 0 6px 0 0 rgb(45 42 50 / 0.12), 0 10px 24px -8px rgb(45 42 50 / 0.18);
+  --shadow-chunky-sm: 0 4px 0 0 rgb(45 42 50 / 0.12);
+}
+
+@layer base {
+  html {
+    /* Kid-friendly base size: 18px on phones, 20px on tablets and up. */
+    font-size: 18px;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 20px;
+    }
+  }
+  body {
+    @apply bg-cream font-body text-ink antialiased;
+    min-height: 100dvh;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+  /* Prevent iOS zoom-on-focus: inputs must be at least 16px. */
+  input,
+  select,
+  textarea,
+  button {
+    font-size: max(1rem, 16px);
+  }
+  :focus-visible {
+    outline: 4px solid #3b82f6;
+    outline-offset: 3px;
+  }
+}
+
+@utility pt-safe {
+  padding-top: env(safe-area-inset-top);
+}
+@utility pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+@utility px-safe {
+  padding-left: max(1rem, env(safe-area-inset-left));
+  padding-right: max(1rem, env(safe-area-inset-right));
+}
+
+/* Soft dotted "playground" background. */
+@utility bg-dots {
+  background-image: radial-gradient(rgb(45 42 50 / 0.07) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+}
