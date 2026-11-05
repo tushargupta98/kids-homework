@@ -36,6 +36,8 @@ describe('content files', () => {
       const p = parsePath(file);
       expect(banks[file].length, file).toBeGreaterThan(0);
       for (const bank of banks[file]) expect(bank.conceptSlug, file).toBe(p.slug);
+      // Mixed review sets have no lesson of their own.
+      if (banks[file].every((b) => b.mixed)) continue;
       expect(concepts).toContain(file.replace('/practice/', '/concepts/').replace(/\.ts$/, '.mdx'));
     }
   });
@@ -47,11 +49,16 @@ describe('content files', () => {
     }
   });
 
-  it('every practice set produces valid, self-consistent questions of one type', () => {
+  it('every practice set produces valid, self-consistent questions (one type unless mixed)', () => {
     for (const [file, bank] of Object.entries(banks).flatMap(([f, sets]) => sets.map((b) => [`${f}#${b.set}`, b] as const))) {
+      if (bank.cards) {
+        expect(bank.cards.length, file).toBeGreaterThan(0);
+        expect(new Set(bank.cards.map((c) => c.word)).size, `${file} repeats a card`).toBe(bank.cards.length);
+        continue;
+      }
       const qs = buildRound(bank, 50);
       expect(qs.length, file).toBe(50);
-      expect(new Set(qs.map((q) => q.type)).size, `${file} mixes question types`).toBe(1);
+      if (!bank.mixed) expect(new Set(qs.map((q) => q.type)).size, `${file} mixes question types`).toBe(1);
       for (const q of qs) {
         expect(checkAnswer(q, q.type === 'true-false' ? q.answer : String(q.answer)), `${file}: ${q.prompt}`).toBe(true);
         if (q.type === 'multiple-choice') {

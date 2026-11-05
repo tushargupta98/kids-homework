@@ -1,9 +1,10 @@
 import { useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { ComingSoon } from '../components/ComingSoon';
+import { SetPicker } from '../components/practice/SetPicker';
 import { BigButton, Mascot } from '../components/ui';
 import { WorksheetSheet } from '../components/worksheet/WorksheetSheet';
-import { bankId, getConcepts, getQuestionBanks } from '../lib/content';
+import { getConcepts, getQuestionBanks } from '../lib/content';
 import { buildRound } from '../lib/questions';
 import { COLUMN_OPTIONS, FONT_SIZES, setWorksheetSettings, useWorksheetSettings } from '../lib/worksheetSettings';
 import { useClassification } from './ClassificationLayout';
@@ -13,7 +14,8 @@ const COUNTS = [10, 20];
 export default function WorksheetsPage() {
   const { contentPath, colors, theme, grade, classification } = useClassification();
   const [params, setParams] = useSearchParams();
-  const banks = getQuestionBanks(contentPath);
+  // Card decks are for listening, so there's nothing to print.
+  const banks = getQuestionBanks(contentPath).filter((b) => !b.cards);
   const [count, setCount] = useState(COUNTS[0]);
   const [seed, setSeed] = useState(0);
   const [showKey, setShowKey] = useState(false);
@@ -42,31 +44,15 @@ export default function WorksheetsPage() {
           <Mascot size={64}>Pick a worksheet, then tap Print! 🖨️</Mascot>
         )}
 
-        {banks.length > 1 &&
-          concepts
-            .filter((c) => banks.some((b) => b.conceptSlug === c.slug))
-            .map((c) => (
-              <div key={c.slug} className="space-y-2">
-                <p className="font-display text-lg font-semibold">
-                  {c.emoji} {c.title}
-                </p>
-                <div className="flex flex-wrap gap-2" role="group" aria-label={c.title}>
-                  {banks
-                    .filter((b) => b.conceptSlug === c.slug)
-                    .map((b) => (
-                      <button
-                        key={bankId(b)}
-                        type="button"
-                        className={chip(b === bank)}
-                        aria-pressed={b === bank}
-                        onClick={() => setParams({ concept: b.conceptSlug, set: b.set })}
-                      >
-                        {b.emoji} {b.title}
-                      </button>
-                    ))}
-                </div>
-              </div>
-            ))}
+        {banks.length > 1 && (
+          <SetPicker
+            banks={banks}
+            concepts={concepts}
+            value={bank}
+            onChange={(b) => setParams({ concept: b.conceptSlug, set: b.set })}
+            label="Questions:"
+          />
+        )}
 
         <div className="flex flex-wrap items-center gap-2">
           <span className="font-display text-lg text-ink-soft">Problems:</span>

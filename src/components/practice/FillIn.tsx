@@ -5,13 +5,15 @@ import { BigButton } from '../ui';
 interface Props {
   question: FillInQuestion;
   solved: boolean;
+  /** Shown in the box once solved (the child's answer, or the right one if revealed). */
+  shownAnswer?: string;
   /** Bumps after a wrong answer so the field clears. */
   attempt: number;
   color: string;
   onAnswer: (value: string) => void;
 }
 
-export function FillIn({ question, solved, attempt, color, onAnswer }: Props) {
+export function FillIn({ question, solved, shownAnswer, attempt, color, onAnswer }: Props) {
   const [value, setValue] = useState('');
   const ref = useRef<HTMLInputElement>(null);
   const numeric = typeof question.answer === 'number';
@@ -32,7 +34,7 @@ export function FillIn({ question, solved, attempt, color, onAnswer }: Props) {
     >
       <input
         ref={ref}
-        value={solved ? String(question.answer) : value}
+        value={solved ? (shownAnswer ?? String(question.answer)) : value}
         onChange={(e) => setValue(e.target.value)}
         disabled={solved}
         inputMode={numeric ? 'numeric' : 'text'}

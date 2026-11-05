@@ -1,17 +1,25 @@
 import type { MDXComponents } from 'mdx/types';
 import { ReadAloudButton } from '../ui';
+import { AlphabetChart } from './AlphabetChart';
+import { BorrowSubtraction } from './BorrowSubtraction';
 import { Callout } from './Callout';
 import { CarryAddition, TensOnes } from './CarryAddition';
 import { Counters } from './Counters';
+import { HundredChart } from './HundredChart';
 import { NumberLine } from './NumberLine';
 import { TenFrame } from './TenFrame';
+import { WordFamilyList } from './WordFamilyList';
 
 /** Widgets available in every .mdx lesson without importing, plus kid-friendly typography. */
 export const mdxComponents: MDXComponents = {
   TenFrame,
+  AlphabetChart,
+  WordFamilyList,
   NumberLine,
   Counters,
+  HundredChart,
   CarryAddition,
+  BorrowSubtraction,
   TensOnes,
   Callout,
   ReadAloud: ReadAloudButton,

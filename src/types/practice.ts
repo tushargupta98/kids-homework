@@ -30,7 +30,10 @@ export interface MultipleChoiceQuestion extends BaseQuestion {
 
 export interface FillInQuestion extends BaseQuestion {
   type: 'fill-in';
+  /** The answer, or one example answer when `accepts` allows others. */
   answer: string | number;
+  /** For questions with many right answers (e.g. "45 > ?"): returns true for any answer that works. */
+  accepts?: (given: string) => boolean;
 }
 
 export interface TrueFalseQuestion extends BaseQuestion {
@@ -48,6 +51,14 @@ export interface QuestionBank {
   /** Name of the practice set, e.g. "Add with carrying". */
   title: string;
   emoji?: string;
+  /** Review set that mixes other sets' questions; it has no lesson of its own. */
+  mixed?: boolean;
+  /** Listen & flip deck: hear a word, then flip the card to see it. Not scored, and has no questions. */
+  cards?: { word: string; emoji?: string; /** First sound, highlighted when flipped: "ch" in chat. */ onset?: string }[];
+  /** listen (default): hear the word, then flip to see it. read: see the word, then tap to hear it. */
+  cardMode?: 'listen' | 'read';
+  /** For a big deck, how many cards one round deals (default: the whole deck). */
+  cardsPerRound?: number;
   /** Fixed questions. */
   questions?: Question[];
   /** Generator for endless randomized questions (great for math facts). */

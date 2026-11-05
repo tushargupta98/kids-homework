@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { burst } from '../../lib/celebrate';
 import { bankId } from '../../lib/content';
 import { progressKey, recordRound, starsForScore } from '../../lib/progress';
-import { answerLabel, buildRound, checkAnswer } from '../../lib/questions';
+import { answerLabel, buildRound, checkAnswer, splitBlank } from '../../lib/questions';
 import { sounds } from '../../lib/sound';
 import type { AgeTheme } from '../../theme/ageThemes';
 import type { SubjectPalette } from '../../theme/subjectColors';
@@ -29,6 +29,20 @@ interface Props {
 
 type Result = 'correct' | 'wrong' | undefined;
 
+/** "? + 5 = 10" with a short blank line where the "?" is; shows the answer once solved. */
+function PromptBlank({ prompt, answer }: { prompt: string; answer?: string }) {
+  const [before, after] = splitBlank(prompt) ?? [prompt, ''];
+  return (
+    <>
+      {before}
+      <span className="mx-1 inline-block min-w-[2.5ch] border-b-4 border-dashed border-ink/50 px-1 text-center">
+        {answer ?? <span className="text-ink/25">?</span>}
+      </span>
+      {after}
+    </>
+  );
+}
+
 export function PracticeRunner({ bank, progressId, colors, theme, worksheetsHref }: Props) {
   const [round, setRound] = useState(0);
   // `round` is a dependency so "Play again" builds a fresh set.
@@ -37,6 +51,8 @@ export function PracticeRunner({ bank, progressId, colors, theme, worksheetsHref
   const [results, setResults] = useState<Result[]>(() => Array(questions.length).fill(undefined));
   const [misses, setMisses] = useState<(string | boolean)[]>([]);
   const [solved, setSolved] = useState(false);
+  // What the child answered correctly; it can differ from q.answer when many answers work.
+  const [rightAnswer, setRightAnswer] = useState('');
   const [done, setDone] = useState(false);
 
   useEffect(() => {
@@ -44,12 +60,14 @@ export function PracticeRunner({ bank, progressId, colors, theme, worksheetsHref
     setResults(Array(questions.length).fill(undefined));
     setMisses([]);
     setSolved(false);
+    setRightAnswer('');
     setDone(false);
   }, [questions]);
 
   const q = questions[index];
   const btn = `${colors.solid} ${colors.solidHover}`;
   const revealed = misses.length >= MAX_TRIES && !solved;
+  const shownAnswer = solved ? rightAnswer : String(q?.answer ?? '');
   const correctCount = results.filter((r) => r === 'correct').length;
   const stars = starsForScore(correctCount, questions.length);
 
@@ -61,6 +79,7 @@ export function PracticeRunner({ bank, progressId, colors, theme, worksheetsHref
       sounds.correct();
       if (theme.celebrate) burst();
       setSolved(true);
+      setRightAnswer(String(given));
       setResults((r) => r.map((v, i) => (i === index ? (misses.length === 0 ? 'correct' : 'wrong') : v)));
     } else {
       sounds.oops();
@@ -84,6 +103,7 @@ export function PracticeRunner({ bank, progressId, colors, theme, worksheetsHref
     setIndex(index + 1);
     setMisses([]);
     setSolved(false);
+    setRightAnswer('');
   };
 
   if (done) {
@@ -141,6 +161,13 @@ export function PracticeRunner({ bank, progressId, colors, theme, worksheetsHref
                 />
               </div>
             </>
+          ) : q.type === 'fill-in' && splitBlank(q.prompt) ? (
+            <h2 className="mb-6 text-center text-3xl font-bold leading-snug md:text-4xl">
+              <span className="sr-only">{q.prompt}</span>
+              <span aria-hidden>
+                <PromptBlank prompt={q.prompt} answer={solved || revealed ? shownAnswer : undefined} />
+              </span>
+            </h2>
           ) : (
             <h2 className="mb-6 text-center text-3xl font-bold leading-snug md:text-4xl">{q.prompt}</h2>
           )}
@@ -152,7 +179,7 @@ export function PracticeRunner({ bank, progressId, colors, theme, worksheetsHref
             <TrueFalse question={q} wrong={misses as boolean[]} solved={solved || revealed} onAnswer={answer} />
           )}
           {q.type === 'fill-in' && (
-            <FillIn question={q} solved={solved || revealed} attempt={misses.length} color={btn} onAnswer={answer} />
+            <FillIn question={q} solved={solved || revealed} shownAnswer={shownAnswer} attempt={misses.length} color={btn} onAnswer={answer} />
           )}
 
           <div className="mt-6 min-h-24" aria-live="polite">

@@ -3,6 +3,7 @@ import { useBreadcrumbs } from '../../hooks/useBreadcrumbs';
 import { setSound, useSettings } from '../../lib/settings';
 import { Owl } from '../ui';
 import { Breadcrumbs } from './Breadcrumbs';
+import { VoicePicker } from './VoicePicker';
 
 export function Header() {
   const crumbs = useBreadcrumbs();
@@ -32,6 +33,7 @@ export function Header() {
         </Link>
 
         <div className="ml-auto flex items-center gap-2">
+          <VoicePicker />
           <button
             type="button"
             onClick={() => setSound(!sound)}

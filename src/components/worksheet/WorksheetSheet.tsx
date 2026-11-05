@@ -1,5 +1,5 @@
 import type { Question } from '../../types/practice';
-import { answerLabel } from '../../lib/questions';
+import { answerLabel, splitBlank } from '../../lib/questions';
 import { FONT_SIZES, type WorksheetColumns, type WorksheetFontSize } from '../../lib/worksheetSettings';
 import { ColumnProblem } from '../math/ColumnProblem';
 import { Owl } from '../ui';
@@ -23,8 +23,8 @@ const columnClasses = {
 
 /** Renders "7 + 5 = ?" with a write-in line in place of the "?". */
 function Prompt({ text, answer }: { text: string; answer?: string }) {
-  const parts = text.split('?');
-  if (parts.length < 2) return <>{text}</>;
+  const parts = splitBlank(text);
+  if (!parts) return <>{text}</>;
   return (
     <>
       {parts[0]}
@@ -32,7 +32,7 @@ function Prompt({ text, answer }: { text: string; answer?: string }) {
       <span className="mx-1 inline-block min-w-[3em] border-b-[3px] border-ink/60 px-1 pb-[0.1em] text-center font-bold">
         {answer ?? '\u00a0'}
       </span>
-      {parts.slice(1).join('?')}
+      {parts[1]}
     </>
   );
 }
@@ -98,7 +98,7 @@ export function WorksheetSheet({ title, subtitle, questions, answerKey, fontSize
               ) : q.type === 'fill-in' ? (
                 <>
                   <Prompt text={q.prompt} answer={answerKey ? String(q.answer) : undefined} />
-                  {!q.prompt.includes('?') && (
+                  {!splitBlank(q.prompt) && (
                     <div className="mt-2 h-10 border-b-2 border-ink/50 font-bold">{answerKey ? String(q.answer) : ''}</div>
                   )}
                 </>

@@ -3,10 +3,10 @@ import { useState, type ReactNode } from 'react';
 import { sounds } from '../../lib/sound';
 import { BigButton } from '../ui';
 
-const ONE = 'h-5 w-5 rounded-md border-2 border-ink/30 md:h-6 md:w-6';
+export const ONE = 'h-5 w-5 rounded-md border-2 border-ink/30 md:h-6 md:w-6';
 
 /** A "ten" block: a tall bar of 10 little squares. */
-function TenBar({ color = 'bg-sky-400', carried = false }: { color?: string; carried?: boolean }) {
+export function TenBar({ color = 'bg-sky-400', carried = false }: { color?: string; carried?: boolean }) {
   return (
     <motion.span
       layout
@@ -23,7 +23,7 @@ function TenBar({ color = 'bg-sky-400', carried = false }: { color?: string; car
 }
 
 /** A place-value mat: tens on the left, ones on the right. */
-function Mat({ tens, ones }: { tens: ReactNode; ones: ReactNode }) {
+export function Mat({ tens, ones }: { tens: ReactNode; ones: ReactNode }) {
   return (
     <div className="grid grid-cols-2 gap-2 rounded-3xl border-4 border-ink/70 bg-white p-2">
       <div className="flex min-h-36 flex-col items-center gap-2 rounded-2xl bg-sky-50 p-2">
