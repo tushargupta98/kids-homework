@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { burst } from '../../lib/celebrate';
 import { bankId } from '../../lib/content';
 import { progressKey, recordRound, starsForScore } from '../../lib/progress';
-import { answerLabel, buildRound, checkAnswer, splitBlank } from '../../lib/questions';
+import { answerLabel, buildPracticeRound, checkAnswer, splitBlank } from '../../lib/questions';
 import { sounds } from '../../lib/sound';
 import { speakWord } from '../../lib/speech';
 import type { AgeTheme } from '../../theme/ageThemes';
@@ -47,7 +47,7 @@ function PromptBlank({ prompt, answer }: { prompt: string; answer?: string }) {
 export function PracticeRunner({ bank, progressId, colors, theme, worksheetsHref }: Props) {
   const [round, setRound] = useState(0);
   // `round` is a dependency so "Play again" builds a fresh set.
-  const questions = useMemo(() => buildRound(bank, ROUND_SIZE), [bank, round]);
+  const questions = useMemo(() => buildPracticeRound(bank, ROUND_SIZE), [bank, round]);
   const [index, setIndex] = useState(0);
   const [results, setResults] = useState<Result[]>(() => Array(questions.length).fill(undefined));
   const [misses, setMisses] = useState<(string | boolean)[]>([]);

@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { getClassification, getGrade, getLevel, getSubject } from '../data/curriculum';
 import type { GradeId, SubjectId } from '../types/curriculum';
 import { allContentFiles, getConcepts, parseFrontmatter } from './content';
-import { buildPrintableRound, buildRound, checkAnswer, hasPrintable, isPrintable } from './questions';
+import { buildPracticeRound, buildPrintableRound, buildRound, checkAnswer, hasPrintable, isPrintable } from './questions';
 
 const parsePath = (file: string) => {
   const [, , , level, grade, subject, classification, kind, name] = file.split('/');
@@ -127,6 +127,19 @@ describe('worksheet repeats', () => {
         const words = qs.filter((q) => q.inWordBank).map((q) => String(q.answer));
         expect(new Set(words).size, `${bank.conceptSlug}/${bank.set} repeats a word`).toBe(words.length);
       }
+    }
+  });
+});
+
+describe('Language Arts practice', () => {
+  it('never asks the child to type: any set with write-in questions flips cards in Practice', () => {
+    const ela = Object.entries(allContentFiles().banks)
+      .filter(([file]) => file.includes('/ela/'))
+      .flatMap(([, banks]) => banks);
+    for (const bank of ela) {
+      if (bank.cards) continue;
+      const typed = buildPracticeRound(bank, 30).some((q) => q.type === 'fill-in');
+      expect(typed, `${bank.conceptSlug}/${bank.set} needs cards for Practice`).toBe(false);
     }
   });
 });

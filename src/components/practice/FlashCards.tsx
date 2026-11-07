@@ -21,8 +21,9 @@ interface Props {
    * listen: hear it, then tap Flip twice to see it. read: see the word, tap to hear it and check.
    * spell: hear it and write it on paper, then one tap shows the word and a sentence with it.
    * gap: read a sentence with a word missing and say the word, then one tap shows the whole sentence.
+   * prompt: the front shows a meaning or picture; say or write the word, then one tap shows it.
    */
-  mode?: 'listen' | 'read' | 'spell' | 'gap';
+  mode?: 'listen' | 'read' | 'spell' | 'gap' | 'prompt';
 }
 
 /** A card's word with its mark highlighted: the first sound in orange, or a heart part in red under a ❤️. */
@@ -115,7 +116,7 @@ export function FlashCards({ cards, colors, perRound, mode = 'listen' }: Props) 
     return (
       <div className="mx-auto flex max-w-xl flex-col items-center gap-5 rounded-[2.5rem] border-4 border-ink/10 bg-white p-8 text-center shadow-chunky">
         <div className="text-6xl">🎉</div>
-        <p className="font-display text-3xl font-bold">{sentence || mode === 'gap' ? `You read all ${deck.length} sentences!` : mode === 'spell' ? `You spelled ${deck.length} words!` : `You heard all ${deck.length} words!`}</p>
+        <p className="font-display text-3xl font-bold">{sentence || mode === 'gap' ? `You read all ${deck.length} sentences!` : mode === 'spell' || mode === 'prompt' ? `You spelled ${deck.length} words!` : `You heard all ${deck.length} words!`}</p>
         {mode !== 'gap' && <p className="font-display text-2xl text-ink-soft">{deck.map((c) => c.word).join(' · ')}</p>}
         <BigButton
           color={btn}
@@ -149,7 +150,46 @@ export function FlashCards({ cards, colors, perRound, mode = 'listen' }: Props) 
               flipped ? 'border-ink/10 bg-white' : 'border-ink/15 bg-amber-50'
             }`}
           >
-            {mode === 'gap' ? (
+            {mode === 'prompt' ? (
+              <>
+                {card.emoji && <div className="text-7xl">{card.emoji}</div>}
+                {flipped ? (
+                  <>
+                    <p className={`text-center font-display font-bold ${sentence ? 'text-4xl leading-snug' : 'text-7xl tracking-wide md:text-8xl'}`}>
+                      <MarkedWord card={card} />
+                    </p>
+                    {card.sentence && (
+                      <p className="text-center font-display text-2xl leading-snug text-ink-soft md:text-3xl">
+                        <UsedIn sentence={card.sentence} word={card.word} />
+                      </p>
+                    )}
+                    {!sentence && (
+                      <BigButton variant="secondary" onClick={play}>
+                        🔊 Word
+                      </BigButton>
+                    )}
+                  </>
+                ) : (
+                  <>
+                    {card.front && <p className="text-center font-display text-3xl font-bold leading-snug md:text-4xl">{card.front}</p>}
+                    {(card.patternHint || card.clue) && (
+                      <p className="rounded-full bg-amber-100 px-4 py-1 text-center font-display text-lg font-semibold">
+                        💡 {[card.patternHint && `Hint: ${card.patternHint}`, card.clue].filter(Boolean).join(' · ')}
+                      </p>
+                    )}
+                    {card.say && (
+                      <BigButton variant="secondary" onClick={() => speakWord(card.say!)}>
+                        🔊 Listen
+                      </BigButton>
+                    )}
+                    <p className="text-center font-display text-xl text-ink-soft">✏️ Say it or write it on paper. Then check!</p>
+                    <BigButton color={btn} onClick={() => setFlipped(true)} className="min-w-52">
+                      👀 Show the word
+                    </BigButton>
+                  </>
+                )}
+              </>
+            ) : mode === 'gap' ? (
               <>
                 <p className="text-center font-display text-4xl font-bold leading-snug md:text-5xl">
                   {flipped ? <UsedIn sentence={card.sentence ?? card.word} word={card.word} /> : card.gap}

@@ -119,6 +119,14 @@ export function buildPrintableRound(bank: QuestionBank, count: number): Question
 /** Sets that can make a worksheet: ones with printable questions (card-only decks and listening-only sets can't). */
 export const hasPrintable = (bank: QuestionBank) => buildRound(bank, 30).some(isPrintable);
 
+/** A practice round. Sets marked noTyping leave out write-in questions (they stay on worksheets). */
+export function buildPracticeRound(bank: QuestionBank, count: number): Question[] {
+  if (!bank.noTyping) return buildRound(bank, count);
+  const out: Question[] = [];
+  for (let tries = 0; out.length < count && tries < 20; tries++) out.push(...buildRound(bank, count).filter((q) => q.type !== 'fill-in'));
+  return out.slice(0, count);
+}
+
 export function checkAnswer(q: Question, given: string | boolean): boolean {
   switch (q.type) {
     case 'true-false':

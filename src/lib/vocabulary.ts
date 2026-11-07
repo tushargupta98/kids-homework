@@ -194,8 +194,21 @@ function typeSets(
 
 const withMeaning = (words: string[]) => words.filter((w) => MEANINGS[w]);
 
+/** Practice flips these instead of typing; worksheets still print the write-in questions. */
+const promptDeck = (cards: NonNullable<QuestionBank['cards']>): Partial<QuestionBank> => ({ cards, cardsPerRound: 10, cardMode: 'prompt' });
+
+const meaningCards = (g: WordGroup) =>
+  withMeaning(g.words)
+    .filter((w) => w.length >= 2)
+    .map((word) => ({ word, emoji: PICTURES[word], front: MEANINGS[word], clue: letterClue(word), sentence: EXAMPLE_SENTENCES[word] }));
+
+const pictureCards = (g: WordGroup) =>
+  pictured(g.words).map((word) => ({ word, emoji: PICTURES[word], front: 'What is it? Spell the word.', say: word, sentence: EXAMPLE_SENTENCES[word] }));
+
 export const meaningSets = (slug: string): QuestionBank[] => [
-  ...typeSets(slug, 'meaning-spell', 'Meaning → spell', '📝', meaningQuestion, (w) => withMeaning(w).filter((x) => x.length >= 2)),
+  ...typeSets(slug, 'meaning-spell', 'Meaning → spell', '📝', meaningQuestion, (w) => withMeaning(w).filter((x) => x.length >= 2), (g) =>
+    promptDeck(meaningCards(g)),
+  ),
   ...typeSets(slug, 'which-word', 'Which word means…?', '🔤', whichWordQuestion, withMeaning),
   ...typeSets(slug, 'what-means', 'What does it mean?', '💭', whatMeansQuestion, withMeaning),
 ];
@@ -220,6 +233,6 @@ export const sentenceWordSets = (slug: string): QuestionBank[] => [
 ];
 
 export const pictureSets = (slug: string): QuestionBank[] => [
-  ...typeSets(slug, 'spell', 'Picture spelling', '🖼️', pictureQuestion, pictured),
+  ...typeSets(slug, 'spell', 'Picture spelling', '🖼️', pictureQuestion, pictured, (g) => promptDeck(pictureCards(g))),
   ...typeSets(slug, 'name', 'Name the picture', '🏷️', namePictureQuestion, pictured),
 ];

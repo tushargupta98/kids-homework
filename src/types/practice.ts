@@ -59,6 +59,8 @@ export interface QuestionBank {
   /** Name of the practice set, e.g. "Add with carrying". */
   title: string;
   emoji?: string;
+  /** Practice skips write-in questions (Language Arts is tap and flip only); worksheets still print them. */
+  noTyping?: boolean;
   /** Review set that mixes other sets' questions; it has no lesson of its own. */
   mixed?: boolean;
   /** Listen & flip deck: hear a word, then flip the card to see it. Not scored, and has no questions. */
@@ -71,6 +73,10 @@ export interface QuestionBank {
     markStyle?: 'onset' | 'heart';
     /** What the word means, shown on the front of a spelling card. It must not contain the word. */
     meaning?: string;
+    /** Text on the front of a prompt card: a meaning, "Write the first letter: __at", and so on. */
+    front?: string;
+    /** Small clue under the front, e.g. "4 letters, starts with d". */
+    clue?: string;
     /** A spelling-pattern hint shown on the front of a gap card, e.g. "short e" or "ck". */
     patternHint?: string;
     /** The sentence with the word left out ("The ___ swims in the pond."), shown on the front of a gap card. */
@@ -80,8 +86,8 @@ export interface QuestionBank {
     /** A sentence that uses the word, shown when a spelling card is turned over. */
     sentence?: string;
   }[];
-  /** listen (default): hear the word, then flip to see it. read: see the word, then tap to hear it. spell: hear it, write it, tap to check. gap: say the missing word, tap to see the whole sentence. */
-  cardMode?: 'listen' | 'read' | 'spell' | 'gap';
+  /** listen (default): hear the word, then flip to see it. read: see the word, then tap to hear it. spell: hear it, write it, tap to check. gap: say the missing word, tap to see the whole sentence. prompt: read the front (a meaning, a picture), say or write the word, tap to see it. */
+  cardMode?: 'listen' | 'read' | 'spell' | 'gap' | 'prompt';
   /** For a big deck, how many cards one round deals (default: the whole deck). */
   cardsPerRound?: number;
   /**

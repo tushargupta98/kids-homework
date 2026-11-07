@@ -17,7 +17,7 @@ describe('word families', () => {
   });
 
   it('has one card deck per family, and decks stay out of the mix', () => {
-    const decks = wordFamilies.filter((b) => b.cards);
+    const decks = wordFamilies.filter((b) => b.cards && (b.set.startsWith('cards-') || b.set.startsWith('read-')));
     expect(decks.map((d) => d.set)).toEqual([
       ...WORD_FAMILIES.map((f) => `cards-${f.rime}`),
       'cards-random',

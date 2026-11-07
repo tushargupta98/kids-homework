@@ -50,9 +50,20 @@ function readWord(): Question {
 
 const slug = 'word-families';
 
+// Practice flips these cards instead of typing; worksheets still print the write-in questions.
+const missingLetterCards = withPictures.map(({ fam, w }) => {
+  const onset = onsetOf(w.word, fam.rime);
+  return { word: w.word, emoji: w.emoji, mark: onset, front: `${'_'.repeat(onset.length)}${fam.rime}`, clue: `Which ${onset.length === 1 ? 'letter goes' : 'letters go'} first?` };
+});
+const buildWordCards = WORD_FAMILIES.map((f) => ({
+  word: f.words.map((w) => w.word).join(', '),
+  front: `Say words in the -${f.rime} family: __${f.rime}`,
+  clue: 'How many can you make?',
+}));
+
 export default [
-  setOf(slug, 'missing-letter', 'Write the first letter', '✍️', missingLetter),
-  setOf(slug, 'build-word', 'Make a family word', '🧱', buildWord),
+  { ...setOf(slug, 'missing-letter', 'Write the first letter', '✍️', missingLetter), cards: missingLetterCards, cardsPerRound: 10, cardMode: 'prompt' as const },
+  { ...setOf(slug, 'build-word', 'Make a family word', '🧱', buildWord), cards: buildWordCards, cardsPerRound: 10, cardMode: 'prompt' as const },
   setOf(slug, 'odd-one-out', 'Odd one out', '🙃', oddOneOut),
   setOf(slug, 'read-word', 'Read the word', '📖', readWord),
   ...familyDecks(slug),
