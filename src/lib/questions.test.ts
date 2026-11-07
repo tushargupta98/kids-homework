@@ -23,6 +23,7 @@ describe('splitBlank', () => {
     expect(splitBlank('8 + 5 = ?')).toEqual(['8 + 5 = ', '']);
     expect(splitBlank('Write the first letter: ?et')).toEqual(['Write the first letter: ', 'et']);
     expect(splitBlank('How many now? Sam')).toBeUndefined();
+    expect(splitBlank('Where is the ??')).toEqual(['Where is the ', '?']);
     expect(splitBlank('? + 5 = 10')).toEqual(['', ' + 5 = 10']);
     expect(splitBlank('That makes 1 ten and ? ones.')).toEqual(['That makes 1 ten and ', ' ones.']);
     expect(splitBlank('How many apples does Sam have now?')).toBeUndefined();

@@ -5,9 +5,11 @@ import { BorrowSubtraction } from './BorrowSubtraction';
 import { Callout } from './Callout';
 import { CarryAddition, TensOnes } from './CarryAddition';
 import { Counters } from './Counters';
+import { HeartWords } from './HeartWords';
 import { HundredChart } from './HundredChart';
 import { NumberLine } from './NumberLine';
 import { TenFrame } from './TenFrame';
+import { WordChart } from './WordChart';
 import { WordFamilyList } from './WordFamilyList';
 
 /** Widgets available in every .mdx lesson without importing, plus kid-friendly typography. */
@@ -15,6 +17,8 @@ export const mdxComponents: MDXComponents = {
   TenFrame,
   AlphabetChart,
   WordFamilyList,
+  WordChart,
+  HeartWords,
   NumberLine,
   Counters,
   HundredChart,

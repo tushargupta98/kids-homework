@@ -1,0 +1,3 @@
+import { patternSets } from '../../../../../../lib/phonicsPatterns';
+
+export default patternSets('short-e');

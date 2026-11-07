@@ -18,6 +18,14 @@ interface BaseQuestion {
   visual?: string;
   /** Gentle nudge shown after a wrong answer. */
   hint?: string;
+  /** A spelling-pattern hint shown in Practice and on worksheets, e.g. "short e" or "ll". */
+  patternHint?: string;
+  /** A small extra clue shown under the prompt in Practice only, e.g. "4 letters, starts with d". Worksheets have a word box instead. */
+  clue?: string;
+  /** On worksheets, list this answer in the word box at the bottom of the page. */
+  inWordBank?: boolean;
+  /** Word or sentence for the 🔊 button to say, kept out of the prompt so the answer isn't shown. */
+  say?: string;
   /** Draw the problem stacked in columns instead of on one line. */
   column?: ColumnLayout;
 }
@@ -54,12 +62,32 @@ export interface QuestionBank {
   /** Review set that mixes other sets' questions; it has no lesson of its own. */
   mixed?: boolean;
   /** Listen & flip deck: hear a word, then flip the card to see it. Not scored, and has no questions. */
-  cards?: { word: string; emoji?: string; /** First sound, highlighted when flipped: "ch" in chat. */ onset?: string }[];
-  /** listen (default): hear the word, then flip to see it. read: see the word, then tap to hear it. */
-  cardMode?: 'listen' | 'read';
+  cards?: {
+    word: string;
+    emoji?: string;
+    /** Part of the word to highlight: the first sound ("ch" in chat), or a heart word's tricky part. */
+    mark?: string;
+    /** onset (default): the mark is at the start, in orange. heart: shown in red under a ❤️. */
+    markStyle?: 'onset' | 'heart';
+    /** What the word means, shown on the front of a spelling card. It must not contain the word. */
+    meaning?: string;
+    /** A spelling-pattern hint shown on the front of a gap card, e.g. "short e" or "ck". */
+    patternHint?: string;
+    /** The sentence with the word left out ("The ___ swims in the pond."), shown on the front of a gap card. */
+    gap?: string;
+    /** What the front's 🔊 says, if anything, e.g. the whole sentence for a listening gap card. */
+    say?: string;
+    /** A sentence that uses the word, shown when a spelling card is turned over. */
+    sentence?: string;
+  }[];
+  /** listen (default): hear the word, then flip to see it. read: see the word, then tap to hear it. spell: hear it, write it, tap to check. gap: say the missing word, tap to see the whole sentence. */
+  cardMode?: 'listen' | 'read' | 'spell' | 'gap';
   /** For a big deck, how many cards one round deals (default: the whole deck). */
   cardsPerRound?: number;
-  /** Fixed questions. */
+  /**
+   * A set can have both cards and questions: Practice shows the cards, Worksheets print the questions.
+   * Fixed questions.
+   */
   questions?: Question[];
   /** Generator for endless randomized questions (great for math facts). */
   generate?: (count: number) => Question[];

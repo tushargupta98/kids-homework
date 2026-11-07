@@ -5,6 +5,7 @@ import { bankId } from '../../lib/content';
 import { progressKey, recordRound, starsForScore } from '../../lib/progress';
 import { answerLabel, buildRound, checkAnswer, splitBlank } from '../../lib/questions';
 import { sounds } from '../../lib/sound';
+import { speakWord } from '../../lib/speech';
 import type { AgeTheme } from '../../theme/ageThemes';
 import type { SubjectPalette } from '../../theme/subjectColors';
 import type { QuestionBank } from '../../types/practice';
@@ -65,6 +66,11 @@ export function PracticeRunner({ bank, progressId, colors, theme, worksheetsHref
   }, [questions]);
 
   const q = questions[index];
+
+  // Listening questions play their word as soon as they appear (browsers may wait for the first tap).
+  useEffect(() => {
+    if (q?.say) speakWord(q.say);
+  }, [q]);
   const btn = `${colors.solid} ${colors.solidHover}`;
   const revealed = misses.length >= MAX_TRIES && !solved;
   const shownAnswer = solved ? rightAnswer : String(q?.answer ?? '');
@@ -150,6 +156,18 @@ export function PracticeRunner({ bank, progressId, colors, theme, worksheetsHref
             {theme.readAloud && <ReadAloudButton text={q.prompt} label="Read the question to me" />}
           </div>
 
+          {q.say && (
+            <div className="mb-4 flex justify-center">
+              <button
+                type="button"
+                onClick={() => speakWord(q.say!)}
+                aria-label="Play it again"
+                className={`flex size-28 items-center justify-center rounded-full border-4 border-ink/15 text-6xl shadow-chunky-sm active:scale-95 ${btn}`}
+              >
+                🔊
+              </button>
+            </div>
+          )}
           {q.visual && <div className="mb-4 text-center text-5xl leading-tight tracking-wide md:text-6xl">{q.visual}</div>}
           {q.column ? (
             <>
@@ -180,6 +198,12 @@ export function PracticeRunner({ bank, progressId, colors, theme, worksheetsHref
           )}
           {q.type === 'fill-in' && (
             <FillIn question={q} solved={solved || revealed} shownAnswer={shownAnswer} attempt={misses.length} color={btn} onAnswer={answer} />
+          )}
+
+          {(q.patternHint || q.clue) && (
+            <p className="-mt-3 mb-5 text-center font-display text-lg text-ink-soft">
+              💡 {[q.patternHint && `Hint: ${q.patternHint}`, q.clue].filter(Boolean).join(' · ')}
+            </p>
           )}
 
           <div className="mt-6 min-h-24" aria-live="polite">

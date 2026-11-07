@@ -5,7 +5,7 @@ import { SetPicker } from '../components/practice/SetPicker';
 import { BigButton, Mascot } from '../components/ui';
 import { WorksheetSheet } from '../components/worksheet/WorksheetSheet';
 import { getConcepts, getQuestionBanks } from '../lib/content';
-import { buildRound } from '../lib/questions';
+import { buildPrintableRound, hasPrintable } from '../lib/questions';
 import { COLUMN_OPTIONS, FONT_SIZES, setWorksheetSettings, useWorksheetSettings } from '../lib/worksheetSettings';
 import { useClassification } from './ClassificationLayout';
 
@@ -14,8 +14,8 @@ const COUNTS = [10, 20];
 export default function WorksheetsPage() {
   const { contentPath, colors, theme, grade, classification } = useClassification();
   const [params, setParams] = useSearchParams();
-  // Card decks are for listening, so there's nothing to print.
-  const banks = getQuestionBanks(contentPath).filter((b) => !b.cards);
+  // Card decks and listening-only sets need sound, so they can't be printed.
+  const banks = useMemo(() => getQuestionBanks(contentPath).filter(hasPrintable), [contentPath]);
   const [count, setCount] = useState(COUNTS[0]);
   const [seed, setSeed] = useState(0);
   const [showKey, setShowKey] = useState(false);
@@ -25,7 +25,7 @@ export default function WorksheetsPage() {
 
   const inLesson = banks.filter((b) => b.conceptSlug === params.get('concept'));
   const bank = inLesson.find((b) => b.set === params.get('set')) ?? inLesson[0] ?? banks[0];
-  const questions = useMemo(() => (bank ? buildRound(bank, count) : []), [bank, count, seed]);
+  const questions = useMemo(() => (bank ? buildPrintableRound(bank, count) : []), [bank, count, seed]);
 
   if (!bank) return <ComingSoon what={`${classification.name} worksheets`} />;
 

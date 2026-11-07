@@ -119,7 +119,7 @@ export const familyOf = (word: string) => WORD_FAMILIES.find((f) => f.words.some
 
 /** Card decks for a lesson's practice dropdown: listen and read decks for each family, plus a random one of each. */
 export function familyDecks(conceptSlug: string): QuestionBank[] {
-  const cardsOf = (f: WordFamily) => f.words.map((w) => ({ ...w, onset: onsetOf(w.word, f.rime) }));
+  const cardsOf = (f: WordFamily) => f.words.map((w) => ({ ...w, mark: onsetOf(w.word, f.rime) }));
   return [
     ...WORD_FAMILIES.map((f) => ({ conceptSlug, set: `cards-${f.rime}`, title: `-${f.rime} listen cards`, emoji: '🃏', cards: cardsOf(f) })),
     // Every family shuffled together; each round deals a handful.

@@ -51,8 +51,10 @@ function currentVoice(): SpeechSynthesisVoice | undefined {
   );
 }
 
-/** Say one word on its own, slowly and with its full vowel, e.g. a word-family card. */
+/** Say one word on its own, slowly and with its full vowel, e.g. a word-family card. Sentences are said normally. */
 export function speakWord(word: string) {
+  // A sentence is said at the normal pace; a single word slowly and clearly.
+  if (/\s/.test(word.trim())) return speak(word);
   speak(SAY_CLEARLY[word.toLowerCase()] ?? word, 0.7);
 }
 
@@ -63,6 +65,10 @@ export function speak(text: string, rate = 0.85) {
     .replace(/[\p{Extended_Pictographic}]/gu, '')
     // A missing first letter: "?et" → "what letter, et".
     .replace(/(^|\s)\?(?=[a-z])/g, '$1what letter, ')
+    // A gap to fill in a meaning: 'like "I ___ happy"' → 'like "I blank happy"'.
+    .replace(/_{2,}/g, 'blank')
+    // A "?" right before a sentence's end mark is a missing word: "She has a ?." → "She has a blank."
+    .replace(/(^|\s)\?(?=[.?!])/g, '$1blank')
     // A "?" standing alone is a blank in a math problem: "? + 5 = 10" → "what number + 5 = 10".
     .replace(/(^|\s)\?(?=[\s,.]|$)/g, '$1what number')
     // Voices may read a lone "-" as "dash".

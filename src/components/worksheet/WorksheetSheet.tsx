@@ -1,5 +1,7 @@
+import { useMemo } from 'react';
 import type { Question } from '../../types/practice';
 import { answerLabel, splitBlank } from '../../lib/questions';
+import { shuffle } from '../../lib/random';
 import { FONT_SIZES, type WorksheetColumns, type WorksheetFontSize } from '../../lib/worksheetSettings';
 import { ColumnProblem } from '../math/ColumnProblem';
 import { Owl } from '../ui';
@@ -55,6 +57,11 @@ export function WorksheetSheet({ title, subtitle, questions, answerKey, fontSize
   const allColumn = questions.every((q) => q.column);
   const cols = columns === 'auto' ? (allColumn ? 4 : allShortFillIns ? 2 : 1) : columns;
   const size = FONT_SIZES.find((f) => f.value === fontSize)?.size;
+  // Answers for the word box, in a random order so it isn't the same as the questions.
+  const wordBank = useMemo(
+    () => shuffle([...new Set(questions.filter((q) => q.inWordBank).map((q) => String(q.answer)))]),
+    [questions],
+  );
   return (
     <section className="print-sheet mx-auto max-w-[8.5in] rounded-[2rem] border-4 border-ink/10 bg-white p-6 shadow-chunky md:p-10">
       <header className="mb-6 border-b-4 border-dashed border-ink/20 pb-4">
@@ -98,6 +105,7 @@ export function WorksheetSheet({ title, subtitle, questions, answerKey, fontSize
               ) : q.type === 'fill-in' ? (
                 <>
                   <Prompt text={q.prompt} answer={answerKey ? String(q.answer) : undefined} />
+                  {q.patternHint && <span className="ml-2 whitespace-nowrap text-[0.75em] text-ink-soft">(Hint: {q.patternHint})</span>}
                   {!splitBlank(q.prompt) && (
                     <div className="mt-2 h-10 border-b-2 border-ink/50 font-bold">{answerKey ? String(q.answer) : ''}</div>
                   )}
@@ -116,6 +124,17 @@ export function WorksheetSheet({ title, subtitle, questions, answerKey, fontSize
           </li>
         ))}
       </ol>
+
+      {wordBank.length > 0 && (
+        <div className="print-avoid-break mt-8 rounded-2xl border-[3px] border-dashed border-ink/40 p-4" style={{ fontSize: size }}>
+          <p className="mb-2 font-display text-[0.8em] font-semibold uppercase tracking-wide text-ink-soft">Word box</p>
+          <p className="flex flex-wrap gap-x-[1.5em] gap-y-[0.5em] font-display font-semibold">
+            {wordBank.map((w) => (
+              <span key={w}>{w}</span>
+            ))}
+          </p>
+        </div>
+      )}
 
       <footer className="mt-8 flex items-center justify-between border-t-2 border-dashed border-ink/15 pt-3 text-sm text-ink-soft">
         <span>Hoot School</span>

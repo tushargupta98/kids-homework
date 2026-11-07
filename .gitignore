@@ -3,3 +3,9 @@ dist
 .vercel
 *.local
 .DS_Store
+
+# Source documents stay local
+src/data/docs/
+
+# PDFs (source documents) stay local
+*.pdf
