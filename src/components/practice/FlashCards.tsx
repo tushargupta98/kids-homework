@@ -1,14 +1,11 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { useEffect, useMemo, useRef, useState } from 'react';
-import { shuffle } from '../../lib/random';
+import { useEffect, useMemo, useState } from 'react';
+import { dealCards } from '../../lib/questions';
 import { sounds } from '../../lib/sound';
 import { speakWord } from '../../lib/speech';
 import type { SubjectPalette } from '../../theme/subjectColors';
 import type { QuestionBank } from '../../types/practice';
 import { BigButton } from '../ui';
-
-/** How long the first tap on Flip waits for the second one. */
-const ARM_MS = 2000;
 
 type Card = NonNullable<QuestionBank['cards']>[number];
 
@@ -18,12 +15,13 @@ interface Props {
   /** Deal only this many cards per round, picked at random. */
   perRound?: number;
   /**
-   * listen: hear it, then tap Flip twice to see it. read: see the word, tap to hear it and check.
+   * listen: hear it, then tap Flip to see it. read: see the word, tap to hear it and check.
    * spell: hear it and write it on paper, then one tap shows the word and a sentence with it.
    * gap: read a sentence with a word missing and say the word, then one tap shows the whole sentence.
    * prompt: the front shows a meaning or picture; say or write the word, then one tap shows it.
+   * answer: the front shows the word and a question; say the answer, then one tap shows `back`.
    */
-  mode?: 'listen' | 'read' | 'spell' | 'gap' | 'prompt';
+  mode?: 'listen' | 'read' | 'spell' | 'gap' | 'prompt' | 'answer';
 }
 
 /** A card's word with its mark highlighted: the first sound in orange, or a heart part in red under a ❤️. */
@@ -57,7 +55,7 @@ function UsedIn({ sentence, word }: { sentence: string; word: string }) {
 }
 
 /**
- * Word cards in three modes. Listen: the card only plays the word; tap Flip twice to see it.
+ * Word cards in three modes. Listen: the card only plays the word; tap Flip to see it.
  * Read: the word is shown; tap to hear it and check your reading.
  * Spell: hear the word, write it on paper, then tap to see it and a sentence that uses it.
  * Gap: read the sentence with a word missing, say the word, then tap to see the whole sentence.
@@ -65,18 +63,14 @@ function UsedIn({ sentence, word }: { sentence: string; word: string }) {
 export function FlashCards({ cards, colors, perRound, mode = 'listen' }: Props) {
   const [round, setRound] = useState(0);
   // `round` is a dependency so "Shuffle and play again" deals a new order.
-  const deck = useMemo(() => shuffle(cards).slice(0, perRound ?? cards.length), [cards, perRound, round]);
+  const deck = useMemo(() => dealCards(cards, perRound), [cards, perRound, round]);
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
-  const [armed, setArmed] = useState(false);
   const [done, setDone] = useState(false);
-  const disarm = useRef<ReturnType<typeof setTimeout>>(undefined);
   const btn = `${colors.solid} ${colors.solidHover}`;
   const card = deck[index];
   const showWord = flipped || mode === 'read';
   const sentence = card?.word.includes(' ');
-
-  useEffect(() => () => clearTimeout(disarm.current), []);
 
   // Spelling cards say their word as soon as they're dealt (browsers may wait for the first tap).
   useEffect(() => {
@@ -89,20 +83,11 @@ export function FlashCards({ cards, colors, perRound, mode = 'listen' }: Props) 
   };
 
   const flipTap = () => {
-    clearTimeout(disarm.current);
-    if (!armed) {
-      sounds.tap();
-      setArmed(true);
-      disarm.current = setTimeout(() => setArmed(false), ARM_MS);
-      return;
-    }
-    setArmed(false);
+    sounds.tap();
     setFlipped(true);
   };
 
   const go = (to: number) => {
-    clearTimeout(disarm.current);
-    setArmed(false);
     setFlipped(false);
     if (to >= deck.length) {
       sounds.finish();
@@ -116,7 +101,7 @@ export function FlashCards({ cards, colors, perRound, mode = 'listen' }: Props) 
     return (
       <div className="mx-auto flex max-w-xl flex-col items-center gap-5 rounded-[2.5rem] border-4 border-ink/10 bg-white p-8 text-center shadow-chunky">
         <div className="text-6xl">🎉</div>
-        <p className="font-display text-3xl font-bold">{sentence || mode === 'gap' ? `You read all ${deck.length} sentences!` : mode === 'spell' || mode === 'prompt' ? `You spelled ${deck.length} words!` : `You heard all ${deck.length} words!`}</p>
+        <p className="font-display text-3xl font-bold">{sentence || mode === 'gap' ? `You read all ${deck.length} sentences!` : mode === 'answer' ? `You named ${deck.length} words!` : mode === 'spell' || mode === 'prompt' ? `You spelled ${deck.length} words!` : `You heard all ${deck.length} words!`}</p>
         {mode !== 'gap' && <p className="font-display text-2xl text-ink-soft">{deck.map((c) => c.word).join(' · ')}</p>}
         <BigButton
           color={btn}
@@ -150,7 +135,35 @@ export function FlashCards({ cards, colors, perRound, mode = 'listen' }: Props) 
               flipped ? 'border-ink/10 bg-white' : 'border-ink/15 bg-amber-50'
             }`}
           >
-            {mode === 'prompt' ? (
+            {mode === 'answer' ? (
+              <>
+                <p className="text-center font-display text-7xl font-bold tracking-wide md:text-8xl">{card.word}</p>
+                {flipped ? (
+                  <>
+                    <p className="rounded-full bg-sky-100 px-6 py-2 text-center font-display text-4xl font-bold text-sky-800">{card.back}</p>
+                    {card.clue && <p className="text-center font-display text-2xl text-ink-soft">{card.clue}</p>}
+                    {card.sentence && (
+                      <p className="text-center font-display text-2xl leading-snug md:text-3xl">
+                        <UsedIn sentence={card.sentence} word={card.word} />
+                      </p>
+                    )}
+                  </>
+                ) : (
+                  <>
+                    {card.front && <p className="text-center font-display text-3xl font-bold leading-snug">{card.front}</p>}
+                    {card.sentence && <p className="text-center font-display text-xl text-ink-soft">as in: “{card.sentence}”</p>}
+                    <div className="flex flex-wrap justify-center gap-3">
+                      <BigButton variant="secondary" onClick={play}>
+                        🔊 Word
+                      </BigButton>
+                      <BigButton color={btn} onClick={() => setFlipped(true)} className="min-w-52">
+                        👀 Show the answer
+                      </BigButton>
+                    </div>
+                  </>
+                )}
+              </>
+            ) : mode === 'prompt' ? (
               <>
                 {card.emoji && <div className="text-7xl">{card.emoji}</div>}
                 {flipped ? (
@@ -287,11 +300,9 @@ export function FlashCards({ cards, colors, perRound, mode = 'listen' }: Props) 
                     </BigButton>
                   </>
                 ) : (
-                <motion.div animate={armed ? { scale: [1, 1.08, 1] } : { scale: 1 }} transition={{ repeat: armed ? Infinity : 0, duration: 0.6 }}>
-                  <BigButton variant={armed ? 'primary' : 'secondary'} color={btn} onClick={flipTap} className="min-w-52">
-                    {armed ? '👆 Tap again to flip' : '🔄 Flip'}
-                  </BigButton>
-                </motion.div>
+                <BigButton color={btn} onClick={flipTap} className="min-w-52">
+                  🔄 Flip
+                </BigButton>
                 )}
               </>
             )}

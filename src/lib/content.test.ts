@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { getClassification, getGrade, getLevel, getSubject } from '../data/curriculum';
 import type { GradeId, SubjectId } from '../types/curriculum';
 import { allContentFiles, getConcepts, parseFrontmatter } from './content';
-import { buildPracticeRound, buildPrintableRound, buildRound, checkAnswer, hasPrintable, isPrintable } from './questions';
+import { buildPracticeRound, buildPrintableRound, buildRound, checkAnswer, dealCards, hasPrintable, isPrintable } from './questions';
 
 const parsePath = (file: string) => {
   const [, , , level, grade, subject, classification, kind, name] = file.split('/');
@@ -140,6 +140,31 @@ describe('Language Arts practice', () => {
       if (bank.cards) continue;
       const typed = buildPracticeRound(bank, 30).some((q) => q.type === 'fill-in');
       expect(typed, `${bank.conceptSlug}/${bank.set} needs cards for Practice`).toBe(false);
+    }
+  });
+});
+
+describe('practice rounds (Constitution, Rule 2)', () => {
+  const banks = Object.values(allContentFiles().banks).flat();
+
+  it('a card deck never deals the same word twice', () => {
+    for (const bank of banks.filter((b) => b.cards)) {
+      for (let i = 0; i < 5; i++) {
+        const words = dealCards(bank.cards!, bank.cardsPerRound).map((c) => c.word.toLowerCase());
+        expect(new Set(words).size, `${bank.conceptSlug}/${bank.set}`).toBe(words.length);
+      }
+    }
+  });
+
+  it('a practice round never asks the same question twice', () => {
+    // Sets with cards show the cards in Practice instead.
+    for (const bank of banks.filter((b) => !b.cards && (b.generate || b.questions?.length))) {
+      for (let i = 0; i < 3; i++) {
+        const qs = buildPracticeRound(bank, 10);
+        const keys = qs.map((q) => `${q.prompt}|${q.visual ?? ''}|${q.type === 'multiple-choice' ? [...q.choices].sort().join('/') : ''}`);
+        expect(new Set(keys).size, `${bank.conceptSlug}/${bank.set}`).toBe(keys.length);
+        expect(qs.length, `${bank.conceptSlug}/${bank.set} is empty`).toBeGreaterThan(0);
+      }
     }
   });
 });

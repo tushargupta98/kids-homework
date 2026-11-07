@@ -1,0 +1,7139 @@
+{
+ "sets": [
+  {
+   "set": 1,
+   "grade": 1,
+   "words": [
+    {
+     "n": 1,
+     "word": "the",
+     "pos": "article",
+     "meaning": "Points to a certain thing.",
+     "sentence": "Look at the cat."
+    },
+    {
+     "n": 2,
+     "word": "of",
+     "pos": "preposition",
+     "meaning": "Shows a part or what something is made from.",
+     "sentence": "I ate a slice of cake."
+    },
+    {
+     "n": 3,
+     "word": "and",
+     "pos": "conjunction",
+     "meaning": "Joins words or ideas together.",
+     "sentence": "I like milk and cookies."
+    },
+    {
+     "n": 4,
+     "word": "a",
+     "pos": "article",
+     "meaning": "One of something.",
+     "sentence": "I saw a bird in the tree."
+    },
+    {
+     "n": 5,
+     "word": "to",
+     "pos": "preposition",
+     "meaning": "Toward a place or person.",
+     "sentence": "We walk to school."
+    },
+    {
+     "n": 6,
+     "word": "in",
+     "pos": "preposition",
+     "meaning": "Inside something.",
+     "sentence": "The fish is in the bowl."
+    },
+    {
+     "n": 7,
+     "word": "is",
+     "pos": "verb",
+     "meaning": "Form of \"be\" for one thing.",
+     "sentence": "The sky is blue."
+    },
+    {
+     "n": 8,
+     "word": "you",
+     "pos": "pronoun",
+     "meaning": "The person being talked to.",
+     "sentence": "You are my best friend."
+    },
+    {
+     "n": 9,
+     "word": "that",
+     "pos": "pronoun",
+     "meaning": "The one over there.",
+     "sentence": "Can I have that toy?"
+    },
+    {
+     "n": 10,
+     "word": "it",
+     "pos": "pronoun",
+     "meaning": "A thing already talked about.",
+     "sentence": "I found the ball and kicked it."
+    },
+    {
+     "n": 11,
+     "word": "he",
+     "pos": "pronoun",
+     "meaning": "A boy or man.",
+     "sentence": "He likes to play soccer."
+    },
+    {
+     "n": 12,
+     "word": "or",
+     "pos": "conjunction",
+     "meaning": "Shows a choice.",
+     "sentence": "Do you want juice or water?"
+    },
+    {
+     "n": 13,
+     "word": "one",
+     "pos": "number",
+     "meaning": "The number 1.",
+     "sentence": "I have one little sister."
+    },
+    {
+     "n": 14,
+     "word": "had",
+     "pos": "verb",
+     "meaning": "Owned or held before.",
+     "sentence": "She had a red kite."
+    },
+    {
+     "n": 15,
+     "word": "by",
+     "pos": "preposition",
+     "meaning": "Next to or near.",
+     "sentence": "The lamp is by the bed."
+    },
+    {
+     "n": 16,
+     "word": "words",
+     "pos": "noun",
+     "meaning": "Groups of letters that mean something.",
+     "sentence": "I can read these words."
+    },
+    {
+     "n": 17,
+     "word": "but",
+     "pos": "conjunction",
+     "meaning": "Shows something different.",
+     "sentence": "I am tired, but I want to play."
+    },
+    {
+     "n": 18,
+     "word": "not",
+     "pos": "adverb",
+     "meaning": "Makes something mean no.",
+     "sentence": "The water is not cold."
+    },
+    {
+     "n": 19,
+     "word": "what",
+     "pos": "pronoun",
+     "meaning": "Asks about a thing.",
+     "sentence": "What is your name?"
+    },
+    {
+     "n": 20,
+     "word": "all",
+     "pos": "determiner",
+     "meaning": "Every one; the whole.",
+     "sentence": "All the kids sat down."
+    },
+    {
+     "n": 21,
+     "word": "were",
+     "pos": "verb",
+     "meaning": "Form of \"be\" for the past.",
+     "sentence": "We were at the park."
+    },
+    {
+     "n": 22,
+     "word": "we",
+     "pos": "pronoun",
+     "meaning": "Me and other people.",
+     "sentence": "We go to the same school."
+    },
+    {
+     "n": 23,
+     "word": "will",
+     "pos": "verb",
+     "meaning": "Is going to happen.",
+     "sentence": "I will call you later."
+    },
+    {
+     "n": 24,
+     "word": "up",
+     "pos": "adverb",
+     "meaning": "Toward the top.",
+     "sentence": "The balloon went up."
+    },
+    {
+     "n": 25,
+     "word": "other",
+     "pos": "adjective",
+     "meaning": "A different one.",
+     "sentence": "Use your other hand."
+    }
+   ]
+  },
+  {
+   "set": 2,
+   "grade": 1,
+   "words": [
+    {
+     "n": 26,
+     "word": "about",
+     "pos": "preposition",
+     "meaning": "On the topic of.",
+     "sentence": "This book is about dogs."
+    },
+    {
+     "n": 27,
+     "word": "out",
+     "pos": "adverb",
+     "meaning": "Away from inside.",
+     "sentence": "The dog ran out the door."
+    },
+    {
+     "n": 28,
+     "word": "many",
+     "pos": "adjective",
+     "meaning": "A lot of.",
+     "sentence": "There are many stars in the sky."
+    },
+    {
+     "n": 29,
+     "word": "then",
+     "pos": "adverb",
+     "meaning": "Next; after that.",
+     "sentence": "Brush your teeth, then go to bed."
+    },
+    {
+     "n": 30,
+     "word": "them",
+     "pos": "pronoun",
+     "meaning": "Those people or things.",
+     "sentence": "I gave them some apples."
+    },
+    {
+     "n": 31,
+     "word": "these",
+     "pos": "pronoun",
+     "meaning": "The ones close to me.",
+     "sentence": "These shoes are new."
+    },
+    {
+     "n": 32,
+     "word": "so",
+     "pos": "conjunction",
+     "meaning": "Because of that.",
+     "sentence": "It was raining, so we stayed in."
+    },
+    {
+     "n": 33,
+     "word": "some",
+     "pos": "determiner",
+     "meaning": "A few or a little.",
+     "sentence": "Can I have some grapes?"
+    },
+    {
+     "n": 34,
+     "word": "number",
+     "pos": "noun",
+     "meaning": "A count like 1, 2, or 3.",
+     "sentence": "Pick a number from one to ten."
+    },
+    {
+     "n": 35,
+     "word": "no",
+     "pos": "determiner",
+     "meaning": "Not any.",
+     "sentence": "There is no milk left."
+    },
+    {
+     "n": 36,
+     "word": "way",
+     "pos": "noun",
+     "meaning": "How to do or get somewhere.",
+     "sentence": "This is the way to the park."
+    },
+    {
+     "n": 37,
+     "word": "could",
+     "pos": "verb",
+     "meaning": "Was able to.",
+     "sentence": "She could swim when she was four."
+    },
+    {
+     "n": 38,
+     "word": "people",
+     "pos": "noun",
+     "meaning": "More than one person.",
+     "sentence": "Many people came to the show."
+    },
+    {
+     "n": 39,
+     "word": "my",
+     "pos": "determiner",
+     "meaning": "Belongs to me.",
+     "sentence": "This is my backpack."
+    },
+    {
+     "n": 40,
+     "word": "than",
+     "pos": "conjunction",
+     "meaning": "Used to compare.",
+     "sentence": "A horse is bigger than a dog."
+    },
+    {
+     "n": 41,
+     "word": "first",
+     "pos": "adjective",
+     "meaning": "Before all others.",
+     "sentence": "I was first in line."
+    },
+    {
+     "n": 42,
+     "word": "water",
+     "pos": "noun",
+     "meaning": "Clear liquid we drink.",
+     "sentence": "Please drink your water."
+    },
+    {
+     "n": 43,
+     "word": "been",
+     "pos": "verb",
+     "meaning": "Form of \"be\".",
+     "sentence": "I have been to the zoo."
+    },
+    {
+     "n": 44,
+     "word": "called",
+     "pos": "verb",
+     "meaning": "Named; or phoned.",
+     "sentence": "My dog is called Max."
+    },
+    {
+     "n": 45,
+     "word": "was",
+     "pos": "verb",
+     "meaning": "Form of \"be\" for the past.",
+     "sentence": "The game was fun."
+    },
+    {
+     "n": 46,
+     "word": "for",
+     "pos": "preposition",
+     "meaning": "Meant to be given to.",
+     "sentence": "This gift is for you."
+    },
+    {
+     "n": 47,
+     "word": "on",
+     "pos": "preposition",
+     "meaning": "Resting atop something.",
+     "sentence": "The book is on the table."
+    },
+    {
+     "n": 48,
+     "word": "are",
+     "pos": "verb",
+     "meaning": "Form of \"be\" for more than one.",
+     "sentence": "We are friends."
+    },
+    {
+     "n": 49,
+     "word": "as",
+     "pos": "conjunction",
+     "meaning": "In the same way.",
+     "sentence": "Use the box as a table."
+    },
+    {
+     "n": 50,
+     "word": "with",
+     "pos": "preposition",
+     "meaning": "Together alongside.",
+     "sentence": "I went to the store with Dad."
+    }
+   ]
+  },
+  {
+   "set": 3,
+   "grade": 1,
+   "words": [
+    {
+     "n": 51,
+     "word": "his",
+     "pos": "determiner",
+     "meaning": "Belongs to him.",
+     "sentence": "That is his bike."
+    },
+    {
+     "n": 52,
+     "word": "they",
+     "pos": "pronoun",
+     "meaning": "Those people or things.",
+     "sentence": "They are playing tag."
+    },
+    {
+     "n": 53,
+     "word": "I",
+     "pos": "pronoun",
+     "meaning": "Me, the one speaking.",
+     "sentence": "I like to draw."
+    },
+    {
+     "n": 54,
+     "word": "at",
+     "pos": "preposition",
+     "meaning": "In a place or time.",
+     "sentence": "We eat lunch at noon."
+    },
+    {
+     "n": 55,
+     "word": "be",
+     "pos": "verb",
+     "meaning": "To exist or stay a certain way.",
+     "sentence": "Please be quiet."
+    },
+    {
+     "n": 56,
+     "word": "this",
+     "pos": "pronoun",
+     "meaning": "The one right here.",
+     "sentence": "This is my favorite book."
+    },
+    {
+     "n": 57,
+     "word": "have",
+     "pos": "verb",
+     "meaning": "To own or hold.",
+     "sentence": "I have two pencils."
+    },
+    {
+     "n": 58,
+     "word": "when",
+     "pos": "adverb",
+     "meaning": "Asks or tells what time.",
+     "sentence": "When is your birthday?"
+    },
+    {
+     "n": 59,
+     "word": "your",
+     "pos": "determiner",
+     "meaning": "Belongs to you.",
+     "sentence": "Is this your coat?"
+    },
+    {
+     "n": 60,
+     "word": "can",
+     "pos": "verb",
+     "meaning": "Is able to.",
+     "sentence": "I can ride a bike."
+    },
+    {
+     "n": 61,
+     "word": "said",
+     "pos": "verb",
+     "meaning": "Told; spoke.",
+     "sentence": "Mom said it is time to eat."
+    },
+    {
+     "n": 62,
+     "word": "there",
+     "pos": "adverb",
+     "meaning": "In that place.",
+     "sentence": "Put the box over there."
+    },
+    {
+     "n": 63,
+     "word": "use",
+     "pos": "verb",
+     "meaning": "To do something with a thing.",
+     "sentence": "Use a pencil to write."
+    },
+    {
+     "n": 64,
+     "word": "an",
+     "pos": "article",
+     "meaning": "One; used before a vowel sound.",
+     "sentence": "I ate an apple."
+    },
+    {
+     "n": 65,
+     "word": "each",
+     "pos": "determiner",
+     "meaning": "Every single one.",
+     "sentence": "Each child got a sticker."
+    },
+    {
+     "n": 66,
+     "word": "which",
+     "pos": "pronoun",
+     "meaning": "Asks you to choose one thing.",
+     "sentence": "Which color do you like?"
+    },
+    {
+     "n": 67,
+     "word": "she",
+     "pos": "pronoun",
+     "meaning": "A girl or woman.",
+     "sentence": "She is my teacher."
+    },
+    {
+     "n": 68,
+     "word": "do",
+     "pos": "verb",
+     "meaning": "To act or make happen.",
+     "sentence": "I do my homework after school."
+    },
+    {
+     "n": 69,
+     "word": "how",
+     "pos": "adverb",
+     "meaning": "Asks in what way.",
+     "sentence": "How do you spell your name?"
+    },
+    {
+     "n": 70,
+     "word": "their",
+     "pos": "determiner",
+     "meaning": "Belongs to them.",
+     "sentence": "The kids hung up their coats."
+    },
+    {
+     "n": 71,
+     "word": "her",
+     "pos": "pronoun",
+     "meaning": "A girl or woman.",
+     "sentence": "I gave her a card."
+    },
+    {
+     "n": 72,
+     "word": "would",
+     "pos": "verb",
+     "meaning": "Wanting or expecting to.",
+     "sentence": "I would like some soup."
+    },
+    {
+     "n": 73,
+     "word": "make",
+     "pos": "verb",
+     "meaning": "To build or create.",
+     "sentence": "Let's make a sandcastle."
+    },
+    {
+     "n": 74,
+     "word": "like",
+     "pos": "verb",
+     "meaning": "To enjoy.",
+     "sentence": "I like pizza."
+    },
+    {
+     "n": 75,
+     "word": "him",
+     "pos": "pronoun",
+     "meaning": "A boy or man.",
+     "sentence": "I waved to him."
+    }
+   ]
+  },
+  {
+   "set": 4,
+   "grade": 1,
+   "words": [
+    {
+     "n": 76,
+     "word": "into",
+     "pos": "preposition",
+     "meaning": "To the inside of.",
+     "sentence": "The frog jumped into the pond."
+    },
+    {
+     "n": 77,
+     "word": "time",
+     "pos": "noun",
+     "meaning": "What a clock shows.",
+     "sentence": "What time is it?"
+    },
+    {
+     "n": 78,
+     "word": "has",
+     "pos": "verb",
+     "meaning": "Owns or holds.",
+     "sentence": "She has a puppy."
+    },
+    {
+     "n": 79,
+     "word": "look",
+     "pos": "verb",
+     "meaning": "To use your eyes.",
+     "sentence": "Look at the rainbow!"
+    },
+    {
+     "n": 80,
+     "word": "two",
+     "pos": "number",
+     "meaning": "The number 2.",
+     "sentence": "I have two hands."
+    },
+    {
+     "n": 81,
+     "word": "more",
+     "pos": "adjective",
+     "meaning": "A bigger amount.",
+     "sentence": "May I have more rice?"
+    },
+    {
+     "n": 82,
+     "word": "write",
+     "pos": "verb",
+     "meaning": "To put words on paper.",
+     "sentence": "Write your name at the top."
+    },
+    {
+     "n": 83,
+     "word": "go",
+     "pos": "verb",
+     "meaning": "To move to a place.",
+     "sentence": "Let's go outside."
+    },
+    {
+     "n": 84,
+     "word": "who",
+     "pos": "pronoun",
+     "meaning": "Asks what person.",
+     "sentence": "Who is at the door?"
+    },
+    {
+     "n": 85,
+     "word": "oil",
+     "pos": "noun",
+     "meaning": "A slippery liquid.",
+     "sentence": "Mom cooks eggs in oil."
+    },
+    {
+     "n": 86,
+     "word": "its",
+     "pos": "determiner",
+     "meaning": "Belongs to it.",
+     "sentence": "The dog wagged its tail."
+    },
+    {
+     "n": 87,
+     "word": "now",
+     "pos": "adverb",
+     "meaning": "At this moment.",
+     "sentence": "Come here now, please."
+    },
+    {
+     "n": 88,
+     "word": "find",
+     "pos": "verb",
+     "meaning": "To look for and get.",
+     "sentence": "Can you find my shoe?"
+    },
+    {
+     "n": 89,
+     "word": "long",
+     "pos": "adjective",
+     "meaning": "Far from end to end.",
+     "sentence": "The snake is very long."
+    },
+    {
+     "n": 90,
+     "word": "down",
+     "pos": "adverb",
+     "meaning": "Toward the bottom.",
+     "sentence": "The leaf fell down."
+    },
+    {
+     "n": 91,
+     "word": "day",
+     "pos": "noun",
+     "meaning": "24 hours; when it is light.",
+     "sentence": "Today is a sunny day."
+    },
+    {
+     "n": 92,
+     "word": "did",
+     "pos": "verb",
+     "meaning": "Past of \"do\".",
+     "sentence": "I did my chores."
+    },
+    {
+     "n": 93,
+     "word": "get",
+     "pos": "verb",
+     "meaning": "To take or receive.",
+     "sentence": "Go get your jacket."
+    },
+    {
+     "n": 94,
+     "word": "come",
+     "pos": "verb",
+     "meaning": "To move toward here.",
+     "sentence": "Come and sit with me."
+    },
+    {
+     "n": 95,
+     "word": "made",
+     "pos": "verb",
+     "meaning": "Built or created.",
+     "sentence": "We made a card for Grandma."
+    },
+    {
+     "n": 96,
+     "word": "may",
+     "pos": "verb",
+     "meaning": "Is allowed to; might.",
+     "sentence": "May I go to the bathroom?"
+    },
+    {
+     "n": 97,
+     "word": "from",
+     "pos": "preposition",
+     "meaning": "Where something starts.",
+     "sentence": "This letter is from my aunt."
+    },
+    {
+     "n": 98,
+     "word": "if",
+     "pos": "conjunction",
+     "meaning": "In case that happens.",
+     "sentence": "If it rains, bring an umbrella."
+    },
+    {
+     "n": 99,
+     "word": "see",
+     "pos": "verb",
+     "meaning": "To look at with your eyes.",
+     "sentence": "I can see the moon."
+    },
+    {
+     "n": 100,
+     "word": "part",
+     "pos": "noun",
+     "meaning": "A piece of something.",
+     "sentence": "I ate part of my sandwich."
+    }
+   ]
+  },
+  {
+   "set": 5,
+   "grade": 2,
+   "words": [
+    {
+     "n": 101,
+     "word": "over",
+     "pos": "preposition",
+     "meaning": "Above something.",
+     "sentence": "The bird flew over the house."
+    },
+    {
+     "n": 102,
+     "word": "new",
+     "pos": "adjective",
+     "meaning": "Just made or bought.",
+     "sentence": "I got new shoes."
+    },
+    {
+     "n": 103,
+     "word": "sound",
+     "pos": "noun",
+     "meaning": "Something you hear.",
+     "sentence": "I heard a loud sound."
+    },
+    {
+     "n": 104,
+     "word": "take",
+     "pos": "verb",
+     "meaning": "To pick up or carry.",
+     "sentence": "Take your lunch to school."
+    },
+    {
+     "n": 105,
+     "word": "only",
+     "pos": "adverb",
+     "meaning": "Just; no more than.",
+     "sentence": "I have only one cookie."
+    },
+    {
+     "n": 106,
+     "word": "little",
+     "pos": "adjective",
+     "meaning": "Small.",
+     "sentence": "The little mouse ran away."
+    },
+    {
+     "n": 107,
+     "word": "work",
+     "pos": "noun",
+     "meaning": "A job or task.",
+     "sentence": "Dad goes to work every day."
+    },
+    {
+     "n": 108,
+     "word": "know",
+     "pos": "verb",
+     "meaning": "To have learned something.",
+     "sentence": "I know my ABCs."
+    },
+    {
+     "n": 109,
+     "word": "place",
+     "pos": "noun",
+     "meaning": "A spot or area.",
+     "sentence": "This is a nice place to sit."
+    },
+    {
+     "n": 110,
+     "word": "years",
+     "pos": "noun",
+     "meaning": "Units of 365 days.",
+     "sentence": "My brother is ten years old."
+    },
+    {
+     "n": 111,
+     "word": "live",
+     "pos": "verb",
+     "meaning": "To have a home somewhere.",
+     "sentence": "We live in Texas."
+    },
+    {
+     "n": 112,
+     "word": "me",
+     "pos": "pronoun",
+     "meaning": "The one speaking.",
+     "sentence": "Please pass the salt to me."
+    },
+    {
+     "n": 113,
+     "word": "back",
+     "pos": "noun",
+     "meaning": "The rear part.",
+     "sentence": "Sit in the back of the car."
+    },
+    {
+     "n": 114,
+     "word": "say",
+     "pos": "verb",
+     "meaning": "To speak words.",
+     "sentence": "Say thank you to your friend."
+    },
+    {
+     "n": 115,
+     "word": "great",
+     "pos": "adjective",
+     "meaning": "Very good.",
+     "sentence": "You did a great job!"
+    },
+    {
+     "n": 116,
+     "word": "where",
+     "pos": "adverb",
+     "meaning": "Asks what place.",
+     "sentence": "Where is my hat?"
+    },
+    {
+     "n": 117,
+     "word": "help",
+     "pos": "verb",
+     "meaning": "To make things easier for someone.",
+     "sentence": "Can you help me tie my shoe?"
+    },
+    {
+     "n": 118,
+     "word": "through",
+     "pos": "preposition",
+     "meaning": "In one side and out the other.",
+     "sentence": "The train went through the tunnel."
+    },
+    {
+     "n": 119,
+     "word": "much",
+     "pos": "adjective",
+     "meaning": "A large amount.",
+     "sentence": "There is too much noise."
+    },
+    {
+     "n": 120,
+     "word": "before",
+     "pos": "preposition",
+     "meaning": "Earlier than.",
+     "sentence": "Wash your hands before dinner."
+    },
+    {
+     "n": 121,
+     "word": "line",
+     "pos": "noun",
+     "meaning": "A long thin mark or row.",
+     "sentence": "Draw a line under the word."
+    },
+    {
+     "n": 122,
+     "word": "right",
+     "pos": "adjective",
+     "meaning": "Correct; or the side opposite left.",
+     "sentence": "Raise your right hand."
+    },
+    {
+     "n": 123,
+     "word": "too",
+     "pos": "adverb",
+     "meaning": "Also; or more than enough.",
+     "sentence": "I want to come too."
+    },
+    {
+     "n": 124,
+     "word": "means",
+     "pos": "verb",
+     "meaning": "Has the meaning of.",
+     "sentence": "A red light means stop."
+    },
+    {
+     "n": 125,
+     "word": "old",
+     "pos": "adjective",
+     "meaning": "Not new or young.",
+     "sentence": "My grandpa is old and wise."
+    }
+   ]
+  },
+  {
+   "set": 6,
+   "grade": 2,
+   "words": [
+    {
+     "n": 126,
+     "word": "any",
+     "pos": "determiner",
+     "meaning": "One or some of.",
+     "sentence": "Do you have any crayons?"
+    },
+    {
+     "n": 127,
+     "word": "set",
+     "pos": "verb",
+     "meaning": "To put down.",
+     "sentence": "Set the plates on the table."
+    },
+    {
+     "n": 128,
+     "word": "put",
+     "pos": "verb",
+     "meaning": "To place something.",
+     "sentence": "Put your toys away."
+    },
+    {
+     "n": 129,
+     "word": "end",
+     "pos": "noun",
+     "meaning": "The last part.",
+     "sentence": "We clapped at the end of the play."
+    },
+    {
+     "n": 130,
+     "word": "does",
+     "pos": "verb",
+     "meaning": "Form of \"do\" for one person.",
+     "sentence": "She does her best."
+    },
+    {
+     "n": 131,
+     "word": "another",
+     "pos": "determiner",
+     "meaning": "One more.",
+     "sentence": "Can I have another turn?"
+    },
+    {
+     "n": 132,
+     "word": "well",
+     "pos": "adverb",
+     "meaning": "In a good way.",
+     "sentence": "You read that well."
+    },
+    {
+     "n": 133,
+     "word": "large",
+     "pos": "adjective",
+     "meaning": "Big.",
+     "sentence": "An elephant is a large animal."
+    },
+    {
+     "n": 134,
+     "word": "must",
+     "pos": "verb",
+     "meaning": "Have to.",
+     "sentence": "You must wear a seatbelt."
+    },
+    {
+     "n": 135,
+     "word": "big",
+     "pos": "adjective",
+     "meaning": "Large in size.",
+     "sentence": "That is a big truck."
+    },
+    {
+     "n": 136,
+     "word": "even",
+     "pos": "adverb",
+     "meaning": "Used to show surprise.",
+     "sentence": "He even ate the broccoli!"
+    },
+    {
+     "n": 137,
+     "word": "such",
+     "pos": "determiner",
+     "meaning": "So much; of this kind.",
+     "sentence": "It was such a fun day."
+    },
+    {
+     "n": 138,
+     "word": "because",
+     "pos": "conjunction",
+     "meaning": "For the reason that.",
+     "sentence": "I wore a coat because it was cold."
+    },
+    {
+     "n": 139,
+     "word": "turn",
+     "pos": "verb",
+     "meaning": "To move around or change direction.",
+     "sentence": "Turn left at the corner."
+    },
+    {
+     "n": 140,
+     "word": "try",
+     "pos": "verb",
+     "meaning": "To make an effort.",
+     "sentence": "Try to catch the ball."
+    },
+    {
+     "n": 141,
+     "word": "kind",
+     "pos": "adjective",
+     "meaning": "Nice and caring.",
+     "sentence": "She is kind to everyone."
+    },
+    {
+     "n": 142,
+     "word": "hand",
+     "pos": "noun",
+     "meaning": "Body part at the end of your arm.",
+     "sentence": "Hold my hand."
+    },
+    {
+     "n": 143,
+     "word": "picture",
+     "pos": "noun",
+     "meaning": "A drawing or photo.",
+     "sentence": "I drew a picture of my family."
+    },
+    {
+     "n": 144,
+     "word": "again",
+     "pos": "adverb",
+     "meaning": "One more time.",
+     "sentence": "Read the story again!"
+    },
+    {
+     "n": 145,
+     "word": "change",
+     "pos": "verb",
+     "meaning": "To make different.",
+     "sentence": "Change into your pajamas."
+    },
+    {
+     "n": 146,
+     "word": "off",
+     "pos": "adverb",
+     "meaning": "Away from; not on.",
+     "sentence": "Turn off the light."
+    },
+    {
+     "n": 147,
+     "word": "play",
+     "pos": "verb",
+     "meaning": "To have fun with games.",
+     "sentence": "Let's play hide and seek."
+    },
+    {
+     "n": 148,
+     "word": "spell",
+     "pos": "verb",
+     "meaning": "To say or write the letters of a word.",
+     "sentence": "Can you spell \"cat\"?"
+    },
+    {
+     "n": 149,
+     "word": "air",
+     "pos": "noun",
+     "meaning": "What we breathe.",
+     "sentence": "Fresh air feels good."
+    },
+    {
+     "n": 150,
+     "word": "away",
+     "pos": "adverb",
+     "meaning": "To another place.",
+     "sentence": "The cat ran away."
+    }
+   ]
+  },
+  {
+   "set": 7,
+   "grade": 2,
+   "words": [
+    {
+     "n": 151,
+     "word": "animal",
+     "pos": "noun",
+     "meaning": "A living thing that moves, like a dog.",
+     "sentence": "My favorite animal is a tiger."
+    },
+    {
+     "n": 152,
+     "word": "house",
+     "pos": "noun",
+     "meaning": "A building people live in.",
+     "sentence": "Our house has a red door."
+    },
+    {
+     "n": 153,
+     "word": "give",
+     "pos": "verb",
+     "meaning": "To hand to someone.",
+     "sentence": "Give the ball to your sister."
+    },
+    {
+     "n": 154,
+     "word": "most",
+     "pos": "adjective",
+     "meaning": "The biggest amount.",
+     "sentence": "Who ate the most cookies?"
+    },
+    {
+     "n": 155,
+     "word": "very",
+     "pos": "adverb",
+     "meaning": "Really; a lot.",
+     "sentence": "It is very hot today."
+    },
+    {
+     "n": 156,
+     "word": "after",
+     "pos": "preposition",
+     "meaning": "Later than.",
+     "sentence": "We play after school."
+    },
+    {
+     "n": 157,
+     "word": "things",
+     "pos": "noun",
+     "meaning": "Objects; stuff.",
+     "sentence": "Pack your things for the trip."
+    },
+    {
+     "n": 158,
+     "word": "our",
+     "pos": "determiner",
+     "meaning": "Belongs to us.",
+     "sentence": "This is our classroom."
+    },
+    {
+     "n": 159,
+     "word": "just",
+     "pos": "adverb",
+     "meaning": "A moment ago; only.",
+     "sentence": "I just woke up."
+    },
+    {
+     "n": 160,
+     "word": "name",
+     "pos": "noun",
+     "meaning": "What someone is called.",
+     "sentence": "My name is on my backpack."
+    },
+    {
+     "n": 161,
+     "word": "good",
+     "pos": "adjective",
+     "meaning": "Nice or well done.",
+     "sentence": "This soup is good."
+    },
+    {
+     "n": 162,
+     "word": "sentence",
+     "pos": "noun",
+     "meaning": "A group of words that tells a full idea.",
+     "sentence": "Write a sentence about your dog."
+    },
+    {
+     "n": 163,
+     "word": "man",
+     "pos": "noun",
+     "meaning": "A grown-up boy.",
+     "sentence": "The man is fixing the car."
+    },
+    {
+     "n": 164,
+     "word": "think",
+     "pos": "verb",
+     "meaning": "To use your mind.",
+     "sentence": "Think before you answer."
+    },
+    {
+     "n": 165,
+     "word": "same",
+     "pos": "adjective",
+     "meaning": "Exactly alike.",
+     "sentence": "We have the same shirt!"
+    },
+    {
+     "n": 166,
+     "word": "tell",
+     "pos": "verb",
+     "meaning": "To say to someone.",
+     "sentence": "Tell me a story."
+    },
+    {
+     "n": 167,
+     "word": "boy",
+     "pos": "noun",
+     "meaning": "A male child.",
+     "sentence": "The boy is flying a kite."
+    },
+    {
+     "n": 168,
+     "word": "follow",
+     "pos": "verb",
+     "meaning": "To go after.",
+     "sentence": "Follow the leader."
+    },
+    {
+     "n": 169,
+     "word": "came",
+     "pos": "verb",
+     "meaning": "Past of \"come\".",
+     "sentence": "My cousin came to visit."
+    },
+    {
+     "n": 170,
+     "word": "want",
+     "pos": "verb",
+     "meaning": "To wish for.",
+     "sentence": "I want a glass of milk."
+    },
+    {
+     "n": 171,
+     "word": "show",
+     "pos": "verb",
+     "meaning": "To let someone see.",
+     "sentence": "Show me your drawing."
+    },
+    {
+     "n": 172,
+     "word": "also",
+     "pos": "adverb",
+     "meaning": "Too; as well.",
+     "sentence": "I also like blue."
+    },
+    {
+     "n": 173,
+     "word": "around",
+     "pos": "preposition",
+     "meaning": "On every side of.",
+     "sentence": "We walked around the lake."
+    },
+    {
+     "n": 174,
+     "word": "form",
+     "pos": "noun",
+     "meaning": "A shape or type.",
+     "sentence": "Ice is a form of water."
+    },
+    {
+     "n": 175,
+     "word": "three",
+     "pos": "number",
+     "meaning": "The number 3.",
+     "sentence": "A triangle has three sides."
+    }
+   ]
+  },
+  {
+   "set": 8,
+   "grade": 2,
+   "words": [
+    {
+     "n": 176,
+     "word": "small",
+     "pos": "adjective",
+     "meaning": "Little.",
+     "sentence": "An ant is very small."
+    },
+    {
+     "n": 177,
+     "word": "here",
+     "pos": "adverb",
+     "meaning": "In this place.",
+     "sentence": "Come here and look."
+    },
+    {
+     "n": 178,
+     "word": "why",
+     "pos": "adverb",
+     "meaning": "Asks for a reason.",
+     "sentence": "Why is the sky blue?"
+    },
+    {
+     "n": 179,
+     "word": "ask",
+     "pos": "verb",
+     "meaning": "To say a question.",
+     "sentence": "Ask the teacher for help."
+    },
+    {
+     "n": 180,
+     "word": "went",
+     "pos": "verb",
+     "meaning": "Past of \"go\".",
+     "sentence": "We went to the beach."
+    },
+    {
+     "n": 181,
+     "word": "men",
+     "pos": "noun",
+     "meaning": "More than one man.",
+     "sentence": "Three men carried the couch."
+    },
+    {
+     "n": 182,
+     "word": "read",
+     "pos": "verb",
+     "meaning": "To look at and understand words.",
+     "sentence": "I read a book every night."
+    },
+    {
+     "n": 183,
+     "word": "need",
+     "pos": "verb",
+     "meaning": "To have to have.",
+     "sentence": "Plants need water."
+    },
+    {
+     "n": 184,
+     "word": "land",
+     "pos": "noun",
+     "meaning": "The ground; not water.",
+     "sentence": "The boat finally reached land."
+    },
+    {
+     "n": 185,
+     "word": "different",
+     "pos": "adjective",
+     "meaning": "Not the same.",
+     "sentence": "We have different hair colors."
+    },
+    {
+     "n": 186,
+     "word": "home",
+     "pos": "noun",
+     "meaning": "Where you live.",
+     "sentence": "Let's go home."
+    },
+    {
+     "n": 187,
+     "word": "us",
+     "pos": "pronoun",
+     "meaning": "Me and others.",
+     "sentence": "Grandma made pancakes for us."
+    },
+    {
+     "n": 188,
+     "word": "move",
+     "pos": "verb",
+     "meaning": "To go from one place to another.",
+     "sentence": "Move your chair closer."
+    },
+    {
+     "n": 189,
+     "word": "point",
+     "pos": "verb",
+     "meaning": "To show with a finger.",
+     "sentence": "Point to the red ball."
+    },
+    {
+     "n": 190,
+     "word": "page",
+     "pos": "noun",
+     "meaning": "One side of paper in a book.",
+     "sentence": "Turn to the next page."
+    },
+    {
+     "n": 191,
+     "word": "letter",
+     "pos": "noun",
+     "meaning": "A sign like A, B, or C; or a note you mail.",
+     "sentence": "\"B\" is the second letter."
+    },
+    {
+     "n": 192,
+     "word": "mother",
+     "pos": "noun",
+     "meaning": "A mom.",
+     "sentence": "My mother reads to me."
+    },
+    {
+     "n": 193,
+     "word": "answer",
+     "pos": "noun",
+     "meaning": "A reply to a question.",
+     "sentence": "I know the answer!"
+    },
+    {
+     "n": 194,
+     "word": "found",
+     "pos": "verb",
+     "meaning": "Past of \"find\".",
+     "sentence": "I found my lost sock."
+    },
+    {
+     "n": 195,
+     "word": "study",
+     "pos": "verb",
+     "meaning": "To learn about something.",
+     "sentence": "We study bugs in science."
+    },
+    {
+     "n": 196,
+     "word": "still",
+     "pos": "adverb",
+     "meaning": "Not moving; or even now.",
+     "sentence": "Sit still for your photo."
+    },
+    {
+     "n": 197,
+     "word": "learn",
+     "pos": "verb",
+     "meaning": "To find out or get better at.",
+     "sentence": "I want to learn to swim."
+    },
+    {
+     "n": 198,
+     "word": "should",
+     "pos": "verb",
+     "meaning": "It is a good idea to.",
+     "sentence": "You should wear a hat."
+    },
+    {
+     "n": 199,
+     "word": "America",
+     "pos": "noun",
+     "meaning": "A large land; also short for the USA.",
+     "sentence": "We live in North America."
+    },
+    {
+     "n": 200,
+     "word": "world",
+     "pos": "noun",
+     "meaning": "The Earth and everyone on it.",
+     "sentence": "There are many countries in the world."
+    }
+   ]
+  },
+  {
+   "set": 9,
+   "grade": 3,
+   "words": [
+    {
+     "n": 201,
+     "word": "high",
+     "pos": "adjective",
+     "meaning": "Far up.",
+     "sentence": "The kite flew high in the sky."
+    },
+    {
+     "n": 202,
+     "word": "every",
+     "pos": "determiner",
+     "meaning": "Each one.",
+     "sentence": "I brush my teeth every day."
+    },
+    {
+     "n": 203,
+     "word": "near",
+     "pos": "preposition",
+     "meaning": "Close to.",
+     "sentence": "The school is near my house."
+    },
+    {
+     "n": 204,
+     "word": "add",
+     "pos": "verb",
+     "meaning": "To put together; to plus.",
+     "sentence": "Add two and three."
+    },
+    {
+     "n": 205,
+     "word": "food",
+     "pos": "noun",
+     "meaning": "What we eat.",
+     "sentence": "Apples are healthy food."
+    },
+    {
+     "n": 206,
+     "word": "between",
+     "pos": "preposition",
+     "meaning": "In the middle of two things.",
+     "sentence": "I sat between Mom and Dad."
+    },
+    {
+     "n": 207,
+     "word": "own",
+     "pos": "adjective",
+     "meaning": "Belonging to yourself.",
+     "sentence": "I have my own room."
+    },
+    {
+     "n": 208,
+     "word": "below",
+     "pos": "preposition",
+     "meaning": "Under; lower than.",
+     "sentence": "Fish swim below the boat."
+    },
+    {
+     "n": 209,
+     "word": "country",
+     "pos": "noun",
+     "meaning": "A nation; or land outside the city.",
+     "sentence": "Canada is a big country."
+    },
+    {
+     "n": 210,
+     "word": "plant",
+     "pos": "noun",
+     "meaning": "A living thing that grows in soil.",
+     "sentence": "Water the plant every week."
+    },
+    {
+     "n": 211,
+     "word": "last",
+     "pos": "adjective",
+     "meaning": "At the end.",
+     "sentence": "Z is the last letter."
+    },
+    {
+     "n": 212,
+     "word": "school",
+     "pos": "noun",
+     "meaning": "A place to learn.",
+     "sentence": "I ride the bus to school."
+    },
+    {
+     "n": 213,
+     "word": "father",
+     "pos": "noun",
+     "meaning": "A dad.",
+     "sentence": "My father makes great pancakes."
+    },
+    {
+     "n": 214,
+     "word": "keep",
+     "pos": "verb",
+     "meaning": "To hold on to.",
+     "sentence": "You can keep this shell."
+    },
+    {
+     "n": 215,
+     "word": "tree",
+     "pos": "noun",
+     "meaning": "A tall plant with a trunk.",
+     "sentence": "A squirrel lives in that tree."
+    },
+    {
+     "n": 216,
+     "word": "never",
+     "pos": "adverb",
+     "meaning": "Not ever.",
+     "sentence": "I never eat mushrooms."
+    },
+    {
+     "n": 217,
+     "word": "start",
+     "pos": "verb",
+     "meaning": "To begin.",
+     "sentence": "The race will start soon."
+    },
+    {
+     "n": 218,
+     "word": "city",
+     "pos": "noun",
+     "meaning": "A large town.",
+     "sentence": "Dallas is a big city."
+    },
+    {
+     "n": 219,
+     "word": "earth",
+     "pos": "noun",
+     "meaning": "Our planet; or soil.",
+     "sentence": "We live on planet Earth."
+    },
+    {
+     "n": 220,
+     "word": "eyes",
+     "pos": "noun",
+     "meaning": "Body parts used to see.",
+     "sentence": "Close your eyes and make a wish."
+    },
+    {
+     "n": 221,
+     "word": "light",
+     "pos": "noun",
+     "meaning": "What lets us see.",
+     "sentence": "Turn on the light."
+    },
+    {
+     "n": 222,
+     "word": "thought",
+     "pos": "verb",
+     "meaning": "Past of \"think\".",
+     "sentence": "I thought it was Monday."
+    },
+    {
+     "n": 223,
+     "word": "head",
+     "pos": "noun",
+     "meaning": "The top part of your body.",
+     "sentence": "Put a hat on your head."
+    },
+    {
+     "n": 224,
+     "word": "under",
+     "pos": "preposition",
+     "meaning": "Below.",
+     "sentence": "The cat is under the table."
+    },
+    {
+     "n": 225,
+     "word": "story",
+     "pos": "noun",
+     "meaning": "A tale about events.",
+     "sentence": "Tell me a bedtime story."
+    }
+   ]
+  },
+  {
+   "set": 10,
+   "grade": 3,
+   "words": [
+    {
+     "n": 226,
+     "word": "saw",
+     "pos": "verb",
+     "meaning": "Past of \"see\".",
+     "sentence": "I saw a rainbow today."
+    },
+    {
+     "n": 227,
+     "word": "left",
+     "pos": "adjective",
+     "meaning": "The side opposite right.",
+     "sentence": "Hold the fork in your left hand."
+    },
+    {
+     "n": 228,
+     "word": "don't",
+     "pos": "verb",
+     "meaning": "Short for \"do not\".",
+     "sentence": "Don't touch the hot stove."
+    },
+    {
+     "n": 229,
+     "word": "few",
+     "pos": "adjective",
+     "meaning": "Not many.",
+     "sentence": "I have a few marbles."
+    },
+    {
+     "n": 230,
+     "word": "while",
+     "pos": "conjunction",
+     "meaning": "During the time that.",
+     "sentence": "I sang while I painted."
+    },
+    {
+     "n": 231,
+     "word": "along",
+     "pos": "preposition",
+     "meaning": "Following the length of.",
+     "sentence": "We walked along the river."
+    },
+    {
+     "n": 232,
+     "word": "might",
+     "pos": "verb",
+     "meaning": "Could maybe happen.",
+     "sentence": "It might snow tomorrow."
+    },
+    {
+     "n": 233,
+     "word": "close",
+     "pos": "verb",
+     "meaning": "To shut.",
+     "sentence": "Please close the door."
+    },
+    {
+     "n": 234,
+     "word": "something",
+     "pos": "pronoun",
+     "meaning": "A thing not named.",
+     "sentence": "I have something for you."
+    },
+    {
+     "n": 235,
+     "word": "seem",
+     "pos": "verb",
+     "meaning": "To look like or appear.",
+     "sentence": "You seem happy today."
+    },
+    {
+     "n": 236,
+     "word": "next",
+     "pos": "adjective",
+     "meaning": "Coming right after.",
+     "sentence": "Who is next in line?"
+    },
+    {
+     "n": 237,
+     "word": "hard",
+     "pos": "adjective",
+     "meaning": "Not soft; or not easy.",
+     "sentence": "This test is hard."
+    },
+    {
+     "n": 238,
+     "word": "open",
+     "pos": "verb",
+     "meaning": "To make not closed.",
+     "sentence": "Open your book."
+    },
+    {
+     "n": 239,
+     "word": "example",
+     "pos": "noun",
+     "meaning": "Something that shows what you mean.",
+     "sentence": "A rose is an example of a flower."
+    },
+    {
+     "n": 240,
+     "word": "begin",
+     "pos": "verb",
+     "meaning": "To start.",
+     "sentence": "Let's begin the game."
+    },
+    {
+     "n": 241,
+     "word": "life",
+     "pos": "noun",
+     "meaning": "Being alive; how you live.",
+     "sentence": "A cat has a happy life here."
+    },
+    {
+     "n": 242,
+     "word": "always",
+     "pos": "adverb",
+     "meaning": "Every time.",
+     "sentence": "I always wear my seatbelt."
+    },
+    {
+     "n": 243,
+     "word": "those",
+     "pos": "pronoun",
+     "meaning": "The ones over there.",
+     "sentence": "Those are my boots."
+    },
+    {
+     "n": 244,
+     "word": "both",
+     "pos": "determiner",
+     "meaning": "The two together.",
+     "sentence": "Both of my hands are cold."
+    },
+    {
+     "n": 245,
+     "word": "paper",
+     "pos": "noun",
+     "meaning": "Thin sheets for writing.",
+     "sentence": "Draw on this paper."
+    },
+    {
+     "n": 246,
+     "word": "together",
+     "pos": "adverb",
+     "meaning": "With each other.",
+     "sentence": "Let's sing together."
+    },
+    {
+     "n": 247,
+     "word": "got",
+     "pos": "verb",
+     "meaning": "Past of \"get\".",
+     "sentence": "I got a gold star."
+    },
+    {
+     "n": 248,
+     "word": "group",
+     "pos": "noun",
+     "meaning": "A number of people or things together.",
+     "sentence": "Our group made a poster."
+    },
+    {
+     "n": 249,
+     "word": "often",
+     "pos": "adverb",
+     "meaning": "Many times.",
+     "sentence": "We often go to the park."
+    },
+    {
+     "n": 250,
+     "word": "run",
+     "pos": "verb",
+     "meaning": "To move fast on your feet.",
+     "sentence": "I can run very fast."
+    }
+   ]
+  },
+  {
+   "set": 11,
+   "grade": 3,
+   "words": [
+    {
+     "n": 251,
+     "word": "important",
+     "pos": "adjective",
+     "meaning": "Matters a lot.",
+     "sentence": "It is important to be kind."
+    },
+    {
+     "n": 252,
+     "word": "until",
+     "pos": "preposition",
+     "meaning": "Up to the time of.",
+     "sentence": "Wait until the bell rings."
+    },
+    {
+     "n": 253,
+     "word": "children",
+     "pos": "noun",
+     "meaning": "More than one child.",
+     "sentence": "The children played outside."
+    },
+    {
+     "n": 254,
+     "word": "side",
+     "pos": "noun",
+     "meaning": "The left or right part.",
+     "sentence": "Stay on this side of the road."
+    },
+    {
+     "n": 255,
+     "word": "feet",
+     "pos": "noun",
+     "meaning": "More than one foot.",
+     "sentence": "My feet are cold."
+    },
+    {
+     "n": 256,
+     "word": "car",
+     "pos": "noun",
+     "meaning": "A vehicle with four wheels.",
+     "sentence": "We drove there in our car."
+    },
+    {
+     "n": 257,
+     "word": "mile",
+     "pos": "noun",
+     "meaning": "A long distance, 5280 feet.",
+     "sentence": "The store is one mile away."
+    },
+    {
+     "n": 258,
+     "word": "night",
+     "pos": "noun",
+     "meaning": "The dark time of day.",
+     "sentence": "The stars come out at night."
+    },
+    {
+     "n": 259,
+     "word": "walk",
+     "pos": "verb",
+     "meaning": "To move on foot.",
+     "sentence": "We walk the dog every day."
+    },
+    {
+     "n": 260,
+     "word": "white",
+     "pos": "adjective",
+     "meaning": "The color of snow.",
+     "sentence": "The clouds are white."
+    },
+    {
+     "n": 261,
+     "word": "sea",
+     "pos": "noun",
+     "meaning": "A big body of salt water.",
+     "sentence": "Whales live in the sea."
+    },
+    {
+     "n": 262,
+     "word": "began",
+     "pos": "verb",
+     "meaning": "Past of \"begin\".",
+     "sentence": "The movie began at six."
+    },
+    {
+     "n": 263,
+     "word": "grow",
+     "pos": "verb",
+     "meaning": "To get bigger.",
+     "sentence": "Puppies grow fast."
+    },
+    {
+     "n": 264,
+     "word": "took",
+     "pos": "verb",
+     "meaning": "Past of \"take\".",
+     "sentence": "I took my bag to school."
+    },
+    {
+     "n": 265,
+     "word": "river",
+     "pos": "noun",
+     "meaning": "A long stream of water.",
+     "sentence": "We fished in the river."
+    },
+    {
+     "n": 266,
+     "word": "four",
+     "pos": "number",
+     "meaning": "The number 4.",
+     "sentence": "A dog has four legs."
+    },
+    {
+     "n": 267,
+     "word": "carry",
+     "pos": "verb",
+     "meaning": "To hold and move.",
+     "sentence": "Can you carry this box?"
+    },
+    {
+     "n": 268,
+     "word": "state",
+     "pos": "noun",
+     "meaning": "One part of a country, like Texas.",
+     "sentence": "Texas is a big state."
+    },
+    {
+     "n": 269,
+     "word": "once",
+     "pos": "adverb",
+     "meaning": "One time.",
+     "sentence": "I have been on a plane once."
+    },
+    {
+     "n": 270,
+     "word": "book",
+     "pos": "noun",
+     "meaning": "Pages with words, bound together.",
+     "sentence": "This book has pictures."
+    },
+    {
+     "n": 271,
+     "word": "hear",
+     "pos": "verb",
+     "meaning": "To take in sounds with your ears.",
+     "sentence": "Do you hear the birds?"
+    },
+    {
+     "n": 272,
+     "word": "stop",
+     "pos": "verb",
+     "meaning": "To not go anymore.",
+     "sentence": "Stop at the red light."
+    },
+    {
+     "n": 273,
+     "word": "without",
+     "pos": "preposition",
+     "meaning": "Not having.",
+     "sentence": "I went outside without a coat."
+    },
+    {
+     "n": 274,
+     "word": "second",
+     "pos": "adjective",
+     "meaning": "After the first.",
+     "sentence": "I was second in the race."
+    },
+    {
+     "n": 275,
+     "word": "late",
+     "pos": "adjective",
+     "meaning": "After the right time.",
+     "sentence": "Don't be late for school."
+    }
+   ]
+  },
+  {
+   "set": 12,
+   "grade": 3,
+   "words": [
+    {
+     "n": 276,
+     "word": "miss",
+     "pos": "verb",
+     "meaning": "To feel sad when someone is away; or not hit.",
+     "sentence": "I miss my grandma."
+    },
+    {
+     "n": 277,
+     "word": "idea",
+     "pos": "noun",
+     "meaning": "A thought or plan.",
+     "sentence": "I have a great idea!"
+    },
+    {
+     "n": 278,
+     "word": "enough",
+     "pos": "adjective",
+     "meaning": "As much as needed.",
+     "sentence": "Do we have enough chairs?"
+    },
+    {
+     "n": 279,
+     "word": "eat",
+     "pos": "verb",
+     "meaning": "To take in food.",
+     "sentence": "Let's eat lunch."
+    },
+    {
+     "n": 280,
+     "word": "face",
+     "pos": "noun",
+     "meaning": "Front of your head.",
+     "sentence": "Wash your face."
+    },
+    {
+     "n": 281,
+     "word": "watch",
+     "pos": "verb",
+     "meaning": "To look at for a while.",
+     "sentence": "Let's watch the fireworks."
+    },
+    {
+     "n": 282,
+     "word": "far",
+     "pos": "adverb",
+     "meaning": "A long way away.",
+     "sentence": "The moon is far away."
+    },
+    {
+     "n": 283,
+     "word": "Indian",
+     "pos": "adjective",
+     "meaning": "From India.",
+     "sentence": "We ate Indian food for dinner."
+    },
+    {
+     "n": 284,
+     "word": "real",
+     "pos": "adjective",
+     "meaning": "True; not fake.",
+     "sentence": "Is that a real diamond?"
+    },
+    {
+     "n": 285,
+     "word": "almost",
+     "pos": "adverb",
+     "meaning": "Nearly.",
+     "sentence": "I am almost done."
+    },
+    {
+     "n": 286,
+     "word": "let",
+     "pos": "verb",
+     "meaning": "To allow.",
+     "sentence": "Let me help you."
+    },
+    {
+     "n": 287,
+     "word": "above",
+     "pos": "preposition",
+     "meaning": "Over; higher than.",
+     "sentence": "The plane flew above the clouds."
+    },
+    {
+     "n": 288,
+     "word": "girl",
+     "pos": "noun",
+     "meaning": "A female child.",
+     "sentence": "The girl won the race."
+    },
+    {
+     "n": 289,
+     "word": "sometimes",
+     "pos": "adverb",
+     "meaning": "Now and then.",
+     "sentence": "Sometimes I eat cereal for lunch."
+    },
+    {
+     "n": 290,
+     "word": "mountains",
+     "pos": "noun",
+     "meaning": "Very tall hills.",
+     "sentence": "We hiked in the mountains."
+    },
+    {
+     "n": 291,
+     "word": "cut",
+     "pos": "verb",
+     "meaning": "To split with scissors.",
+     "sentence": "Cut the paper in half."
+    },
+    {
+     "n": 292,
+     "word": "young",
+     "pos": "adjective",
+     "meaning": "Not old.",
+     "sentence": "A young puppy needs lots of sleep."
+    },
+    {
+     "n": 293,
+     "word": "talk",
+     "pos": "verb",
+     "meaning": "To speak.",
+     "sentence": "Let's talk about our day."
+    },
+    {
+     "n": 294,
+     "word": "soon",
+     "pos": "adverb",
+     "meaning": "In a short time.",
+     "sentence": "Dinner will be ready soon."
+    },
+    {
+     "n": 295,
+     "word": "list",
+     "pos": "noun",
+     "meaning": "Things written one after another.",
+     "sentence": "Make a list of what to buy."
+    },
+    {
+     "n": 296,
+     "word": "song",
+     "pos": "noun",
+     "meaning": "Words and music sung together.",
+     "sentence": "Sing me a song."
+    },
+    {
+     "n": 297,
+     "word": "being",
+     "pos": "verb",
+     "meaning": "Form of \"be\".",
+     "sentence": "You are being very helpful."
+    },
+    {
+     "n": 298,
+     "word": "leave",
+     "pos": "verb",
+     "meaning": "To go away from.",
+     "sentence": "We leave for school at eight."
+    },
+    {
+     "n": 299,
+     "word": "family",
+     "pos": "noun",
+     "meaning": "People related to you.",
+     "sentence": "My family eats dinner together."
+    },
+    {
+     "n": 300,
+     "word": "it's",
+     "pos": "verb",
+     "meaning": "Short for \"it is\".",
+     "sentence": "It's a sunny day."
+    }
+   ]
+  },
+  {
+   "set": 13,
+   "grade": 4,
+   "words": [
+    {
+     "n": 301,
+     "word": "body",
+     "pos": "noun",
+     "meaning": "All the parts of a person or animal.",
+     "sentence": "Exercise keeps your body strong."
+    },
+    {
+     "n": 302,
+     "word": "music",
+     "pos": "noun",
+     "meaning": "Sounds arranged to sound nice.",
+     "sentence": "I like to dance to music."
+    },
+    {
+     "n": 303,
+     "word": "color",
+     "pos": "noun",
+     "meaning": "Red, blue, green, and so on.",
+     "sentence": "What color is your bike?"
+    },
+    {
+     "n": 304,
+     "word": "stand",
+     "pos": "verb",
+     "meaning": "To be up on your feet.",
+     "sentence": "Please stand in line."
+    },
+    {
+     "n": 305,
+     "word": "sun",
+     "pos": "noun",
+     "meaning": "The star that gives us light.",
+     "sentence": "The sun is shining today."
+    },
+    {
+     "n": 306,
+     "word": "questions",
+     "pos": "noun",
+     "meaning": "Things you ask.",
+     "sentence": "Raise your hand to ask questions."
+    },
+    {
+     "n": 307,
+     "word": "fish",
+     "pos": "noun",
+     "meaning": "An animal that lives in water.",
+     "sentence": "A fish swims with its fins."
+    },
+    {
+     "n": 308,
+     "word": "area",
+     "pos": "noun",
+     "meaning": "A space or region.",
+     "sentence": "This area is for reading."
+    },
+    {
+     "n": 309,
+     "word": "mark",
+     "pos": "noun",
+     "meaning": "A spot, line, or sign.",
+     "sentence": "There is a mark on my shirt."
+    },
+    {
+     "n": 310,
+     "word": "dog",
+     "pos": "noun",
+     "meaning": "A pet that barks.",
+     "sentence": "Our dog loves to fetch."
+    },
+    {
+     "n": 311,
+     "word": "horse",
+     "pos": "noun",
+     "meaning": "A large animal people ride.",
+     "sentence": "She rode a brown horse."
+    },
+    {
+     "n": 312,
+     "word": "birds",
+     "pos": "noun",
+     "meaning": "Animals with feathers and wings.",
+     "sentence": "Birds sing in the morning."
+    },
+    {
+     "n": 313,
+     "word": "problem",
+     "pos": "noun",
+     "meaning": "Something that needs fixing or solving.",
+     "sentence": "Can you solve this math problem?"
+    },
+    {
+     "n": 314,
+     "word": "complete",
+     "pos": "verb",
+     "meaning": "To finish.",
+     "sentence": "Complete the puzzle before dinner."
+    },
+    {
+     "n": 315,
+     "word": "room",
+     "pos": "noun",
+     "meaning": "A space inside a building.",
+     "sentence": "My room is upstairs."
+    },
+    {
+     "n": 316,
+     "word": "knew",
+     "pos": "verb",
+     "meaning": "Past of \"know\".",
+     "sentence": "I knew the answer."
+    },
+    {
+     "n": 317,
+     "word": "since",
+     "pos": "preposition",
+     "meaning": "From a past time until now.",
+     "sentence": "I have lived here since I was born."
+    },
+    {
+     "n": 318,
+     "word": "ever",
+     "pos": "adverb",
+     "meaning": "At any time.",
+     "sentence": "Have you ever seen snow?"
+    },
+    {
+     "n": 319,
+     "word": "piece",
+     "pos": "noun",
+     "meaning": "A part of something.",
+     "sentence": "Can I have a piece of cake?"
+    },
+    {
+     "n": 320,
+     "word": "told",
+     "pos": "verb",
+     "meaning": "Past of \"tell\".",
+     "sentence": "She told me a secret."
+    },
+    {
+     "n": 321,
+     "word": "usually",
+     "pos": "adverb",
+     "meaning": "Most of the time.",
+     "sentence": "I usually walk to school."
+    },
+    {
+     "n": 322,
+     "word": "didn't",
+     "pos": "verb",
+     "meaning": "Short for \"did not\".",
+     "sentence": "I didn't hear the bell."
+    },
+    {
+     "n": 323,
+     "word": "friends",
+     "pos": "noun",
+     "meaning": "People you like and play with.",
+     "sentence": "My friends came to my party."
+    },
+    {
+     "n": 324,
+     "word": "easy",
+     "pos": "adjective",
+     "meaning": "Not hard.",
+     "sentence": "This puzzle is easy."
+    },
+    {
+     "n": 325,
+     "word": "heard",
+     "pos": "verb",
+     "meaning": "Past of \"hear\".",
+     "sentence": "I heard thunder last night."
+    }
+   ]
+  },
+  {
+   "set": 14,
+   "grade": 4,
+   "words": [
+    {
+     "n": 326,
+     "word": "order",
+     "pos": "noun",
+     "meaning": "The way things are lined up.",
+     "sentence": "Put the numbers in order."
+    },
+    {
+     "n": 327,
+     "word": "red",
+     "pos": "adjective",
+     "meaning": "The color of a strawberry.",
+     "sentence": "I have a red ball."
+    },
+    {
+     "n": 328,
+     "word": "door",
+     "pos": "noun",
+     "meaning": "What you open to go in or out.",
+     "sentence": "Knock on the door."
+    },
+    {
+     "n": 329,
+     "word": "sure",
+     "pos": "adjective",
+     "meaning": "Certain.",
+     "sentence": "Are you sure it's Tuesday?"
+    },
+    {
+     "n": 330,
+     "word": "become",
+     "pos": "verb",
+     "meaning": "To grow to be.",
+     "sentence": "Tadpoles become frogs."
+    },
+    {
+     "n": 331,
+     "word": "top",
+     "pos": "noun",
+     "meaning": "The highest part.",
+     "sentence": "We climbed to the top of the hill."
+    },
+    {
+     "n": 332,
+     "word": "ship",
+     "pos": "noun",
+     "meaning": "A big boat.",
+     "sentence": "The ship sailed across the ocean."
+    },
+    {
+     "n": 333,
+     "word": "across",
+     "pos": "preposition",
+     "meaning": "From one side to the other.",
+     "sentence": "We swam across the pool."
+    },
+    {
+     "n": 334,
+     "word": "today",
+     "pos": "noun",
+     "meaning": "This day.",
+     "sentence": "Today is my birthday!"
+    },
+    {
+     "n": 335,
+     "word": "during",
+     "pos": "preposition",
+     "meaning": "While something is happening.",
+     "sentence": "Don't talk during the movie."
+    },
+    {
+     "n": 336,
+     "word": "short",
+     "pos": "adjective",
+     "meaning": "Not long or tall.",
+     "sentence": "My pencil is short."
+    },
+    {
+     "n": 337,
+     "word": "better",
+     "pos": "adjective",
+     "meaning": "More good.",
+     "sentence": "My cold is better today."
+    },
+    {
+     "n": 338,
+     "word": "best",
+     "pos": "adjective",
+     "meaning": "Most good.",
+     "sentence": "She is my best friend."
+    },
+    {
+     "n": 339,
+     "word": "however",
+     "pos": "adverb",
+     "meaning": "But; even so.",
+     "sentence": "It was cold. However, we still played outside."
+    },
+    {
+     "n": 340,
+     "word": "low",
+     "pos": "adjective",
+     "meaning": "Not high.",
+     "sentence": "The fence is low."
+    },
+    {
+     "n": 341,
+     "word": "hours",
+     "pos": "noun",
+     "meaning": "Units of 60 minutes.",
+     "sentence": "We drove for two hours."
+    },
+    {
+     "n": 342,
+     "word": "black",
+     "pos": "adjective",
+     "meaning": "The darkest color.",
+     "sentence": "The cat has black fur."
+    },
+    {
+     "n": 343,
+     "word": "products",
+     "pos": "noun",
+     "meaning": "Things that are made to sell.",
+     "sentence": "The store sells many products."
+    },
+    {
+     "n": 344,
+     "word": "happened",
+     "pos": "verb",
+     "meaning": "Took place.",
+     "sentence": "What happened at school today?"
+    },
+    {
+     "n": 345,
+     "word": "whole",
+     "pos": "adjective",
+     "meaning": "All of it.",
+     "sentence": "I ate the whole apple."
+    },
+    {
+     "n": 346,
+     "word": "measure",
+     "pos": "verb",
+     "meaning": "To find the size of.",
+     "sentence": "Measure the table with a ruler."
+    },
+    {
+     "n": 347,
+     "word": "remember",
+     "pos": "verb",
+     "meaning": "To keep in your mind.",
+     "sentence": "Remember to bring your lunch."
+    },
+    {
+     "n": 348,
+     "word": "early",
+     "pos": "adjective",
+     "meaning": "Before the usual time.",
+     "sentence": "I woke up early today."
+    },
+    {
+     "n": 349,
+     "word": "waves",
+     "pos": "noun",
+     "meaning": "Moving bumps of water.",
+     "sentence": "The waves crashed on the beach."
+    },
+    {
+     "n": 350,
+     "word": "reached",
+     "pos": "verb",
+     "meaning": "Got to; stretched out to.",
+     "sentence": "We reached the top of the hill."
+    }
+   ]
+  },
+  {
+   "set": 15,
+   "grade": 4,
+   "words": [
+    {
+     "n": 351,
+     "word": "listen",
+     "pos": "verb",
+     "meaning": "To pay attention to sounds.",
+     "sentence": "Listen to the teacher."
+    },
+    {
+     "n": 352,
+     "word": "wind",
+     "pos": "noun",
+     "meaning": "Moving air.",
+     "sentence": "The wind blew my hat off."
+    },
+    {
+     "n": 353,
+     "word": "rock",
+     "pos": "noun",
+     "meaning": "A hard piece of stone.",
+     "sentence": "I found a smooth rock."
+    },
+    {
+     "n": 354,
+     "word": "space",
+     "pos": "noun",
+     "meaning": "Empty area; or where the planets are.",
+     "sentence": "Astronauts travel into space."
+    },
+    {
+     "n": 355,
+     "word": "covered",
+     "pos": "verb",
+     "meaning": "Put something over.",
+     "sentence": "Snow covered the ground."
+    },
+    {
+     "n": 356,
+     "word": "fast",
+     "pos": "adjective",
+     "meaning": "Quick.",
+     "sentence": "A cheetah is very fast."
+    },
+    {
+     "n": 357,
+     "word": "several",
+     "pos": "adjective",
+     "meaning": "More than two but not many.",
+     "sentence": "I read several books this week."
+    },
+    {
+     "n": 358,
+     "word": "hold",
+     "pos": "verb",
+     "meaning": "To keep in your hands.",
+     "sentence": "Hold the baby gently."
+    },
+    {
+     "n": 359,
+     "word": "himself",
+     "pos": "pronoun",
+     "meaning": "That same boy or man.",
+     "sentence": "He made the sandwich himself."
+    },
+    {
+     "n": 360,
+     "word": "toward",
+     "pos": "preposition",
+     "meaning": "In the direction of.",
+     "sentence": "The dog ran toward me."
+    },
+    {
+     "n": 361,
+     "word": "five",
+     "pos": "number",
+     "meaning": "The number 5.",
+     "sentence": "I have five fingers on each hand."
+    },
+    {
+     "n": 362,
+     "word": "step",
+     "pos": "noun",
+     "meaning": "One move of your foot.",
+     "sentence": "Take one step forward."
+    },
+    {
+     "n": 363,
+     "word": "morning",
+     "pos": "noun",
+     "meaning": "The early part of the day.",
+     "sentence": "I eat breakfast in the morning."
+    },
+    {
+     "n": 364,
+     "word": "passed",
+     "pos": "verb",
+     "meaning": "Went by; or handed.",
+     "sentence": "A truck passed our house."
+    },
+    {
+     "n": 365,
+     "word": "vowel",
+     "pos": "noun",
+     "meaning": "The letters a, e, i, o, u.",
+     "sentence": "\"A\" is a vowel."
+    },
+    {
+     "n": 366,
+     "word": "true",
+     "pos": "adjective",
+     "meaning": "Real; not false.",
+     "sentence": "Is that story true?"
+    },
+    {
+     "n": 367,
+     "word": "hundred",
+     "pos": "number",
+     "meaning": "The number 100.",
+     "sentence": "There are a hundred pennies in a dollar."
+    },
+    {
+     "n": 368,
+     "word": "against",
+     "pos": "preposition",
+     "meaning": "Touching; or on the other side.",
+     "sentence": "Lean the bike against the wall."
+    },
+    {
+     "n": 369,
+     "word": "pattern",
+     "pos": "noun",
+     "meaning": "Something that repeats.",
+     "sentence": "Red, blue, red, blue is a pattern."
+    },
+    {
+     "n": 370,
+     "word": "numeral",
+     "pos": "noun",
+     "meaning": "A symbol for a number, like 7.",
+     "sentence": "Write the numeral for ten."
+    },
+    {
+     "n": 371,
+     "word": "table",
+     "pos": "noun",
+     "meaning": "Furniture with a flat top and legs.",
+     "sentence": "Set the table for dinner."
+    },
+    {
+     "n": 372,
+     "word": "north",
+     "pos": "noun",
+     "meaning": "The direction toward the top of a map.",
+     "sentence": "Birds fly north in spring."
+    },
+    {
+     "n": 373,
+     "word": "slowly",
+     "pos": "adverb",
+     "meaning": "Not fast.",
+     "sentence": "The turtle walked slowly."
+    },
+    {
+     "n": 374,
+     "word": "money",
+     "pos": "noun",
+     "meaning": "Coins and bills used to buy things.",
+     "sentence": "I saved money in my piggy bank."
+    },
+    {
+     "n": 375,
+     "word": "map",
+     "pos": "noun",
+     "meaning": "A drawing that shows places.",
+     "sentence": "Look at the map to find the park."
+    }
+   ]
+  },
+  {
+   "set": 16,
+   "grade": 4,
+   "words": [
+    {
+     "n": 376,
+     "word": "farm",
+     "pos": "noun",
+     "meaning": "Land where crops and animals are raised.",
+     "sentence": "We saw cows on the farm."
+    },
+    {
+     "n": 377,
+     "word": "pulled",
+     "pos": "verb",
+     "meaning": "Moved something toward you.",
+     "sentence": "I pulled the wagon."
+    },
+    {
+     "n": 378,
+     "word": "draw",
+     "pos": "verb",
+     "meaning": "To make a picture with a pencil.",
+     "sentence": "Draw a house."
+    },
+    {
+     "n": 379,
+     "word": "voice",
+     "pos": "noun",
+     "meaning": "The sound you make when you speak.",
+     "sentence": "She has a soft voice."
+    },
+    {
+     "n": 380,
+     "word": "seen",
+     "pos": "verb",
+     "meaning": "Form of \"see\".",
+     "sentence": "Have you seen my keys?"
+    },
+    {
+     "n": 381,
+     "word": "cold",
+     "pos": "adjective",
+     "meaning": "Not warm.",
+     "sentence": "The ice cream is cold."
+    },
+    {
+     "n": 382,
+     "word": "cried",
+     "pos": "verb",
+     "meaning": "Past of \"cry\".",
+     "sentence": "The baby cried all night."
+    },
+    {
+     "n": 383,
+     "word": "plan",
+     "pos": "noun",
+     "meaning": "An idea of what to do.",
+     "sentence": "We made a plan for the weekend."
+    },
+    {
+     "n": 384,
+     "word": "notice",
+     "pos": "verb",
+     "meaning": "To see or pay attention to.",
+     "sentence": "Did you notice my new haircut?"
+    },
+    {
+     "n": 385,
+     "word": "south",
+     "pos": "noun",
+     "meaning": "The direction toward the bottom of a map.",
+     "sentence": "Many birds fly south for winter."
+    },
+    {
+     "n": 386,
+     "word": "sing",
+     "pos": "verb",
+     "meaning": "To make music with your voice.",
+     "sentence": "Let's sing a song."
+    },
+    {
+     "n": 388,
+     "word": "ground",
+     "pos": "noun",
+     "meaning": "The surface of the earth.",
+     "sentence": "The apple fell to the ground."
+    },
+    {
+     "n": 389,
+     "word": "fall",
+     "pos": "verb",
+     "meaning": "To drop down.",
+     "sentence": "Be careful not to fall."
+    },
+    {
+     "n": 390,
+     "word": "king",
+     "pos": "noun",
+     "meaning": "A man who rules a kingdom.",
+     "sentence": "The king wore a crown."
+    },
+    {
+     "n": 391,
+     "word": "town",
+     "pos": "noun",
+     "meaning": "A place smaller than a city.",
+     "sentence": "We live in a small town."
+    },
+    {
+     "n": 392,
+     "word": "I'll",
+     "pos": "verb",
+     "meaning": "Short for \"I will\".",
+     "sentence": "I'll see you tomorrow."
+    },
+    {
+     "n": 393,
+     "word": "unit",
+     "pos": "noun",
+     "meaning": "One whole thing; or a measure like an inch.",
+     "sentence": "An inch is a unit of length."
+    },
+    {
+     "n": 394,
+     "word": "figure",
+     "pos": "verb",
+     "meaning": "To work out.",
+     "sentence": "Let's figure out the answer."
+    },
+    {
+     "n": 395,
+     "word": "certain",
+     "pos": "adjective",
+     "meaning": "Sure.",
+     "sentence": "I am certain I locked the door."
+    },
+    {
+     "n": 396,
+     "word": "field",
+     "pos": "noun",
+     "meaning": "An open area of land.",
+     "sentence": "The cows are in the field."
+    },
+    {
+     "n": 397,
+     "word": "travel",
+     "pos": "verb",
+     "meaning": "To go on a trip.",
+     "sentence": "We travel to India in summer."
+    },
+    {
+     "n": 398,
+     "word": "wood",
+     "pos": "noun",
+     "meaning": "What trees are made of.",
+     "sentence": "The table is made of wood."
+    },
+    {
+     "n": 399,
+     "word": "fire",
+     "pos": "noun",
+     "meaning": "Flames and heat from burning.",
+     "sentence": "We sat by the fire."
+    },
+    {
+     "n": 400,
+     "word": "upon",
+     "pos": "preposition",
+     "meaning": "On.",
+     "sentence": "Once upon a time, there was a dragon."
+    }
+   ]
+  },
+  {
+   "set": 17,
+   "grade": 4,
+   "words": [
+    {
+     "n": 401,
+     "word": "done",
+     "pos": "adjective",
+     "meaning": "Finished.",
+     "sentence": "I am done with my homework."
+    },
+    {
+     "n": 402,
+     "word": "English",
+     "pos": "noun",
+     "meaning": "The language we are speaking.",
+     "sentence": "We speak English at school."
+    },
+    {
+     "n": 403,
+     "word": "road",
+     "pos": "noun",
+     "meaning": "A path for cars.",
+     "sentence": "Look both ways before crossing the road."
+    },
+    {
+     "n": 404,
+     "word": "half",
+     "pos": "noun",
+     "meaning": "One of two equal parts.",
+     "sentence": "I ate half of the pizza."
+    },
+    {
+     "n": 405,
+     "word": "ten",
+     "pos": "number",
+     "meaning": "The number 10.",
+     "sentence": "I can count to ten."
+    },
+    {
+     "n": 406,
+     "word": "fly",
+     "pos": "verb",
+     "meaning": "To move through the air.",
+     "sentence": "Birds fly south in winter."
+    },
+    {
+     "n": 407,
+     "word": "gave",
+     "pos": "verb",
+     "meaning": "Past of \"give\".",
+     "sentence": "She gave me a hug."
+    },
+    {
+     "n": 408,
+     "word": "box",
+     "pos": "noun",
+     "meaning": "A container with sides.",
+     "sentence": "The toys are in the box."
+    },
+    {
+     "n": 409,
+     "word": "finally",
+     "pos": "adverb",
+     "meaning": "At last.",
+     "sentence": "We finally got there."
+    },
+    {
+     "n": 410,
+     "word": "wait",
+     "pos": "verb",
+     "meaning": "To stay until something happens.",
+     "sentence": "Wait for the bus here."
+    },
+    {
+     "n": 411,
+     "word": "correct",
+     "pos": "adjective",
+     "meaning": "Right; no mistakes.",
+     "sentence": "Your answer is correct."
+    },
+    {
+     "n": 412,
+     "word": "oh",
+     "pos": "interjection",
+     "meaning": "Shows surprise.",
+     "sentence": "Oh, I forgot my hat!"
+    },
+    {
+     "n": 413,
+     "word": "quickly",
+     "pos": "adverb",
+     "meaning": "Fast.",
+     "sentence": "He quickly ran home."
+    },
+    {
+     "n": 414,
+     "word": "person",
+     "pos": "noun",
+     "meaning": "A human being.",
+     "sentence": "Every person is special."
+    },
+    {
+     "n": 415,
+     "word": "became",
+     "pos": "verb",
+     "meaning": "Past of \"become\".",
+     "sentence": "The caterpillar became a butterfly."
+    },
+    {
+     "n": 416,
+     "word": "shown",
+     "pos": "verb",
+     "meaning": "Form of \"show\".",
+     "sentence": "We were shown the way."
+    },
+    {
+     "n": 417,
+     "word": "minutes",
+     "pos": "noun",
+     "meaning": "Units of 60 seconds.",
+     "sentence": "Recess is fifteen minutes long."
+    },
+    {
+     "n": 418,
+     "word": "strong",
+     "pos": "adjective",
+     "meaning": "Has a lot of power.",
+     "sentence": "An ant is strong for its size."
+    },
+    {
+     "n": 419,
+     "word": "verb",
+     "pos": "noun",
+     "meaning": "An action word, like run.",
+     "sentence": "\"Jump\" is a verb."
+    },
+    {
+     "n": 420,
+     "word": "stars",
+     "pos": "noun",
+     "meaning": "Bright points of light in the night sky.",
+     "sentence": "We counted the stars."
+    },
+    {
+     "n": 421,
+     "word": "front",
+     "pos": "noun",
+     "meaning": "The part that faces forward.",
+     "sentence": "Sit in the front of the class."
+    },
+    {
+     "n": 422,
+     "word": "feel",
+     "pos": "verb",
+     "meaning": "To touch; or to have an emotion.",
+     "sentence": "I feel happy today."
+    },
+    {
+     "n": 423,
+     "word": "fact",
+     "pos": "noun",
+     "meaning": "Something that is true.",
+     "sentence": "It is a fact that ice is cold."
+    },
+    {
+     "n": 424,
+     "word": "inches",
+     "pos": "noun",
+     "meaning": "Small units of length.",
+     "sentence": "The worm is three inches long."
+    },
+    {
+     "n": 425,
+     "word": "street",
+     "pos": "noun",
+     "meaning": "A road in a town or city.",
+     "sentence": "I live on Oak Street."
+    }
+   ]
+  },
+  {
+   "set": 18,
+   "grade": 4,
+   "words": [
+    {
+     "n": 426,
+     "word": "decided",
+     "pos": "verb",
+     "meaning": "Made a choice.",
+     "sentence": "We decided to have tacos."
+    },
+    {
+     "n": 427,
+     "word": "contain",
+     "pos": "verb",
+     "meaning": "To hold inside.",
+     "sentence": "These jars contain jam."
+    },
+    {
+     "n": 428,
+     "word": "course",
+     "pos": "noun",
+     "meaning": "A path or route; or a class.",
+     "sentence": "The race course goes around the lake."
+    },
+    {
+     "n": 429,
+     "word": "surface",
+     "pos": "noun",
+     "meaning": "The outside or top layer.",
+     "sentence": "The surface of the pond is still."
+    },
+    {
+     "n": 430,
+     "word": "produce",
+     "pos": "verb",
+     "meaning": "To make or grow.",
+     "sentence": "Bees produce honey."
+    },
+    {
+     "n": 431,
+     "word": "building",
+     "pos": "noun",
+     "meaning": "A structure with walls and a roof.",
+     "sentence": "The library is a tall building."
+    },
+    {
+     "n": 432,
+     "word": "ocean",
+     "pos": "noun",
+     "meaning": "A huge body of salt water.",
+     "sentence": "Sharks swim in the ocean."
+    },
+    {
+     "n": 433,
+     "word": "class",
+     "pos": "noun",
+     "meaning": "A group of students.",
+     "sentence": "Our class went on a field trip."
+    },
+    {
+     "n": 434,
+     "word": "note",
+     "pos": "noun",
+     "meaning": "A short written message.",
+     "sentence": "I left a note for Mom."
+    },
+    {
+     "n": 435,
+     "word": "nothing",
+     "pos": "pronoun",
+     "meaning": "Not anything.",
+     "sentence": "There is nothing in the box."
+    },
+    {
+     "n": 436,
+     "word": "rest",
+     "pos": "verb",
+     "meaning": "To relax or sleep.",
+     "sentence": "Rest after you run."
+    },
+    {
+     "n": 437,
+     "word": "carefully",
+     "pos": "adverb",
+     "meaning": "With care.",
+     "sentence": "Carry the eggs carefully."
+    },
+    {
+     "n": 438,
+     "word": "scientists",
+     "pos": "noun",
+     "meaning": "People who study how things work.",
+     "sentence": "Scientists study the stars."
+    },
+    {
+     "n": 439,
+     "word": "inside",
+     "pos": "preposition",
+     "meaning": "In something.",
+     "sentence": "Stay inside when it rains."
+    },
+    {
+     "n": 440,
+     "word": "wheels",
+     "pos": "noun",
+     "meaning": "Round parts that roll.",
+     "sentence": "A bike has two wheels."
+    },
+    {
+     "n": 441,
+     "word": "stay",
+     "pos": "verb",
+     "meaning": "To remain in one place.",
+     "sentence": "Stay here until I come back."
+    },
+    {
+     "n": 442,
+     "word": "green",
+     "pos": "adjective",
+     "meaning": "The color of grass.",
+     "sentence": "Frogs are green."
+    },
+    {
+     "n": 443,
+     "word": "known",
+     "pos": "verb",
+     "meaning": "Form of \"know\".",
+     "sentence": "I have known her since kindergarten."
+    },
+    {
+     "n": 444,
+     "word": "island",
+     "pos": "noun",
+     "meaning": "Land with water all around.",
+     "sentence": "We took a boat to the island."
+    },
+    {
+     "n": 445,
+     "word": "week",
+     "pos": "noun",
+     "meaning": "Seven days.",
+     "sentence": "There are seven days in a week."
+    },
+    {
+     "n": 446,
+     "word": "less",
+     "pos": "adjective",
+     "meaning": "A smaller amount.",
+     "sentence": "I want less ice in my drink."
+    },
+    {
+     "n": 447,
+     "word": "machine",
+     "pos": "noun",
+     "meaning": "A tool with moving parts.",
+     "sentence": "A washing machine cleans clothes."
+    },
+    {
+     "n": 448,
+     "word": "base",
+     "pos": "noun",
+     "meaning": "The bottom part; or a stop in baseball.",
+     "sentence": "He ran to first base."
+    },
+    {
+     "n": 449,
+     "word": "ago",
+     "pos": "adverb",
+     "meaning": "In the past.",
+     "sentence": "We moved here two years ago."
+    },
+    {
+     "n": 450,
+     "word": "stood",
+     "pos": "verb",
+     "meaning": "Past of \"stand\".",
+     "sentence": "We stood in line for lunch."
+    }
+   ]
+  },
+  {
+   "set": 19,
+   "grade": 4,
+   "words": [
+    {
+     "n": 451,
+     "word": "plane",
+     "pos": "noun",
+     "meaning": "An airplane.",
+     "sentence": "The plane landed safely."
+    },
+    {
+     "n": 452,
+     "word": "system",
+     "pos": "noun",
+     "meaning": "Parts that work together.",
+     "sentence": "The sun and planets form our solar system."
+    },
+    {
+     "n": 453,
+     "word": "behind",
+     "pos": "preposition",
+     "meaning": "At the back of.",
+     "sentence": "The cat hid behind the couch."
+    },
+    {
+     "n": 454,
+     "word": "ran",
+     "pos": "verb",
+     "meaning": "Past of \"run\".",
+     "sentence": "The dog ran after the ball."
+    },
+    {
+     "n": 455,
+     "word": "round",
+     "pos": "adjective",
+     "meaning": "Shaped like a circle.",
+     "sentence": "A ball is round."
+    },
+    {
+     "n": 456,
+     "word": "boat",
+     "pos": "noun",
+     "meaning": "Something that floats and carries people.",
+     "sentence": "We rowed the boat across the lake."
+    },
+    {
+     "n": 457,
+     "word": "game",
+     "pos": "noun",
+     "meaning": "Something you play for fun.",
+     "sentence": "Let's play a board game."
+    },
+    {
+     "n": 458,
+     "word": "force",
+     "pos": "noun",
+     "meaning": "A push or a pull.",
+     "sentence": "It takes force to open this jar."
+    },
+    {
+     "n": 459,
+     "word": "brought",
+     "pos": "verb",
+     "meaning": "Past of \"bring\".",
+     "sentence": "I brought snacks for everyone."
+    },
+    {
+     "n": 460,
+     "word": "understand",
+     "pos": "verb",
+     "meaning": "To know what something means.",
+     "sentence": "I understand the story."
+    },
+    {
+     "n": 461,
+     "word": "warm",
+     "pos": "adjective",
+     "meaning": "A little hot.",
+     "sentence": "The blanket is warm."
+    },
+    {
+     "n": 462,
+     "word": "common",
+     "pos": "adjective",
+     "meaning": "Seen or found a lot.",
+     "sentence": "Sparrows are common birds."
+    },
+    {
+     "n": 463,
+     "word": "bring",
+     "pos": "verb",
+     "meaning": "To carry with you.",
+     "sentence": "Bring your library book tomorrow."
+    },
+    {
+     "n": 464,
+     "word": "explain",
+     "pos": "verb",
+     "meaning": "To make clear.",
+     "sentence": "Can you explain the rules?"
+    },
+    {
+     "n": 465,
+     "word": "dry",
+     "pos": "adjective",
+     "meaning": "Not wet.",
+     "sentence": "My towel is dry."
+    },
+    {
+     "n": 466,
+     "word": "though",
+     "pos": "conjunction",
+     "meaning": "Even if.",
+     "sentence": "I went outside, though it was cold."
+    },
+    {
+     "n": 467,
+     "word": "language",
+     "pos": "noun",
+     "meaning": "Words people use to talk.",
+     "sentence": "Spanish is a language."
+    },
+    {
+     "n": 468,
+     "word": "shape",
+     "pos": "noun",
+     "meaning": "The outline of something.",
+     "sentence": "A square is a shape."
+    },
+    {
+     "n": 469,
+     "word": "deep",
+     "pos": "adjective",
+     "meaning": "Going far down.",
+     "sentence": "The pool is deep."
+    },
+    {
+     "n": 470,
+     "word": "thousands",
+     "pos": "noun",
+     "meaning": "Many groups of 1,000.",
+     "sentence": "Thousands of people came to the parade."
+    },
+    {
+     "n": 471,
+     "word": "yes",
+     "pos": "interjection",
+     "meaning": "A way of agreeing.",
+     "sentence": "Yes, I want to come!"
+    },
+    {
+     "n": 472,
+     "word": "clear",
+     "pos": "adjective",
+     "meaning": "Easy to see through.",
+     "sentence": "The water is clear."
+    },
+    {
+     "n": 473,
+     "word": "equation",
+     "pos": "noun",
+     "meaning": "A math sentence with an equal sign.",
+     "sentence": "2 + 2 = 4 is an equation."
+    },
+    {
+     "n": 474,
+     "word": "yet",
+     "pos": "adverb",
+     "meaning": "Up to now.",
+     "sentence": "I haven't eaten yet."
+    }
+   ]
+  },
+  {
+   "set": 20,
+   "grade": 4,
+   "words": [
+    {
+     "n": 476,
+     "word": "filled",
+     "pos": "verb",
+     "meaning": "Made full.",
+     "sentence": "I filled my cup with water."
+    },
+    {
+     "n": 477,
+     "word": "heat",
+     "pos": "noun",
+     "meaning": "Warmth.",
+     "sentence": "The heat from the oven is strong."
+    },
+    {
+     "n": 478,
+     "word": "full",
+     "pos": "adjective",
+     "meaning": "Holding as much as it can.",
+     "sentence": "My tummy is full."
+    },
+    {
+     "n": 479,
+     "word": "hot",
+     "pos": "adjective",
+     "meaning": "Very warm.",
+     "sentence": "The soup is hot."
+    },
+    {
+     "n": 480,
+     "word": "check",
+     "pos": "verb",
+     "meaning": "To look to make sure.",
+     "sentence": "Check your work."
+    },
+    {
+     "n": 481,
+     "word": "object",
+     "pos": "noun",
+     "meaning": "A thing you can see or touch.",
+     "sentence": "A ball is an object."
+    },
+    {
+     "n": 482,
+     "word": "am",
+     "pos": "verb",
+     "meaning": "Form of \"be\" used with I.",
+     "sentence": "I am seven years old."
+    },
+    {
+     "n": 483,
+     "word": "rule",
+     "pos": "noun",
+     "meaning": "Something you must follow.",
+     "sentence": "The rule is no running inside."
+    },
+    {
+     "n": 484,
+     "word": "among",
+     "pos": "preposition",
+     "meaning": "In the middle of many.",
+     "sentence": "The ball was among the leaves."
+    },
+    {
+     "n": 485,
+     "word": "noun",
+     "pos": "noun",
+     "meaning": "A word for a person, place, or thing.",
+     "sentence": "\"Dog\" is a noun."
+    },
+    {
+     "n": 486,
+     "word": "power",
+     "pos": "noun",
+     "meaning": "Strength or energy.",
+     "sentence": "The storm knocked out the power."
+    },
+    {
+     "n": 487,
+     "word": "cannot",
+     "pos": "verb",
+     "meaning": "Is not able to.",
+     "sentence": "I cannot reach the top shelf."
+    },
+    {
+     "n": 488,
+     "word": "able",
+     "pos": "adjective",
+     "meaning": "Can do something.",
+     "sentence": "She is able to swim."
+    },
+    {
+     "n": 489,
+     "word": "six",
+     "pos": "number",
+     "meaning": "The number 6.",
+     "sentence": "An insect has six legs."
+    },
+    {
+     "n": 490,
+     "word": "size",
+     "pos": "noun",
+     "meaning": "How big or small something is.",
+     "sentence": "What size shoe do you wear?"
+    },
+    {
+     "n": 491,
+     "word": "dark",
+     "pos": "adjective",
+     "meaning": "Without light.",
+     "sentence": "It is dark at night."
+    },
+    {
+     "n": 492,
+     "word": "ball",
+     "pos": "noun",
+     "meaning": "A round toy.",
+     "sentence": "Throw me the ball."
+    },
+    {
+     "n": 493,
+     "word": "material",
+     "pos": "noun",
+     "meaning": "What something is made of.",
+     "sentence": "Cotton is a soft material."
+    },
+    {
+     "n": 494,
+     "word": "special",
+     "pos": "adjective",
+     "meaning": "Different and important.",
+     "sentence": "Today is a special day."
+    },
+    {
+     "n": 495,
+     "word": "heavy",
+     "pos": "adjective",
+     "meaning": "Hard to lift.",
+     "sentence": "This box is heavy."
+    },
+    {
+     "n": 496,
+     "word": "fine",
+     "pos": "adjective",
+     "meaning": "Okay; good.",
+     "sentence": "I feel fine."
+    },
+    {
+     "n": 497,
+     "word": "pair",
+     "pos": "noun",
+     "meaning": "Two things that go together.",
+     "sentence": "I need a new pair of socks."
+    },
+    {
+     "n": 498,
+     "word": "circle",
+     "pos": "noun",
+     "meaning": "A round shape.",
+     "sentence": "Draw a circle."
+    },
+    {
+     "n": 499,
+     "word": "include",
+     "pos": "verb",
+     "meaning": "To make part of a group.",
+     "sentence": "Include everyone in the game."
+    },
+    {
+     "n": 500,
+     "word": "built",
+     "pos": "verb",
+     "meaning": "Past of \"build\".",
+     "sentence": "We built a fort."
+    }
+   ]
+  },
+  {
+   "set": 21,
+   "grade": 4,
+   "words": [
+    {
+     "n": 501,
+     "word": "can't",
+     "pos": "verb",
+     "meaning": "Short for \"cannot\".",
+     "sentence": "I can't find my shoe."
+    },
+    {
+     "n": 502,
+     "word": "matter",
+     "pos": "verb",
+     "meaning": "To be important.",
+     "sentence": "Your feelings matter."
+    },
+    {
+     "n": 503,
+     "word": "square",
+     "pos": "noun",
+     "meaning": "A shape with four equal sides.",
+     "sentence": "A window can be a square."
+    },
+    {
+     "n": 504,
+     "word": "syllables",
+     "pos": "noun",
+     "meaning": "Beats or parts in a word.",
+     "sentence": "\"Rabbit\" has two syllables."
+    },
+    {
+     "n": 505,
+     "word": "perhaps",
+     "pos": "adverb",
+     "meaning": "Maybe.",
+     "sentence": "Perhaps we can go tomorrow."
+    },
+    {
+     "n": 506,
+     "word": "bill",
+     "pos": "noun",
+     "meaning": "Paper money; or a bird's beak.",
+     "sentence": "Dad paid with a ten-dollar bill."
+    },
+    {
+     "n": 507,
+     "word": "felt",
+     "pos": "verb",
+     "meaning": "Past of \"feel\".",
+     "sentence": "I felt sleepy after lunch."
+    },
+    {
+     "n": 508,
+     "word": "suddenly",
+     "pos": "adverb",
+     "meaning": "Quickly and without warning.",
+     "sentence": "Suddenly, the lights went out."
+    },
+    {
+     "n": 509,
+     "word": "test",
+     "pos": "noun",
+     "meaning": "Questions to check what you know.",
+     "sentence": "I studied for my spelling test."
+    },
+    {
+     "n": 510,
+     "word": "direction",
+     "pos": "noun",
+     "meaning": "The way something is going.",
+     "sentence": "Which direction is the park?"
+    },
+    {
+     "n": 511,
+     "word": "center",
+     "pos": "noun",
+     "meaning": "The middle.",
+     "sentence": "Put the vase in the center of the table."
+    },
+    {
+     "n": 512,
+     "word": "farmers",
+     "pos": "noun",
+     "meaning": "People who grow food or raise animals.",
+     "sentence": "Farmers grow corn and wheat."
+    },
+    {
+     "n": 513,
+     "word": "ready",
+     "pos": "adjective",
+     "meaning": "Prepared.",
+     "sentence": "Are you ready to go?"
+    },
+    {
+     "n": 514,
+     "word": "anything",
+     "pos": "pronoun",
+     "meaning": "Any thing at all.",
+     "sentence": "Do you need anything from the store?"
+    },
+    {
+     "n": 515,
+     "word": "divided",
+     "pos": "verb",
+     "meaning": "Split into parts.",
+     "sentence": "We divided the cake into eight pieces."
+    },
+    {
+     "n": 516,
+     "word": "general",
+     "pos": "adjective",
+     "meaning": "About most things; not exact.",
+     "sentence": "I have a general idea of the plan."
+    },
+    {
+     "n": 517,
+     "word": "energy",
+     "pos": "noun",
+     "meaning": "Power to move or work.",
+     "sentence": "Food gives you energy."
+    },
+    {
+     "n": 518,
+     "word": "subject",
+     "pos": "noun",
+     "meaning": "What something is about; or a school class.",
+     "sentence": "Math is my favorite subject."
+    },
+    {
+     "n": 519,
+     "word": "Europe",
+     "pos": "noun",
+     "meaning": "A continent with countries like France.",
+     "sentence": "Spain is in Europe."
+    },
+    {
+     "n": 520,
+     "word": "moon",
+     "pos": "noun",
+     "meaning": "The bright ball in the night sky.",
+     "sentence": "The moon is full tonight."
+    },
+    {
+     "n": 521,
+     "word": "region",
+     "pos": "noun",
+     "meaning": "An area or part of a place.",
+     "sentence": "It snows a lot in this region."
+    },
+    {
+     "n": 522,
+     "word": "return",
+     "pos": "verb",
+     "meaning": "To come or give back.",
+     "sentence": "Return the book to the library."
+    },
+    {
+     "n": 523,
+     "word": "believe",
+     "pos": "verb",
+     "meaning": "To think something is true.",
+     "sentence": "I believe you."
+    },
+    {
+     "n": 524,
+     "word": "dance",
+     "pos": "verb",
+     "meaning": "To move to music.",
+     "sentence": "Let's dance!"
+    },
+    {
+     "n": 525,
+     "word": "members",
+     "pos": "noun",
+     "meaning": "People in a group.",
+     "sentence": "Our team has ten members."
+    }
+   ]
+  },
+  {
+   "set": 22,
+   "grade": 4,
+   "words": [
+    {
+     "n": 526,
+     "word": "picked",
+     "pos": "verb",
+     "meaning": "Chose; or pulled off.",
+     "sentence": "I picked the blue one."
+    },
+    {
+     "n": 527,
+     "word": "simple",
+     "pos": "adjective",
+     "meaning": "Easy; plain.",
+     "sentence": "This is a simple recipe."
+    },
+    {
+     "n": 528,
+     "word": "cells",
+     "pos": "noun",
+     "meaning": "Tiny parts that make up living things.",
+     "sentence": "Your body is made of cells."
+    },
+    {
+     "n": 529,
+     "word": "paint",
+     "pos": "verb",
+     "meaning": "To color with a brush.",
+     "sentence": "Let's paint a picture."
+    },
+    {
+     "n": 530,
+     "word": "mind",
+     "pos": "noun",
+     "meaning": "The part of you that thinks.",
+     "sentence": "Keep an open mind."
+    },
+    {
+     "n": 531,
+     "word": "love",
+     "pos": "verb",
+     "meaning": "To care about a lot.",
+     "sentence": "I love my family."
+    },
+    {
+     "n": 532,
+     "word": "cause",
+     "pos": "noun",
+     "meaning": "The reason something happens.",
+     "sentence": "Rain was the cause of the flood."
+    },
+    {
+     "n": 533,
+     "word": "rain",
+     "pos": "noun",
+     "meaning": "Water falling from clouds.",
+     "sentence": "The rain made puddles."
+    },
+    {
+     "n": 534,
+     "word": "exercise",
+     "pos": "noun",
+     "meaning": "Moving your body to stay healthy.",
+     "sentence": "Running is good exercise."
+    },
+    {
+     "n": 535,
+     "word": "eggs",
+     "pos": "noun",
+     "meaning": "Oval things laid by birds.",
+     "sentence": "We had eggs for breakfast."
+    },
+    {
+     "n": 536,
+     "word": "train",
+     "pos": "noun",
+     "meaning": "Cars pulled along a track.",
+     "sentence": "The train goes choo-choo."
+    },
+    {
+     "n": 537,
+     "word": "blue",
+     "pos": "adjective",
+     "meaning": "The color of the sky.",
+     "sentence": "My eyes are blue."
+    },
+    {
+     "n": 538,
+     "word": "wish",
+     "pos": "verb",
+     "meaning": "To hope for something.",
+     "sentence": "I wish I could fly."
+    },
+    {
+     "n": 539,
+     "word": "drop",
+     "pos": "verb",
+     "meaning": "To let fall.",
+     "sentence": "Don't drop the glass."
+    },
+    {
+     "n": 540,
+     "word": "developed",
+     "pos": "verb",
+     "meaning": "Grew or made better over time.",
+     "sentence": "The seed developed into a plant."
+    },
+    {
+     "n": 541,
+     "word": "window",
+     "pos": "noun",
+     "meaning": "Glass in a wall to see through.",
+     "sentence": "Look out the window."
+    },
+    {
+     "n": 542,
+     "word": "difference",
+     "pos": "noun",
+     "meaning": "How things are not alike.",
+     "sentence": "What is the difference between a frog and a toad?"
+    },
+    {
+     "n": 543,
+     "word": "distance",
+     "pos": "noun",
+     "meaning": "How far apart.",
+     "sentence": "The distance to school is one mile."
+    },
+    {
+     "n": 544,
+     "word": "heart",
+     "pos": "noun",
+     "meaning": "The body part in your chest that pumps.",
+     "sentence": "My heart beats fast when I run."
+    },
+    {
+     "n": 545,
+     "word": "site",
+     "pos": "noun",
+     "meaning": "A place where something is or happens.",
+     "sentence": "This is the site of the new park."
+    },
+    {
+     "n": 546,
+     "word": "sum",
+     "pos": "noun",
+     "meaning": "The answer when you add.",
+     "sentence": "The sum of 2 and 3 is 5."
+    },
+    {
+     "n": 547,
+     "word": "summer",
+     "pos": "noun",
+     "meaning": "The hottest season.",
+     "sentence": "We swim in summer."
+    },
+    {
+     "n": 548,
+     "word": "wall",
+     "pos": "noun",
+     "meaning": "A side of a room or building.",
+     "sentence": "Hang the picture on the wall."
+    },
+    {
+     "n": 549,
+     "word": "forest",
+     "pos": "noun",
+     "meaning": "A large area with many trees.",
+     "sentence": "Deer live in the forest."
+    },
+    {
+     "n": 550,
+     "word": "probably",
+     "pos": "adverb",
+     "meaning": "Very likely.",
+     "sentence": "It will probably rain today."
+    }
+   ]
+  },
+  {
+   "set": 23,
+   "grade": 4,
+   "words": [
+    {
+     "n": 551,
+     "word": "legs",
+     "pos": "noun",
+     "meaning": "Body parts you walk with.",
+     "sentence": "A spider has eight legs."
+    },
+    {
+     "n": 552,
+     "word": "sat",
+     "pos": "verb",
+     "meaning": "Past of \"sit\".",
+     "sentence": "I sat next to my friend."
+    },
+    {
+     "n": 553,
+     "word": "main",
+     "pos": "adjective",
+     "meaning": "Most important.",
+     "sentence": "What is the main idea of the story?"
+    },
+    {
+     "n": 554,
+     "word": "winter",
+     "pos": "noun",
+     "meaning": "The coldest season.",
+     "sentence": "It snows in winter."
+    },
+    {
+     "n": 555,
+     "word": "wide",
+     "pos": "adjective",
+     "meaning": "Far from side to side.",
+     "sentence": "The river is wide."
+    },
+    {
+     "n": 556,
+     "word": "written",
+     "pos": "verb",
+     "meaning": "Form of \"write\".",
+     "sentence": "The note was written in pencil."
+    },
+    {
+     "n": 557,
+     "word": "length",
+     "pos": "noun",
+     "meaning": "How long something is.",
+     "sentence": "Measure the length of the rope."
+    },
+    {
+     "n": 558,
+     "word": "reason",
+     "pos": "noun",
+     "meaning": "Why something happens.",
+     "sentence": "What is the reason you are late?"
+    },
+    {
+     "n": 559,
+     "word": "kept",
+     "pos": "verb",
+     "meaning": "Past of \"keep\".",
+     "sentence": "I kept the shell I found."
+    },
+    {
+     "n": 560,
+     "word": "interest",
+     "pos": "noun",
+     "meaning": "Wanting to know more.",
+     "sentence": "He has an interest in dinosaurs."
+    },
+    {
+     "n": 561,
+     "word": "arms",
+     "pos": "noun",
+     "meaning": "Body parts between shoulders and hands.",
+     "sentence": "Raise your arms up high."
+    },
+    {
+     "n": 562,
+     "word": "brother",
+     "pos": "noun",
+     "meaning": "A boy with the same parents as you.",
+     "sentence": "My brother is older than me."
+    },
+    {
+     "n": 563,
+     "word": "race",
+     "pos": "noun",
+     "meaning": "A contest of speed.",
+     "sentence": "I won the race!"
+    },
+    {
+     "n": 564,
+     "word": "present",
+     "pos": "noun",
+     "meaning": "A gift; or now.",
+     "sentence": "I got a present for my birthday."
+    },
+    {
+     "n": 565,
+     "word": "beautiful",
+     "pos": "adjective",
+     "meaning": "Very pretty.",
+     "sentence": "The sunset is beautiful."
+    },
+    {
+     "n": 566,
+     "word": "store",
+     "pos": "noun",
+     "meaning": "A shop.",
+     "sentence": "We bought milk at the store."
+    },
+    {
+     "n": 567,
+     "word": "job",
+     "pos": "noun",
+     "meaning": "Work someone does.",
+     "sentence": "My mom's job is at a hospital."
+    },
+    {
+     "n": 568,
+     "word": "edge",
+     "pos": "noun",
+     "meaning": "The side or end of something.",
+     "sentence": "Don't sit on the edge of the table."
+    },
+    {
+     "n": 569,
+     "word": "past",
+     "pos": "noun",
+     "meaning": "The time before now.",
+     "sentence": "Dinosaurs lived in the past."
+    },
+    {
+     "n": 570,
+     "word": "sign",
+     "pos": "noun",
+     "meaning": "A board with words or pictures.",
+     "sentence": "The sign says \"Stop.\""
+    },
+    {
+     "n": 571,
+     "word": "record",
+     "pos": "verb",
+     "meaning": "To save sounds or facts.",
+     "sentence": "Record the weather each day."
+    },
+    {
+     "n": 572,
+     "word": "finished",
+     "pos": "verb",
+     "meaning": "Completed.",
+     "sentence": "I finished my book."
+    },
+    {
+     "n": 573,
+     "word": "discovered",
+     "pos": "verb",
+     "meaning": "Found for the first time.",
+     "sentence": "We discovered a nest in the tree."
+    },
+    {
+     "n": 574,
+     "word": "wild",
+     "pos": "adjective",
+     "meaning": "Living in nature, not tame.",
+     "sentence": "Lions are wild animals."
+    },
+    {
+     "n": 575,
+     "word": "happy",
+     "pos": "adjective",
+     "meaning": "Feeling good.",
+     "sentence": "I am happy to see you."
+    }
+   ]
+  },
+  {
+   "set": 24,
+   "grade": 4,
+   "words": [
+    {
+     "n": 576,
+     "word": "beside",
+     "pos": "preposition",
+     "meaning": "Next to.",
+     "sentence": "Sit beside me."
+    },
+    {
+     "n": 577,
+     "word": "gone",
+     "pos": "verb",
+     "meaning": "Form of \"go\"; not here anymore.",
+     "sentence": "The cookies are all gone."
+    },
+    {
+     "n": 578,
+     "word": "sky",
+     "pos": "noun",
+     "meaning": "The space above the earth.",
+     "sentence": "The sky is cloudy."
+    },
+    {
+     "n": 579,
+     "word": "grass",
+     "pos": "noun",
+     "meaning": "Green plants that cover the ground.",
+     "sentence": "The grass is wet."
+    },
+    {
+     "n": 580,
+     "word": "million",
+     "pos": "number",
+     "meaning": "1,000,000.",
+     "sentence": "There are a million stars in the sky."
+    },
+    {
+     "n": 581,
+     "word": "west",
+     "pos": "noun",
+     "meaning": "The direction where the sun sets.",
+     "sentence": "The sun sets in the west."
+    },
+    {
+     "n": 582,
+     "word": "lay",
+     "pos": "verb",
+     "meaning": "To put down flat.",
+     "sentence": "Lay the blanket on the grass."
+    },
+    {
+     "n": 583,
+     "word": "weather",
+     "pos": "noun",
+     "meaning": "What it is like outside.",
+     "sentence": "The weather is sunny today."
+    },
+    {
+     "n": 584,
+     "word": "root",
+     "pos": "noun",
+     "meaning": "The part of a plant under the ground.",
+     "sentence": "The root drinks water from the soil."
+    },
+    {
+     "n": 585,
+     "word": "instruments",
+     "pos": "noun",
+     "meaning": "Tools; or things you play music on.",
+     "sentence": "Pianos and drums are instruments."
+    },
+    {
+     "n": 586,
+     "word": "meet",
+     "pos": "verb",
+     "meaning": "To come together; to get to know.",
+     "sentence": "Nice to meet you!"
+    },
+    {
+     "n": 587,
+     "word": "third",
+     "pos": "adjective",
+     "meaning": "After the second.",
+     "sentence": "I am in third place."
+    },
+    {
+     "n": 588,
+     "word": "months",
+     "pos": "noun",
+     "meaning": "12 parts of a year.",
+     "sentence": "There are twelve months in a year."
+    },
+    {
+     "n": 589,
+     "word": "paragraph",
+     "pos": "noun",
+     "meaning": "A group of sentences about one idea.",
+     "sentence": "Write a paragraph about your pet."
+    },
+    {
+     "n": 590,
+     "word": "raised",
+     "pos": "verb",
+     "meaning": "Lifted up.",
+     "sentence": "She raised her hand."
+    },
+    {
+     "n": 591,
+     "word": "represent",
+     "pos": "verb",
+     "meaning": "To stand for.",
+     "sentence": "The stars on the flag represent states."
+    },
+    {
+     "n": 592,
+     "word": "soft",
+     "pos": "adjective",
+     "meaning": "Not hard.",
+     "sentence": "My pillow is soft."
+    },
+    {
+     "n": 593,
+     "word": "whether",
+     "pos": "conjunction",
+     "meaning": "If.",
+     "sentence": "I don't know whether it will rain."
+    },
+    {
+     "n": 594,
+     "word": "clothes",
+     "pos": "noun",
+     "meaning": "Things you wear.",
+     "sentence": "Put your clothes in the drawer."
+    },
+    {
+     "n": 595,
+     "word": "flowers",
+     "pos": "noun",
+     "meaning": "Colorful parts of plants.",
+     "sentence": "We picked flowers for Mom."
+    },
+    {
+     "n": 596,
+     "word": "shall",
+     "pos": "verb",
+     "meaning": "Will; used to suggest.",
+     "sentence": "Shall we go to the park?"
+    },
+    {
+     "n": 597,
+     "word": "teacher",
+     "pos": "noun",
+     "meaning": "A person who helps you learn.",
+     "sentence": "My teacher is very kind."
+    },
+    {
+     "n": 598,
+     "word": "held",
+     "pos": "verb",
+     "meaning": "Past of \"hold\".",
+     "sentence": "I held the puppy."
+    },
+    {
+     "n": 599,
+     "word": "describe",
+     "pos": "verb",
+     "meaning": "To tell what something is like.",
+     "sentence": "Describe your favorite toy."
+    },
+    {
+     "n": 600,
+     "word": "drive",
+     "pos": "verb",
+     "meaning": "To make a car go.",
+     "sentence": "Mom will drive us to school."
+    }
+   ]
+  },
+  {
+   "set": 25,
+   "grade": 5,
+   "words": [
+    {
+     "n": 601,
+     "word": "cross",
+     "pos": "verb",
+     "meaning": "To go from one side to the other.",
+     "sentence": "Hold hands when you cross the street."
+    },
+    {
+     "n": 602,
+     "word": "speak",
+     "pos": "verb",
+     "meaning": "To talk.",
+     "sentence": "Please speak louder."
+    },
+    {
+     "n": 603,
+     "word": "solve",
+     "pos": "verb",
+     "meaning": "To find the answer.",
+     "sentence": "Can you solve this riddle?"
+    },
+    {
+     "n": 604,
+     "word": "appear",
+     "pos": "verb",
+     "meaning": "To come into sight.",
+     "sentence": "Stars appear at night."
+    },
+    {
+     "n": 605,
+     "word": "metal",
+     "pos": "noun",
+     "meaning": "A hard material like iron or gold.",
+     "sentence": "The spoon is made of metal."
+    },
+    {
+     "n": 606,
+     "word": "son",
+     "pos": "noun",
+     "meaning": "A boy child of a parent.",
+     "sentence": "He is their only son."
+    },
+    {
+     "n": 607,
+     "word": "either",
+     "pos": "determiner",
+     "meaning": "One or the other.",
+     "sentence": "You can pick either color."
+    },
+    {
+     "n": 608,
+     "word": "ice",
+     "pos": "noun",
+     "meaning": "Frozen water.",
+     "sentence": "Put some ice in my drink."
+    },
+    {
+     "n": 609,
+     "word": "sleep",
+     "pos": "verb",
+     "meaning": "To rest with your eyes closed.",
+     "sentence": "I sleep in my own bed."
+    },
+    {
+     "n": 610,
+     "word": "village",
+     "pos": "noun",
+     "meaning": "A very small town.",
+     "sentence": "The village had one store."
+    },
+    {
+     "n": 611,
+     "word": "factors",
+     "pos": "noun",
+     "meaning": "Things that help cause a result; or numbers that multiply.",
+     "sentence": "Sun and water are factors in plant growth."
+    },
+    {
+     "n": 612,
+     "word": "result",
+     "pos": "noun",
+     "meaning": "What happens in the end.",
+     "sentence": "The result of the game was a tie."
+    },
+    {
+     "n": 613,
+     "word": "jumped",
+     "pos": "verb",
+     "meaning": "Pushed off the ground into the air.",
+     "sentence": "The frog jumped into the pond."
+    },
+    {
+     "n": 614,
+     "word": "snow",
+     "pos": "noun",
+     "meaning": "Frozen white flakes from the sky.",
+     "sentence": "We built a man out of snow."
+    },
+    {
+     "n": 615,
+     "word": "ride",
+     "pos": "verb",
+     "meaning": "To sit on and travel.",
+     "sentence": "I ride my bike to the park."
+    },
+    {
+     "n": 616,
+     "word": "care",
+     "pos": "verb",
+     "meaning": "To feel that something matters.",
+     "sentence": "I care about my friends."
+    },
+    {
+     "n": 617,
+     "word": "floor",
+     "pos": "noun",
+     "meaning": "The part of a room you walk on.",
+     "sentence": "Don't leave toys on the floor."
+    },
+    {
+     "n": 618,
+     "word": "hill",
+     "pos": "noun",
+     "meaning": "A raised area of land.",
+     "sentence": "We rolled down the hill."
+    },
+    {
+     "n": 619,
+     "word": "pushed",
+     "pos": "verb",
+     "meaning": "Pressed to move away.",
+     "sentence": "She pushed the swing."
+    },
+    {
+     "n": 620,
+     "word": "baby",
+     "pos": "noun",
+     "meaning": "A very young child.",
+     "sentence": "The baby is sleeping."
+    },
+    {
+     "n": 621,
+     "word": "buy",
+     "pos": "verb",
+     "meaning": "To pay money for.",
+     "sentence": "Let's buy some apples."
+    },
+    {
+     "n": 622,
+     "word": "century",
+     "pos": "noun",
+     "meaning": "One hundred years.",
+     "sentence": "This house is a century old."
+    },
+    {
+     "n": 623,
+     "word": "outside",
+     "pos": "adverb",
+     "meaning": "Not inside; outdoors.",
+     "sentence": "Let's play outside."
+    },
+    {
+     "n": 624,
+     "word": "everything",
+     "pos": "pronoun",
+     "meaning": "All things.",
+     "sentence": "Everything is ready for the party."
+    },
+    {
+     "n": 625,
+     "word": "tall",
+     "pos": "adjective",
+     "meaning": "High from top to bottom.",
+     "sentence": "A giraffe is very tall."
+    }
+   ]
+  },
+  {
+   "set": 26,
+   "grade": 5,
+   "words": [
+    {
+     "n": 626,
+     "word": "already",
+     "pos": "adverb",
+     "meaning": "Before now.",
+     "sentence": "I already ate lunch."
+    },
+    {
+     "n": 627,
+     "word": "instead",
+     "pos": "adverb",
+     "meaning": "In place of.",
+     "sentence": "Let's walk instead of driving."
+    },
+    {
+     "n": 628,
+     "word": "phrase",
+     "pos": "noun",
+     "meaning": "A small group of words.",
+     "sentence": "\"Over the hill\" is a phrase."
+    },
+    {
+     "n": 629,
+     "word": "soil",
+     "pos": "noun",
+     "meaning": "Dirt where plants grow.",
+     "sentence": "Plant the seeds in the soil."
+    },
+    {
+     "n": 630,
+     "word": "bed",
+     "pos": "noun",
+     "meaning": "Furniture you sleep on.",
+     "sentence": "Make your bed."
+    },
+    {
+     "n": 631,
+     "word": "copy",
+     "pos": "verb",
+     "meaning": "To make the same as.",
+     "sentence": "Copy the word into your notebook."
+    },
+    {
+     "n": 632,
+     "word": "free",
+     "pos": "adjective",
+     "meaning": "Costs nothing; or not stuck.",
+     "sentence": "The museum is free today."
+    },
+    {
+     "n": 633,
+     "word": "hope",
+     "pos": "verb",
+     "meaning": "To wish for.",
+     "sentence": "I hope it snows."
+    },
+    {
+     "n": 634,
+     "word": "spring",
+     "pos": "noun",
+     "meaning": "The season when flowers bloom.",
+     "sentence": "Flowers bloom in spring."
+    },
+    {
+     "n": 635,
+     "word": "case",
+     "pos": "noun",
+     "meaning": "A box or holder.",
+     "sentence": "Put your glasses in the case."
+    },
+    {
+     "n": 636,
+     "word": "laughed",
+     "pos": "verb",
+     "meaning": "Made a happy sound at something funny.",
+     "sentence": "We laughed at the clown."
+    },
+    {
+     "n": 637,
+     "word": "nation",
+     "pos": "noun",
+     "meaning": "A country.",
+     "sentence": "The United States is a nation."
+    },
+    {
+     "n": 638,
+     "word": "quite",
+     "pos": "adverb",
+     "meaning": "Very; really.",
+     "sentence": "It is quite cold today."
+    },
+    {
+     "n": 639,
+     "word": "type",
+     "pos": "noun",
+     "meaning": "A kind or sort.",
+     "sentence": "What type of music do you like?"
+    },
+    {
+     "n": 640,
+     "word": "themselves",
+     "pos": "pronoun",
+     "meaning": "Those same people.",
+     "sentence": "The kids cleaned up by themselves."
+    },
+    {
+     "n": 641,
+     "word": "temperature",
+     "pos": "noun",
+     "meaning": "How hot or cold something is.",
+     "sentence": "The temperature is 70 degrees."
+    },
+    {
+     "n": 642,
+     "word": "bright",
+     "pos": "adjective",
+     "meaning": "Full of light.",
+     "sentence": "The sun is bright."
+    },
+    {
+     "n": 643,
+     "word": "lead",
+     "pos": "verb",
+     "meaning": "To go first and show the way.",
+     "sentence": "You lead and we will follow."
+    },
+    {
+     "n": 644,
+     "word": "everyone",
+     "pos": "pronoun",
+     "meaning": "Every person.",
+     "sentence": "Everyone is invited."
+    },
+    {
+     "n": 645,
+     "word": "method",
+     "pos": "noun",
+     "meaning": "A way of doing something.",
+     "sentence": "Show the method you used to solve it."
+    },
+    {
+     "n": 646,
+     "word": "section",
+     "pos": "noun",
+     "meaning": "A part of something.",
+     "sentence": "Read the first section of the book."
+    },
+    {
+     "n": 647,
+     "word": "lake",
+     "pos": "noun",
+     "meaning": "A large area of fresh water.",
+     "sentence": "We swam in the lake."
+    },
+    {
+     "n": 648,
+     "word": "iron",
+     "pos": "noun",
+     "meaning": "A strong metal.",
+     "sentence": "The gate is made of iron."
+    },
+    {
+     "n": 649,
+     "word": "within",
+     "pos": "preposition",
+     "meaning": "Inside of.",
+     "sentence": "Stay within the lines."
+    },
+    {
+     "n": 650,
+     "word": "dictionary",
+     "pos": "noun",
+     "meaning": "A book of word meanings.",
+     "sentence": "Look up the word in the dictionary."
+    }
+   ]
+  },
+  {
+   "set": 27,
+   "grade": 5,
+   "words": [
+    {
+     "n": 651,
+     "word": "hair",
+     "pos": "noun",
+     "meaning": "Threads that grow on your head.",
+     "sentence": "She has long hair."
+    },
+    {
+     "n": 652,
+     "word": "age",
+     "pos": "noun",
+     "meaning": "How old someone is.",
+     "sentence": "What is your age?"
+    },
+    {
+     "n": 653,
+     "word": "amount",
+     "pos": "noun",
+     "meaning": "How much there is.",
+     "sentence": "Add a small amount of salt."
+    },
+    {
+     "n": 654,
+     "word": "scale",
+     "pos": "noun",
+     "meaning": "A tool to weigh things.",
+     "sentence": "Step on the scale."
+    },
+    {
+     "n": 655,
+     "word": "pounds",
+     "pos": "noun",
+     "meaning": "Units of weight.",
+     "sentence": "The puppy weighs ten pounds."
+    },
+    {
+     "n": 656,
+     "word": "although",
+     "pos": "conjunction",
+     "meaning": "Even though.",
+     "sentence": "Although it was late, we kept reading."
+    },
+    {
+     "n": 657,
+     "word": "per",
+     "pos": "preposition",
+     "meaning": "For each.",
+     "sentence": "The candy costs ten cents per piece."
+    },
+    {
+     "n": 658,
+     "word": "broken",
+     "pos": "adjective",
+     "meaning": "Damaged; not working.",
+     "sentence": "My toy is broken."
+    },
+    {
+     "n": 659,
+     "word": "moment",
+     "pos": "noun",
+     "meaning": "A very short time.",
+     "sentence": "Wait a moment, please."
+    },
+    {
+     "n": 660,
+     "word": "tiny",
+     "pos": "adjective",
+     "meaning": "Very small.",
+     "sentence": "An ant is tiny."
+    },
+    {
+     "n": 661,
+     "word": "possible",
+     "pos": "adjective",
+     "meaning": "Can happen.",
+     "sentence": "Is it possible to visit the moon?"
+    },
+    {
+     "n": 662,
+     "word": "gold",
+     "pos": "noun",
+     "meaning": "A shiny yellow metal.",
+     "sentence": "The ring is made of gold."
+    },
+    {
+     "n": 663,
+     "word": "milk",
+     "pos": "noun",
+     "meaning": "A white drink from cows.",
+     "sentence": "I drink milk with my cereal."
+    },
+    {
+     "n": 664,
+     "word": "quiet",
+     "pos": "adjective",
+     "meaning": "Not loud.",
+     "sentence": "Be quiet in the library."
+    },
+    {
+     "n": 665,
+     "word": "natural",
+     "pos": "adjective",
+     "meaning": "Made by nature.",
+     "sentence": "The lake is natural, not man-made."
+    },
+    {
+     "n": 666,
+     "word": "lot",
+     "pos": "noun",
+     "meaning": "A large amount.",
+     "sentence": "I have a lot of homework."
+    },
+    {
+     "n": 667,
+     "word": "stone",
+     "pos": "noun",
+     "meaning": "A small rock.",
+     "sentence": "I threw a stone into the pond."
+    },
+    {
+     "n": 668,
+     "word": "act",
+     "pos": "verb",
+     "meaning": "To do something; or to play a part.",
+     "sentence": "Act like a lion!"
+    },
+    {
+     "n": 669,
+     "word": "build",
+     "pos": "verb",
+     "meaning": "To make by putting parts together.",
+     "sentence": "Let's build a tower of blocks."
+    },
+    {
+     "n": 670,
+     "word": "middle",
+     "pos": "noun",
+     "meaning": "The center.",
+     "sentence": "Stand in the middle of the circle."
+    },
+    {
+     "n": 671,
+     "word": "speed",
+     "pos": "noun",
+     "meaning": "How fast something goes.",
+     "sentence": "The car drove at a slow speed."
+    },
+    {
+     "n": 672,
+     "word": "count",
+     "pos": "verb",
+     "meaning": "To say numbers in order.",
+     "sentence": "Count to twenty."
+    },
+    {
+     "n": 673,
+     "word": "consonant",
+     "pos": "noun",
+     "meaning": "A letter that is not a vowel.",
+     "sentence": "\"B\" is a consonant."
+    },
+    {
+     "n": 674,
+     "word": "someone",
+     "pos": "pronoun",
+     "meaning": "A person not named.",
+     "sentence": "Someone left a jacket here."
+    },
+    {
+     "n": 675,
+     "word": "sail",
+     "pos": "verb",
+     "meaning": "To travel on water in a boat.",
+     "sentence": "We sail on the lake in summer."
+    }
+   ]
+  },
+  {
+   "set": 28,
+   "grade": 5,
+   "words": [
+    {
+     "n": 676,
+     "word": "rolled",
+     "pos": "verb",
+     "meaning": "Turned over and over.",
+     "sentence": "The ball rolled down the hill."
+    },
+    {
+     "n": 677,
+     "word": "bear",
+     "pos": "noun",
+     "meaning": "A big furry wild animal.",
+     "sentence": "A bear sleeps in winter."
+    },
+    {
+     "n": 678,
+     "word": "wonder",
+     "pos": "verb",
+     "meaning": "To want to know.",
+     "sentence": "I wonder what is in the box."
+    },
+    {
+     "n": 679,
+     "word": "smiled",
+     "pos": "verb",
+     "meaning": "Made a happy face.",
+     "sentence": "The baby smiled at me."
+    },
+    {
+     "n": 680,
+     "word": "angle",
+     "pos": "noun",
+     "meaning": "The corner where two lines meet.",
+     "sentence": "A square has a right angle in each corner."
+    },
+    {
+     "n": 681,
+     "word": "fraction",
+     "pos": "noun",
+     "meaning": "A part of a whole, like 1/2.",
+     "sentence": "One half is a fraction."
+    },
+    {
+     "n": 682,
+     "word": "Africa",
+     "pos": "noun",
+     "meaning": "A big continent.",
+     "sentence": "Lions live in Africa."
+    },
+    {
+     "n": 684,
+     "word": "melody",
+     "pos": "noun",
+     "meaning": "The tune of a song.",
+     "sentence": "I hummed the melody."
+    },
+    {
+     "n": 685,
+     "word": "bottom",
+     "pos": "noun",
+     "meaning": "The lowest part.",
+     "sentence": "The coin sank to the bottom of the pool."
+    },
+    {
+     "n": 686,
+     "word": "trip",
+     "pos": "noun",
+     "meaning": "A journey to a place.",
+     "sentence": "We took a trip to the zoo."
+    },
+    {
+     "n": 687,
+     "word": "hole",
+     "pos": "noun",
+     "meaning": "An open space or gap.",
+     "sentence": "The dog dug a hole."
+    },
+    {
+     "n": 688,
+     "word": "poor",
+     "pos": "adjective",
+     "meaning": "Having little money.",
+     "sentence": "The poor man needed help."
+    },
+    {
+     "n": 689,
+     "word": "let's",
+     "pos": "verb",
+     "meaning": "Short for \"let us\".",
+     "sentence": "Let's go to the park."
+    },
+    {
+     "n": 691,
+     "word": "surprise",
+     "pos": "noun",
+     "meaning": "Something you did not expect.",
+     "sentence": "We planned a surprise party."
+    },
+    {
+     "n": 692,
+     "word": "French",
+     "pos": "adjective",
+     "meaning": "From France.",
+     "sentence": "I ate a French croissant."
+    },
+    {
+     "n": 694,
+     "word": "beat",
+     "pos": "verb",
+     "meaning": "To win against; or to stir fast.",
+     "sentence": "Our team beat theirs."
+    },
+    {
+     "n": 695,
+     "word": "exactly",
+     "pos": "adverb",
+     "meaning": "Just right; with no difference.",
+     "sentence": "It is exactly three o'clock."
+    },
+    {
+     "n": 696,
+     "word": "remain",
+     "pos": "verb",
+     "meaning": "To stay.",
+     "sentence": "Please remain in your seats."
+    },
+    {
+     "n": 697,
+     "word": "dress",
+     "pos": "noun",
+     "meaning": "Clothing for a girl or woman.",
+     "sentence": "She wore a pink dress."
+    },
+    {
+     "n": 698,
+     "word": "cat",
+     "pos": "noun",
+     "meaning": "A small furry pet.",
+     "sentence": "The cat says meow."
+    },
+    {
+     "n": 699,
+     "word": "couldn't",
+     "pos": "verb",
+     "meaning": "Short for \"could not\".",
+     "sentence": "I couldn't open the jar."
+    },
+    {
+     "n": 700,
+     "word": "fingers",
+     "pos": "noun",
+     "meaning": "The five parts of your hand.",
+     "sentence": "I have ten fingers."
+    }
+   ]
+  },
+  {
+   "set": 29,
+   "grade": 5,
+   "words": [
+    {
+     "n": 701,
+     "word": "row",
+     "pos": "noun",
+     "meaning": "A line of things side by side.",
+     "sentence": "We sat in the front row."
+    },
+    {
+     "n": 702,
+     "word": "least",
+     "pos": "adjective",
+     "meaning": "The smallest amount.",
+     "sentence": "Who has the least candy?"
+    },
+    {
+     "n": 703,
+     "word": "catch",
+     "pos": "verb",
+     "meaning": "To grab something moving.",
+     "sentence": "Catch the ball!"
+    },
+    {
+     "n": 704,
+     "word": "climbed",
+     "pos": "verb",
+     "meaning": "Went up using hands and feet.",
+     "sentence": "I climbed the tree."
+    },
+    {
+     "n": 705,
+     "word": "wrote",
+     "pos": "verb",
+     "meaning": "Past of \"write\".",
+     "sentence": "I wrote a letter to Grandpa."
+    },
+    {
+     "n": 706,
+     "word": "shouted",
+     "pos": "verb",
+     "meaning": "Yelled loudly.",
+     "sentence": "He shouted, \"Goal!\""
+    },
+    {
+     "n": 707,
+     "word": "continued",
+     "pos": "verb",
+     "meaning": "Kept going.",
+     "sentence": "We continued walking after lunch."
+    },
+    {
+     "n": 708,
+     "word": "itself",
+     "pos": "pronoun",
+     "meaning": "That same thing.",
+     "sentence": "The cat cleaned itself."
+    },
+    {
+     "n": 709,
+     "word": "else",
+     "pos": "adverb",
+     "meaning": "Other; different.",
+     "sentence": "Do you want anything else?"
+    },
+    {
+     "n": 710,
+     "word": "plains",
+     "pos": "noun",
+     "meaning": "Large flat areas of land.",
+     "sentence": "Bison once roamed the plains."
+    },
+    {
+     "n": 711,
+     "word": "gas",
+     "pos": "noun",
+     "meaning": "Something like air; or fuel for a car.",
+     "sentence": "We stopped to get gas."
+    },
+    {
+     "n": 712,
+     "word": "England",
+     "pos": "noun",
+     "meaning": "A country in Europe.",
+     "sentence": "London is in England."
+    },
+    {
+     "n": 713,
+     "word": "burning",
+     "pos": "verb",
+     "meaning": "On fire.",
+     "sentence": "The candle is burning."
+    },
+    {
+     "n": 714,
+     "word": "design",
+     "pos": "noun",
+     "meaning": "A plan or pattern.",
+     "sentence": "I like the design on your shirt."
+    },
+    {
+     "n": 715,
+     "word": "joined",
+     "pos": "verb",
+     "meaning": "Became part of; connected.",
+     "sentence": "She joined the soccer team."
+    },
+    {
+     "n": 716,
+     "word": "foot",
+     "pos": "noun",
+     "meaning": "The body part you stand on.",
+     "sentence": "I hop on one foot."
+    },
+    {
+     "n": 717,
+     "word": "law",
+     "pos": "noun",
+     "meaning": "A rule everyone must follow.",
+     "sentence": "It is the law to stop at red lights."
+    },
+    {
+     "n": 718,
+     "word": "ears",
+     "pos": "noun",
+     "meaning": "Body parts used to hear.",
+     "sentence": "Cover your ears, it's loud!"
+    },
+    {
+     "n": 719,
+     "word": "glass",
+     "pos": "noun",
+     "meaning": "A clear hard material; or a cup.",
+     "sentence": "Pour juice into the glass."
+    },
+    {
+     "n": 720,
+     "word": "you're",
+     "pos": "verb",
+     "meaning": "Short for \"you are\".",
+     "sentence": "You're my best friend."
+    },
+    {
+     "n": 721,
+     "word": "grew",
+     "pos": "verb",
+     "meaning": "Past of \"grow\".",
+     "sentence": "The plant grew tall."
+    },
+    {
+     "n": 722,
+     "word": "skin",
+     "pos": "noun",
+     "meaning": "The outer covering of your body.",
+     "sentence": "Wear sunscreen to protect your skin."
+    },
+    {
+     "n": 723,
+     "word": "valley",
+     "pos": "noun",
+     "meaning": "Low land between hills.",
+     "sentence": "A river runs through the valley."
+    },
+    {
+     "n": 724,
+     "word": "cents",
+     "pos": "noun",
+     "meaning": "Pennies; parts of a dollar.",
+     "sentence": "The gum costs fifty cents."
+    },
+    {
+     "n": 725,
+     "word": "key",
+     "pos": "noun",
+     "meaning": "A tool that opens a lock.",
+     "sentence": "I lost the house key."
+    }
+   ]
+  },
+  {
+   "set": 30,
+   "grade": 5,
+   "words": [
+    {
+     "n": 727,
+     "word": "brown",
+     "pos": "adjective",
+     "meaning": "The color of chocolate.",
+     "sentence": "The dog has brown spots."
+    },
+    {
+     "n": 728,
+     "word": "trouble",
+     "pos": "noun",
+     "meaning": "A problem or difficulty.",
+     "sentence": "I had trouble opening the jar."
+    },
+    {
+     "n": 729,
+     "word": "cool",
+     "pos": "adjective",
+     "meaning": "A little cold.",
+     "sentence": "The breeze is cool."
+    },
+    {
+     "n": 730,
+     "word": "cloud",
+     "pos": "noun",
+     "meaning": "White or gray puffs in the sky.",
+     "sentence": "That cloud looks like a bunny."
+    },
+    {
+     "n": 731,
+     "word": "lost",
+     "pos": "verb",
+     "meaning": "Could not find.",
+     "sentence": "I lost my mitten."
+    },
+    {
+     "n": 732,
+     "word": "sent",
+     "pos": "verb",
+     "meaning": "Past of \"send\".",
+     "sentence": "I sent a card to my friend."
+    },
+    {
+     "n": 733,
+     "word": "symbols",
+     "pos": "noun",
+     "meaning": "Signs that stand for something.",
+     "sentence": "+ and - are math symbols."
+    },
+    {
+     "n": 734,
+     "word": "wear",
+     "pos": "verb",
+     "meaning": "To have on your body.",
+     "sentence": "Wear your boots in the snow."
+    },
+    {
+     "n": 735,
+     "word": "bad",
+     "pos": "adjective",
+     "meaning": "Not good.",
+     "sentence": "I had a bad dream."
+    },
+    {
+     "n": 736,
+     "word": "save",
+     "pos": "verb",
+     "meaning": "To keep safe; or to keep for later.",
+     "sentence": "Save some cake for Dad."
+    },
+    {
+     "n": 737,
+     "word": "experiment",
+     "pos": "noun",
+     "meaning": "A test to find something out.",
+     "sentence": "We did an experiment with magnets."
+    },
+    {
+     "n": 738,
+     "word": "engine",
+     "pos": "noun",
+     "meaning": "A machine that makes something move.",
+     "sentence": "The car engine is loud."
+    },
+    {
+     "n": 739,
+     "word": "alone",
+     "pos": "adjective",
+     "meaning": "By yourself.",
+     "sentence": "The puppy doesn't like to be alone."
+    },
+    {
+     "n": 740,
+     "word": "drawing",
+     "pos": "noun",
+     "meaning": "A picture made with a pencil.",
+     "sentence": "I made a drawing of a dragon."
+    },
+    {
+     "n": 741,
+     "word": "east",
+     "pos": "noun",
+     "meaning": "The direction where the sun rises.",
+     "sentence": "The sun rises in the east."
+    },
+    {
+     "n": 742,
+     "word": "choose",
+     "pos": "verb",
+     "meaning": "To pick.",
+     "sentence": "Choose a book to read."
+    },
+    {
+     "n": 743,
+     "word": "single",
+     "pos": "adjective",
+     "meaning": "Only one.",
+     "sentence": "There is a single cookie left."
+    },
+    {
+     "n": 744,
+     "word": "touch",
+     "pos": "verb",
+     "meaning": "To feel with your hand.",
+     "sentence": "Don't touch the paint, it's wet."
+    },
+    {
+     "n": 745,
+     "word": "information",
+     "pos": "noun",
+     "meaning": "Facts about something.",
+     "sentence": "The book has information about sharks."
+    },
+    {
+     "n": 746,
+     "word": "express",
+     "pos": "verb",
+     "meaning": "To show or tell feelings.",
+     "sentence": "Use words to express how you feel."
+    },
+    {
+     "n": 747,
+     "word": "mouth",
+     "pos": "noun",
+     "meaning": "The part of your face you eat with.",
+     "sentence": "Open your mouth wide."
+    },
+    {
+     "n": 748,
+     "word": "yard",
+     "pos": "noun",
+     "meaning": "Grass area around a house.",
+     "sentence": "We played in the yard."
+    },
+    {
+     "n": 749,
+     "word": "equal",
+     "pos": "adjective",
+     "meaning": "The same amount.",
+     "sentence": "Cut the pie into equal pieces."
+    },
+    {
+     "n": 750,
+     "word": "decimal",
+     "pos": "noun",
+     "meaning": "A number with a dot, like 2.5.",
+     "sentence": "0.5 is a decimal."
+    }
+   ]
+  },
+  {
+   "set": 31,
+   "grade": 5,
+   "words": [
+    {
+     "n": 751,
+     "word": "yourself",
+     "pos": "pronoun",
+     "meaning": "You and no one else.",
+     "sentence": "Did you build that yourself?"
+    },
+    {
+     "n": 752,
+     "word": "control",
+     "pos": "verb",
+     "meaning": "To make something do what you want.",
+     "sentence": "Control the car with the remote."
+    },
+    {
+     "n": 753,
+     "word": "practice",
+     "pos": "verb",
+     "meaning": "To do again and again to get better.",
+     "sentence": "I practice piano every day."
+    },
+    {
+     "n": 754,
+     "word": "report",
+     "pos": "noun",
+     "meaning": "A piece of writing that gives facts.",
+     "sentence": "I wrote a report about whales."
+    },
+    {
+     "n": 755,
+     "word": "straight",
+     "pos": "adjective",
+     "meaning": "Not bent or curved.",
+     "sentence": "Draw a straight line."
+    },
+    {
+     "n": 756,
+     "word": "rise",
+     "pos": "verb",
+     "meaning": "To go up.",
+     "sentence": "Bread dough will rise."
+    },
+    {
+     "n": 757,
+     "word": "statement",
+     "pos": "noun",
+     "meaning": "A sentence that tells something.",
+     "sentence": "\"The sky is blue\" is a statement."
+    },
+    {
+     "n": 758,
+     "word": "stick",
+     "pos": "noun",
+     "meaning": "A thin piece of wood.",
+     "sentence": "The dog fetched the stick."
+    },
+    {
+     "n": 759,
+     "word": "party",
+     "pos": "noun",
+     "meaning": "A fun get-together.",
+     "sentence": "Come to my birthday party."
+    },
+    {
+     "n": 760,
+     "word": "seeds",
+     "pos": "noun",
+     "meaning": "Small things plants grow from.",
+     "sentence": "Plant the seeds in spring."
+    },
+    {
+     "n": 761,
+     "word": "suppose",
+     "pos": "verb",
+     "meaning": "To think or guess.",
+     "sentence": "I suppose we can go now."
+    },
+    {
+     "n": 762,
+     "word": "woman",
+     "pos": "noun",
+     "meaning": "A grown-up girl.",
+     "sentence": "The woman is a doctor."
+    },
+    {
+     "n": 763,
+     "word": "coast",
+     "pos": "noun",
+     "meaning": "Land next to the sea.",
+     "sentence": "We drove along the coast."
+    },
+    {
+     "n": 764,
+     "word": "bank",
+     "pos": "noun",
+     "meaning": "A place that keeps money; or land by a river.",
+     "sentence": "Dad went to the bank."
+    },
+    {
+     "n": 765,
+     "word": "period",
+     "pos": "noun",
+     "meaning": "A dot at the end of a sentence; or a length of time.",
+     "sentence": "End your sentence with a period."
+    },
+    {
+     "n": 766,
+     "word": "wire",
+     "pos": "noun",
+     "meaning": "A thin metal thread.",
+     "sentence": "The lamp has a long wire."
+    },
+    {
+     "n": 767,
+     "word": "pay",
+     "pos": "verb",
+     "meaning": "To give money for something.",
+     "sentence": "We pay at the front of the store."
+    },
+    {
+     "n": 768,
+     "word": "clean",
+     "pos": "adjective",
+     "meaning": "Not dirty.",
+     "sentence": "My hands are clean."
+    },
+    {
+     "n": 769,
+     "word": "visit",
+     "pos": "verb",
+     "meaning": "To go see someone.",
+     "sentence": "We visit Grandma on Sundays."
+    },
+    {
+     "n": 770,
+     "word": "bit",
+     "pos": "noun",
+     "meaning": "A small piece.",
+     "sentence": "Can I have a bit of your apple?"
+    },
+    {
+     "n": 771,
+     "word": "whose",
+     "pos": "pronoun",
+     "meaning": "Asks who owns something.",
+     "sentence": "Whose jacket is this?"
+    },
+    {
+     "n": 772,
+     "word": "received",
+     "pos": "verb",
+     "meaning": "Got something.",
+     "sentence": "I received a letter today."
+    },
+    {
+     "n": 773,
+     "word": "garden",
+     "pos": "noun",
+     "meaning": "A place to grow plants.",
+     "sentence": "We grow tomatoes in our garden."
+    },
+    {
+     "n": 774,
+     "word": "please",
+     "pos": "adverb",
+     "meaning": "A polite word when asking.",
+     "sentence": "Please pass the bread."
+    },
+    {
+     "n": 775,
+     "word": "strange",
+     "pos": "adjective",
+     "meaning": "Odd; unusual.",
+     "sentence": "I heard a strange noise."
+    }
+   ]
+  },
+  {
+   "set": 32,
+   "grade": 5,
+   "words": [
+    {
+     "n": 776,
+     "word": "caught",
+     "pos": "verb",
+     "meaning": "Past of \"catch\".",
+     "sentence": "She caught the ball."
+    },
+    {
+     "n": 777,
+     "word": "fell",
+     "pos": "verb",
+     "meaning": "Past of \"fall\".",
+     "sentence": "The leaves fell from the tree."
+    },
+    {
+     "n": 778,
+     "word": "team",
+     "pos": "noun",
+     "meaning": "A group working or playing together.",
+     "sentence": "Our team won the game."
+    },
+    {
+     "n": 780,
+     "word": "captain",
+     "pos": "noun",
+     "meaning": "The leader of a team or ship.",
+     "sentence": "The captain steered the ship."
+    },
+    {
+     "n": 781,
+     "word": "direct",
+     "pos": "adjective",
+     "meaning": "Going straight with no stops.",
+     "sentence": "We took a direct flight."
+    },
+    {
+     "n": 782,
+     "word": "ring",
+     "pos": "noun",
+     "meaning": "Jewelry worn on a finger; or a circle.",
+     "sentence": "She wears a silver ring."
+    },
+    {
+     "n": 783,
+     "word": "serve",
+     "pos": "verb",
+     "meaning": "To give food; or to help.",
+     "sentence": "They serve lunch at noon."
+    },
+    {
+     "n": 784,
+     "word": "child",
+     "pos": "noun",
+     "meaning": "A young boy or girl.",
+     "sentence": "Every child gets a turn."
+    },
+    {
+     "n": 785,
+     "word": "desert",
+     "pos": "noun",
+     "meaning": "A dry, sandy place.",
+     "sentence": "Camels live in the desert."
+    },
+    {
+     "n": 786,
+     "word": "increase",
+     "pos": "verb",
+     "meaning": "To make bigger or more.",
+     "sentence": "Increase the volume."
+    },
+    {
+     "n": 787,
+     "word": "history",
+     "pos": "noun",
+     "meaning": "Things that happened in the past.",
+     "sentence": "We learned about history in class."
+    },
+    {
+     "n": 788,
+     "word": "cost",
+     "pos": "noun",
+     "meaning": "The price of something.",
+     "sentence": "What is the cost of this toy?"
+    },
+    {
+     "n": 789,
+     "word": "maybe",
+     "pos": "adverb",
+     "meaning": "Perhaps.",
+     "sentence": "Maybe we can go swimming."
+    },
+    {
+     "n": 790,
+     "word": "business",
+     "pos": "noun",
+     "meaning": "A company or store.",
+     "sentence": "Her family owns a business."
+    },
+    {
+     "n": 791,
+     "word": "separate",
+     "pos": "adjective",
+     "meaning": "Apart; not together.",
+     "sentence": "Keep the colors in separate piles."
+    },
+    {
+     "n": 792,
+     "word": "break",
+     "pos": "verb",
+     "meaning": "To crack into pieces.",
+     "sentence": "Don't break the plate."
+    },
+    {
+     "n": 793,
+     "word": "uncle",
+     "pos": "noun",
+     "meaning": "Your parent's brother.",
+     "sentence": "My uncle lives in Canada."
+    },
+    {
+     "n": 794,
+     "word": "hunting",
+     "pos": "verb",
+     "meaning": "Searching for something.",
+     "sentence": "I am hunting for my lost sock."
+    },
+    {
+     "n": 795,
+     "word": "flow",
+     "pos": "verb",
+     "meaning": "To move smoothly like water.",
+     "sentence": "Rivers flow to the sea."
+    },
+    {
+     "n": 796,
+     "word": "lady",
+     "pos": "noun",
+     "meaning": "A woman.",
+     "sentence": "The lady gave us directions."
+    },
+    {
+     "n": 797,
+     "word": "students",
+     "pos": "noun",
+     "meaning": "People who go to school.",
+     "sentence": "The students lined up."
+    },
+    {
+     "n": 798,
+     "word": "human",
+     "pos": "noun",
+     "meaning": "A person.",
+     "sentence": "A human has two legs."
+    },
+    {
+     "n": 799,
+     "word": "art",
+     "pos": "noun",
+     "meaning": "Drawings, paintings, and other creative work.",
+     "sentence": "We made art with clay."
+    },
+    {
+     "n": 800,
+     "word": "feeling",
+     "pos": "noun",
+     "meaning": "An emotion.",
+     "sentence": "I have a happy feeling."
+    }
+   ]
+  },
+  {
+   "set": 33,
+   "grade": 5,
+   "words": [
+    {
+     "n": 801,
+     "word": "supply",
+     "pos": "noun",
+     "meaning": "An amount kept for use.",
+     "sentence": "We have a supply of pencils."
+    },
+    {
+     "n": 802,
+     "word": "corner",
+     "pos": "noun",
+     "meaning": "Where two sides meet.",
+     "sentence": "Put the chair in the corner."
+    },
+    {
+     "n": 803,
+     "word": "electric",
+     "pos": "adjective",
+     "meaning": "Run by electricity.",
+     "sentence": "We have an electric stove."
+    },
+    {
+     "n": 804,
+     "word": "insects",
+     "pos": "noun",
+     "meaning": "Small animals with six legs.",
+     "sentence": "Ants and bees are insects."
+    },
+    {
+     "n": 805,
+     "word": "crops",
+     "pos": "noun",
+     "meaning": "Plants grown on a farm.",
+     "sentence": "Corn and wheat are crops."
+    },
+    {
+     "n": 806,
+     "word": "tone",
+     "pos": "noun",
+     "meaning": "The sound or feeling of a voice.",
+     "sentence": "She spoke in a kind tone."
+    },
+    {
+     "n": 807,
+     "word": "hit",
+     "pos": "verb",
+     "meaning": "To tap or knock against something.",
+     "sentence": "He hit the ball with the bat."
+    },
+    {
+     "n": 808,
+     "word": "sand",
+     "pos": "noun",
+     "meaning": "Tiny bits of rock on a beach.",
+     "sentence": "We built a castle in the sand."
+    },
+    {
+     "n": 809,
+     "word": "doctor",
+     "pos": "noun",
+     "meaning": "A person who helps sick people.",
+     "sentence": "The doctor checked my ears."
+    },
+    {
+     "n": 810,
+     "word": "provide",
+     "pos": "verb",
+     "meaning": "To give what is needed.",
+     "sentence": "Trees provide shade."
+    },
+    {
+     "n": 811,
+     "word": "thus",
+     "pos": "adverb",
+     "meaning": "So; because of this.",
+     "sentence": "It rained; thus, the game was canceled."
+    },
+    {
+     "n": 812,
+     "word": "won't",
+     "pos": "verb",
+     "meaning": "Short for \"will not\".",
+     "sentence": "I won't be late."
+    },
+    {
+     "n": 813,
+     "word": "cook",
+     "pos": "verb",
+     "meaning": "To make food with heat.",
+     "sentence": "Dad will cook dinner."
+    },
+    {
+     "n": 814,
+     "word": "bones",
+     "pos": "noun",
+     "meaning": "Hard parts inside your body.",
+     "sentence": "Milk helps make strong bones."
+    },
+    {
+     "n": 815,
+     "word": "tail",
+     "pos": "noun",
+     "meaning": "The part at the back of an animal.",
+     "sentence": "The dog wagged its tail."
+    },
+    {
+     "n": 816,
+     "word": "board",
+     "pos": "noun",
+     "meaning": "A flat piece of wood.",
+     "sentence": "Write on the white board."
+    },
+    {
+     "n": 817,
+     "word": "modern",
+     "pos": "adjective",
+     "meaning": "New; of today.",
+     "sentence": "We live in a modern house."
+    },
+    {
+     "n": 818,
+     "word": "compound",
+     "pos": "noun",
+     "meaning": "Something made of two or more parts.",
+     "sentence": "\"Sunflower\" is a compound word."
+    },
+    {
+     "n": 819,
+     "word": "mine",
+     "pos": "pronoun",
+     "meaning": "Belongs to me.",
+     "sentence": "That toy is mine."
+    },
+    {
+     "n": 820,
+     "word": "wasn't",
+     "pos": "verb",
+     "meaning": "Short for \"was not\".",
+     "sentence": "It wasn't my fault."
+    },
+    {
+     "n": 821,
+     "word": "fit",
+     "pos": "verb",
+     "meaning": "To be the right size.",
+     "sentence": "These shoes fit me."
+    },
+    {
+     "n": 822,
+     "word": "addition",
+     "pos": "noun",
+     "meaning": "Adding numbers together.",
+     "sentence": "2 + 3 is an addition problem."
+    },
+    {
+     "n": 823,
+     "word": "belong",
+     "pos": "verb",
+     "meaning": "To be owned by; or to be part of.",
+     "sentence": "These books belong to me."
+    },
+    {
+     "n": 824,
+     "word": "safe",
+     "pos": "adjective",
+     "meaning": "Free from danger.",
+     "sentence": "Wear a helmet to stay safe."
+    }
+   ]
+  },
+  {
+   "set": 34,
+   "grade": 5,
+   "words": [
+    {
+     "n": 826,
+     "word": "guess",
+     "pos": "verb",
+     "meaning": "To answer without being sure.",
+     "sentence": "Guess how many candies are in the jar."
+    },
+    {
+     "n": 827,
+     "word": "silent",
+     "pos": "adjective",
+     "meaning": "Completely quiet.",
+     "sentence": "The room was silent."
+    },
+    {
+     "n": 828,
+     "word": "trade",
+     "pos": "verb",
+     "meaning": "To swap.",
+     "sentence": "Do you want to trade cards?"
+    },
+    {
+     "n": 829,
+     "word": "rather",
+     "pos": "adverb",
+     "meaning": "More willingly; instead.",
+     "sentence": "I would rather play than nap."
+    },
+    {
+     "n": 830,
+     "word": "compare",
+     "pos": "verb",
+     "meaning": "To see how things are alike or different.",
+     "sentence": "Compare the two pictures."
+    },
+    {
+     "n": 831,
+     "word": "crowd",
+     "pos": "noun",
+     "meaning": "A large group of people.",
+     "sentence": "A big crowd watched the game."
+    },
+    {
+     "n": 832,
+     "word": "poem",
+     "pos": "noun",
+     "meaning": "Writing with rhythm, often rhyming.",
+     "sentence": "I wrote a poem about the rain."
+    },
+    {
+     "n": 833,
+     "word": "enjoy",
+     "pos": "verb",
+     "meaning": "To like doing something.",
+     "sentence": "I enjoy reading."
+    },
+    {
+     "n": 834,
+     "word": "elements",
+     "pos": "noun",
+     "meaning": "Basic parts of something.",
+     "sentence": "Fire and water are elements in the story."
+    },
+    {
+     "n": 835,
+     "word": "indicate",
+     "pos": "verb",
+     "meaning": "To point out or show.",
+     "sentence": "The arrows indicate the way out."
+    },
+    {
+     "n": 836,
+     "word": "except",
+     "pos": "preposition",
+     "meaning": "But not.",
+     "sentence": "Everyone came except Sam."
+    },
+    {
+     "n": 837,
+     "word": "expect",
+     "pos": "verb",
+     "meaning": "To think something will happen.",
+     "sentence": "I expect it will be sunny."
+    },
+    {
+     "n": 838,
+     "word": "flat",
+     "pos": "adjective",
+     "meaning": "Smooth and level.",
+     "sentence": "The table top is flat."
+    },
+    {
+     "n": 839,
+     "word": "seven",
+     "pos": "number",
+     "meaning": "The number 7.",
+     "sentence": "There are seven days in a week."
+    },
+    {
+     "n": 840,
+     "word": "interesting",
+     "pos": "adjective",
+     "meaning": "Makes you want to know more.",
+     "sentence": "This book is very interesting."
+    },
+    {
+     "n": 841,
+     "word": "sense",
+     "pos": "noun",
+     "meaning": "A way to feel, like sight or smell.",
+     "sentence": "Smell is a sense."
+    },
+    {
+     "n": 842,
+     "word": "string",
+     "pos": "noun",
+     "meaning": "A thin rope.",
+     "sentence": "Tie the box with string."
+    },
+    {
+     "n": 843,
+     "word": "blow",
+     "pos": "verb",
+     "meaning": "To push air out of your mouth.",
+     "sentence": "Blow out the candles!"
+    },
+    {
+     "n": 844,
+     "word": "famous",
+     "pos": "adjective",
+     "meaning": "Known by many people.",
+     "sentence": "She is a famous singer."
+    },
+    {
+     "n": 845,
+     "word": "value",
+     "pos": "noun",
+     "meaning": "How much something is worth.",
+     "sentence": "What is the value of this coin?"
+    },
+    {
+     "n": 846,
+     "word": "wings",
+     "pos": "noun",
+     "meaning": "Body parts used for flying.",
+     "sentence": "A butterfly has colorful wings."
+    },
+    {
+     "n": 847,
+     "word": "movement",
+     "pos": "noun",
+     "meaning": "An act of moving.",
+     "sentence": "I saw a movement in the bushes."
+    },
+    {
+     "n": 848,
+     "word": "pole",
+     "pos": "noun",
+     "meaning": "A long stick; or the top or bottom of Earth.",
+     "sentence": "Polar bears live near the North Pole."
+    },
+    {
+     "n": 849,
+     "word": "exciting",
+     "pos": "adjective",
+     "meaning": "Makes you feel thrilled.",
+     "sentence": "The roller coaster was exciting."
+    },
+    {
+     "n": 850,
+     "word": "branches",
+     "pos": "noun",
+     "meaning": "Arms of a tree.",
+     "sentence": "Birds sat on the branches."
+    }
+   ]
+  },
+  {
+   "set": 35,
+   "grade": 5,
+   "words": [
+    {
+     "n": 851,
+     "word": "thick",
+     "pos": "adjective",
+     "meaning": "Wide from side to side; not thin.",
+     "sentence": "The book is thick."
+    },
+    {
+     "n": 853,
+     "word": "lie",
+     "pos": "verb",
+     "meaning": "To rest flat; or to say what isn't true.",
+     "sentence": "Lie down on the bed."
+    },
+    {
+     "n": 854,
+     "word": "spot",
+     "pos": "noun",
+     "meaning": "A small mark; or a place.",
+     "sentence": "There is a spot on my shirt."
+    },
+    {
+     "n": 855,
+     "word": "bell",
+     "pos": "noun",
+     "meaning": "A metal object that rings.",
+     "sentence": "The school bell rang."
+    },
+    {
+     "n": 856,
+     "word": "fun",
+     "pos": "noun",
+     "meaning": "A good time.",
+     "sentence": "We had fun at the fair."
+    },
+    {
+     "n": 857,
+     "word": "loud",
+     "pos": "adjective",
+     "meaning": "Making a lot of noise.",
+     "sentence": "The music is too loud."
+    },
+    {
+     "n": 858,
+     "word": "consider",
+     "pos": "verb",
+     "meaning": "To think carefully about.",
+     "sentence": "Consider all the choices."
+    },
+    {
+     "n": 859,
+     "word": "suggested",
+     "pos": "verb",
+     "meaning": "Offered an idea.",
+     "sentence": "She suggested we play a game."
+    },
+    {
+     "n": 860,
+     "word": "thin",
+     "pos": "adjective",
+     "meaning": "Not thick or wide.",
+     "sentence": "The paper is thin."
+    },
+    {
+     "n": 861,
+     "word": "position",
+     "pos": "noun",
+     "meaning": "A place or way of standing.",
+     "sentence": "Get in position for the race."
+    },
+    {
+     "n": 862,
+     "word": "entered",
+     "pos": "verb",
+     "meaning": "Went in.",
+     "sentence": "We entered the museum."
+    },
+    {
+     "n": 863,
+     "word": "fruit",
+     "pos": "noun",
+     "meaning": "The sweet part of a plant we eat.",
+     "sentence": "Bananas are my favorite fruit."
+    },
+    {
+     "n": 864,
+     "word": "tied",
+     "pos": "verb",
+     "meaning": "Made a knot.",
+     "sentence": "I tied my shoes."
+    },
+    {
+     "n": 865,
+     "word": "rich",
+     "pos": "adjective",
+     "meaning": "Having a lot of money.",
+     "sentence": "The rich king lived in a castle."
+    },
+    {
+     "n": 866,
+     "word": "dollars",
+     "pos": "noun",
+     "meaning": "Units of money.",
+     "sentence": "The book costs five dollars."
+    },
+    {
+     "n": 867,
+     "word": "send",
+     "pos": "verb",
+     "meaning": "To make something go somewhere.",
+     "sentence": "Send me a picture."
+    },
+    {
+     "n": 868,
+     "word": "sight",
+     "pos": "noun",
+     "meaning": "The ability to see; or something seen.",
+     "sentence": "The mountains are a pretty sight."
+    },
+    {
+     "n": 869,
+     "word": "chief",
+     "pos": "noun",
+     "meaning": "The leader.",
+     "sentence": "The fire chief led the team."
+    },
+    {
+     "n": 870,
+     "word": "Japanese",
+     "pos": "adjective",
+     "meaning": "From Japan.",
+     "sentence": "We ate Japanese noodles."
+    },
+    {
+     "n": 871,
+     "word": "stream",
+     "pos": "noun",
+     "meaning": "A small river.",
+     "sentence": "Fish swim in the stream."
+    },
+    {
+     "n": 872,
+     "word": "planets",
+     "pos": "noun",
+     "meaning": "Large worlds that circle a star.",
+     "sentence": "Earth and Mars are planets."
+    },
+    {
+     "n": 873,
+     "word": "rhythm",
+     "pos": "noun",
+     "meaning": "A steady beat.",
+     "sentence": "Clap to the rhythm of the song."
+    },
+    {
+     "n": 874,
+     "word": "eight",
+     "pos": "number",
+     "meaning": "The number 8.",
+     "sentence": "A spider has eight legs."
+    },
+    {
+     "n": 875,
+     "word": "science",
+     "pos": "noun",
+     "meaning": "Study of nature and how things work.",
+     "sentence": "We learn about plants in science."
+    }
+   ]
+  },
+  {
+   "set": 36,
+   "grade": 5,
+   "words": [
+    {
+     "n": 876,
+     "word": "major",
+     "pos": "adjective",
+     "meaning": "Big or important.",
+     "sentence": "The storm caused major damage."
+    },
+    {
+     "n": 877,
+     "word": "observe",
+     "pos": "verb",
+     "meaning": "To watch carefully.",
+     "sentence": "Observe the ants in the jar."
+    },
+    {
+     "n": 878,
+     "word": "tube",
+     "pos": "noun",
+     "meaning": "A long, hollow pipe.",
+     "sentence": "Squeeze the toothpaste tube."
+    },
+    {
+     "n": 879,
+     "word": "necessary",
+     "pos": "adjective",
+     "meaning": "Needed.",
+     "sentence": "Water is necessary for life."
+    },
+    {
+     "n": 880,
+     "word": "weight",
+     "pos": "noun",
+     "meaning": "How heavy something is.",
+     "sentence": "What is the weight of the box?"
+    },
+    {
+     "n": 881,
+     "word": "meat",
+     "pos": "noun",
+     "meaning": "Food that comes from animals.",
+     "sentence": "Chicken is a kind of meat."
+    },
+    {
+     "n": 882,
+     "word": "lifted",
+     "pos": "verb",
+     "meaning": "Picked up.",
+     "sentence": "Dad lifted me onto his shoulders."
+    },
+    {
+     "n": 883,
+     "word": "process",
+     "pos": "noun",
+     "meaning": "Steps to do something.",
+     "sentence": "Baking bread is a long process."
+    },
+    {
+     "n": 885,
+     "word": "hat",
+     "pos": "noun",
+     "meaning": "Something you wear on your head.",
+     "sentence": "Wear a hat in the sun."
+    },
+    {
+     "n": 886,
+     "word": "property",
+     "pos": "noun",
+     "meaning": "Things or land someone owns.",
+     "sentence": "This land is private property."
+    },
+    {
+     "n": 887,
+     "word": "particular",
+     "pos": "adjective",
+     "meaning": "One special one.",
+     "sentence": "I want this particular toy."
+    },
+    {
+     "n": 888,
+     "word": "swim",
+     "pos": "verb",
+     "meaning": "To move through water.",
+     "sentence": "Fish swim in the sea."
+    },
+    {
+     "n": 889,
+     "word": "terms",
+     "pos": "noun",
+     "meaning": "Words with special meanings.",
+     "sentence": "Learn the science terms."
+    },
+    {
+     "n": 890,
+     "word": "current",
+     "pos": "noun",
+     "meaning": "Flowing water or air; or electricity.",
+     "sentence": "The river current is strong."
+    },
+    {
+     "n": 891,
+     "word": "park",
+     "pos": "noun",
+     "meaning": "An outdoor place to play.",
+     "sentence": "Let's go to the park."
+    },
+    {
+     "n": 892,
+     "word": "sell",
+     "pos": "verb",
+     "meaning": "To give for money.",
+     "sentence": "We sell lemonade in summer."
+    },
+    {
+     "n": 893,
+     "word": "shoulder",
+     "pos": "noun",
+     "meaning": "Where your arm joins your body.",
+     "sentence": "The bird sat on his shoulder."
+    },
+    {
+     "n": 894,
+     "word": "industry",
+     "pos": "noun",
+     "meaning": "Businesses that make things.",
+     "sentence": "The car industry makes trucks."
+    },
+    {
+     "n": 895,
+     "word": "wash",
+     "pos": "verb",
+     "meaning": "To clean with water.",
+     "sentence": "Wash your hands before eating."
+    },
+    {
+     "n": 896,
+     "word": "block",
+     "pos": "noun",
+     "meaning": "A solid piece; or a city street section.",
+     "sentence": "Put one block on top."
+    },
+    {
+     "n": 897,
+     "word": "spread",
+     "pos": "verb",
+     "meaning": "To open or cover a wide area.",
+     "sentence": "Spread butter on the toast."
+    },
+    {
+     "n": 898,
+     "word": "cattle",
+     "pos": "noun",
+     "meaning": "Cows and bulls.",
+     "sentence": "The cattle grazed in the field."
+    },
+    {
+     "n": 899,
+     "word": "wife",
+     "pos": "noun",
+     "meaning": "A married woman.",
+     "sentence": "He went out to dinner with his wife."
+    },
+    {
+     "n": 900,
+     "word": "sharp",
+     "pos": "adjective",
+     "meaning": "Has a thin edge that can cut.",
+     "sentence": "The pencil tip is sharp."
+    }
+   ]
+  },
+  {
+   "set": 37,
+   "grade": 5,
+   "words": [
+    {
+     "n": 901,
+     "word": "company",
+     "pos": "noun",
+     "meaning": "A business; or people with you.",
+     "sentence": "My dad works for a big company."
+    },
+    {
+     "n": 902,
+     "word": "radio",
+     "pos": "noun",
+     "meaning": "A device that plays sound from far away.",
+     "sentence": "We listen to the radio in the car."
+    },
+    {
+     "n": 903,
+     "word": "we'll",
+     "pos": "verb",
+     "meaning": "Short for \"we will\".",
+     "sentence": "We'll be there soon."
+    },
+    {
+     "n": 904,
+     "word": "action",
+     "pos": "noun",
+     "meaning": "Something done.",
+     "sentence": "Quick action saved the day."
+    },
+    {
+     "n": 905,
+     "word": "capital",
+     "pos": "noun",
+     "meaning": "The main city; or a big letter.",
+     "sentence": "Austin is the capital of Texas."
+    },
+    {
+     "n": 906,
+     "word": "factories",
+     "pos": "noun",
+     "meaning": "Buildings where things are made.",
+     "sentence": "Factories make cars and toys."
+    },
+    {
+     "n": 907,
+     "word": "settled",
+     "pos": "verb",
+     "meaning": "Made a home in a new place.",
+     "sentence": "Farmers settled near the river."
+    },
+    {
+     "n": 908,
+     "word": "yellow",
+     "pos": "adjective",
+     "meaning": "The color of a banana.",
+     "sentence": "The sun is yellow."
+    },
+    {
+     "n": 909,
+     "word": "isn't",
+     "pos": "verb",
+     "meaning": "Short for \"is not\".",
+     "sentence": "It isn't time to go yet."
+    },
+    {
+     "n": 910,
+     "word": "southern",
+     "pos": "adjective",
+     "meaning": "In or from the south.",
+     "sentence": "Texas is a southern state."
+    },
+    {
+     "n": 911,
+     "word": "truck",
+     "pos": "noun",
+     "meaning": "A big vehicle that carries loads.",
+     "sentence": "The truck carried logs."
+    },
+    {
+     "n": 912,
+     "word": "fair",
+     "pos": "adjective",
+     "meaning": "Equal and right for everyone.",
+     "sentence": "Taking turns is fair."
+    },
+    {
+     "n": 913,
+     "word": "printed",
+     "pos": "verb",
+     "meaning": "Put words on paper with a machine.",
+     "sentence": "I printed my homework."
+    },
+    {
+     "n": 914,
+     "word": "wouldn't",
+     "pos": "verb",
+     "meaning": "Short for \"would not\".",
+     "sentence": "The door wouldn't open."
+    },
+    {
+     "n": 915,
+     "word": "ahead",
+     "pos": "adverb",
+     "meaning": "In front.",
+     "sentence": "Look ahead when you walk."
+    },
+    {
+     "n": 916,
+     "word": "chance",
+     "pos": "noun",
+     "meaning": "A time to do something; or luck.",
+     "sentence": "You get a chance to try again."
+    },
+    {
+     "n": 917,
+     "word": "born",
+     "pos": "verb",
+     "meaning": "Came into life.",
+     "sentence": "I was born in March."
+    },
+    {
+     "n": 918,
+     "word": "level",
+     "pos": "noun",
+     "meaning": "A height or stage.",
+     "sentence": "You reached the next level!"
+    },
+    {
+     "n": 919,
+     "word": "triangle",
+     "pos": "noun",
+     "meaning": "A shape with three sides.",
+     "sentence": "A slice of pizza looks like a triangle."
+    },
+    {
+     "n": 920,
+     "word": "molecules",
+     "pos": "noun",
+     "meaning": "Very tiny bits that make up everything.",
+     "sentence": "Water is made of molecules."
+    },
+    {
+     "n": 921,
+     "word": "France",
+     "pos": "noun",
+     "meaning": "A country in Europe.",
+     "sentence": "Paris is in France."
+    },
+    {
+     "n": 922,
+     "word": "repeated",
+     "pos": "verb",
+     "meaning": "Said or did again.",
+     "sentence": "The teacher repeated the question."
+    },
+    {
+     "n": 923,
+     "word": "column",
+     "pos": "noun",
+     "meaning": "A tall post; or a line going down.",
+     "sentence": "Write the numbers in a column."
+    },
+    {
+     "n": 924,
+     "word": "western",
+     "pos": "adjective",
+     "meaning": "In or from the west.",
+     "sentence": "We drove to a western state."
+    }
+   ]
+  },
+  {
+   "set": 38,
+   "grade": 5,
+   "words": [
+    {
+     "n": 926,
+     "word": "sister",
+     "pos": "noun",
+     "meaning": "A girl with the same parents as you.",
+     "sentence": "My sister likes to paint."
+    },
+    {
+     "n": 927,
+     "word": "oxygen",
+     "pos": "noun",
+     "meaning": "A gas in the air we need to breathe.",
+     "sentence": "We need oxygen to live."
+    },
+    {
+     "n": 928,
+     "word": "plural",
+     "pos": "adjective",
+     "meaning": "More than one.",
+     "sentence": "\"Cats\" is the plural of \"cat.\""
+    },
+    {
+     "n": 929,
+     "word": "various",
+     "pos": "adjective",
+     "meaning": "Many different.",
+     "sentence": "We saw various animals at the zoo."
+    },
+    {
+     "n": 930,
+     "word": "agreed",
+     "pos": "verb",
+     "meaning": "Said yes; thought the same.",
+     "sentence": "We agreed to share."
+    },
+    {
+     "n": 931,
+     "word": "opposite",
+     "pos": "noun",
+     "meaning": "Something completely different.",
+     "sentence": "Hot is the opposite of cold."
+    },
+    {
+     "n": 932,
+     "word": "wrong",
+     "pos": "adjective",
+     "meaning": "Not right.",
+     "sentence": "That answer is wrong."
+    },
+    {
+     "n": 933,
+     "word": "chart",
+     "pos": "noun",
+     "meaning": "A drawing that shows information.",
+     "sentence": "We made a weather chart."
+    },
+    {
+     "n": 934,
+     "word": "prepared",
+     "pos": "verb",
+     "meaning": "Made ready.",
+     "sentence": "Mom prepared a picnic."
+    },
+    {
+     "n": 935,
+     "word": "pretty",
+     "pos": "adjective",
+     "meaning": "Nice to look at.",
+     "sentence": "That is a pretty flower."
+    },
+    {
+     "n": 936,
+     "word": "solution",
+     "pos": "noun",
+     "meaning": "The answer to a problem.",
+     "sentence": "We found a solution."
+    },
+    {
+     "n": 937,
+     "word": "fresh",
+     "pos": "adjective",
+     "meaning": "New; not old or stale.",
+     "sentence": "I like fresh bread."
+    },
+    {
+     "n": 938,
+     "word": "shop",
+     "pos": "noun",
+     "meaning": "A small store.",
+     "sentence": "We went to the toy shop."
+    },
+    {
+     "n": 939,
+     "word": "suffix",
+     "pos": "noun",
+     "meaning": "Letters added to the end of a word.",
+     "sentence": "\"-ful\" is a suffix in \"helpful.\""
+    },
+    {
+     "n": 940,
+     "word": "especially",
+     "pos": "adverb",
+     "meaning": "More than usual.",
+     "sentence": "I like fruit, especially mangoes."
+    },
+    {
+     "n": 941,
+     "word": "shoes",
+     "pos": "noun",
+     "meaning": "Things you wear on your feet.",
+     "sentence": "Put on your shoes."
+    },
+    {
+     "n": 942,
+     "word": "actually",
+     "pos": "adverb",
+     "meaning": "Really; in fact.",
+     "sentence": "I actually like broccoli."
+    },
+    {
+     "n": 943,
+     "word": "nose",
+     "pos": "noun",
+     "meaning": "The part of your face you smell with.",
+     "sentence": "My nose is cold."
+    },
+    {
+     "n": 944,
+     "word": "afraid",
+     "pos": "adjective",
+     "meaning": "Scared.",
+     "sentence": "I am afraid of the dark."
+    },
+    {
+     "n": 946,
+     "word": "sugar",
+     "pos": "noun",
+     "meaning": "A sweet powder.",
+     "sentence": "Don't eat too much sugar."
+    },
+    {
+     "n": 947,
+     "word": "adjective",
+     "pos": "noun",
+     "meaning": "A word that describes a noun.",
+     "sentence": "\"Red\" is an adjective."
+    },
+    {
+     "n": 948,
+     "word": "fig",
+     "pos": "noun",
+     "meaning": "A small sweet fruit.",
+     "sentence": "I ate a fig."
+    },
+    {
+     "n": 949,
+     "word": "office",
+     "pos": "noun",
+     "meaning": "A room or building where people work.",
+     "sentence": "Mom works in an office."
+    },
+    {
+     "n": 950,
+     "word": "huge",
+     "pos": "adjective",
+     "meaning": "Very big.",
+     "sentence": "A whale is huge."
+    }
+   ]
+  },
+  {
+   "set": 39,
+   "grade": 5,
+   "words": [
+    {
+     "n": 952,
+     "word": "similar",
+     "pos": "adjective",
+     "meaning": "Almost the same.",
+     "sentence": "Our bikes are similar."
+    },
+    {
+     "n": 954,
+     "word": "score",
+     "pos": "noun",
+     "meaning": "The points in a game.",
+     "sentence": "What's the score?"
+    },
+    {
+     "n": 955,
+     "word": "forward",
+     "pos": "adverb",
+     "meaning": "Toward the front.",
+     "sentence": "Take a step forward."
+    },
+    {
+     "n": 956,
+     "word": "stretched",
+     "pos": "verb",
+     "meaning": "Reached out long.",
+     "sentence": "The cat stretched after its nap."
+    },
+    {
+     "n": 957,
+     "word": "experience",
+     "pos": "noun",
+     "meaning": "Something that happens to you.",
+     "sentence": "Camping was a fun experience."
+    },
+    {
+     "n": 958,
+     "word": "rose",
+     "pos": "noun",
+     "meaning": "A flower with thorns; or past of \"rise\".",
+     "sentence": "The rose smells sweet."
+    },
+    {
+     "n": 959,
+     "word": "allow",
+     "pos": "verb",
+     "meaning": "To let.",
+     "sentence": "We don't allow dogs inside."
+    },
+    {
+     "n": 960,
+     "word": "fear",
+     "pos": "noun",
+     "meaning": "Feeling scared.",
+     "sentence": "He has a fear of spiders."
+    },
+    {
+     "n": 961,
+     "word": "workers",
+     "pos": "noun",
+     "meaning": "People who work.",
+     "sentence": "The workers built a bridge."
+    },
+    {
+     "n": 963,
+     "word": "Greek",
+     "pos": "adjective",
+     "meaning": "From Greece.",
+     "sentence": "We read Greek myths."
+    },
+    {
+     "n": 964,
+     "word": "women",
+     "pos": "noun",
+     "meaning": "More than one woman.",
+     "sentence": "Two women walked by."
+    },
+    {
+     "n": 965,
+     "word": "bought",
+     "pos": "verb",
+     "meaning": "Past of \"buy\".",
+     "sentence": "I bought a new book."
+    },
+    {
+     "n": 966,
+     "word": "led",
+     "pos": "verb",
+     "meaning": "Past of \"lead\".",
+     "sentence": "She led us to the playground."
+    },
+    {
+     "n": 967,
+     "word": "march",
+     "pos": "verb",
+     "meaning": "To walk in step.",
+     "sentence": "The band will march in the parade."
+    },
+    {
+     "n": 968,
+     "word": "northern",
+     "pos": "adjective",
+     "meaning": "In or from the north.",
+     "sentence": "Canada is a northern country."
+    },
+    {
+     "n": 969,
+     "word": "create",
+     "pos": "verb",
+     "meaning": "To make something new.",
+     "sentence": "Create your own story."
+    },
+    {
+     "n": 970,
+     "word": "British",
+     "pos": "adjective",
+     "meaning": "From Britain.",
+     "sentence": "He has a British accent."
+    },
+    {
+     "n": 971,
+     "word": "difficult",
+     "pos": "adjective",
+     "meaning": "Hard to do.",
+     "sentence": "This puzzle is difficult."
+    },
+    {
+     "n": 972,
+     "word": "match",
+     "pos": "verb",
+     "meaning": "To go together; or to be the same.",
+     "sentence": "Your socks don't match."
+    },
+    {
+     "n": 973,
+     "word": "win",
+     "pos": "verb",
+     "meaning": "To come in first.",
+     "sentence": "I hope our team will win."
+    },
+    {
+     "n": 974,
+     "word": "doesn't",
+     "pos": "verb",
+     "meaning": "Short for \"does not\".",
+     "sentence": "He doesn't like spinach."
+    },
+    {
+     "n": 975,
+     "word": "steel",
+     "pos": "noun",
+     "meaning": "A strong metal.",
+     "sentence": "The bridge is made of steel."
+    }
+   ]
+  },
+  {
+   "set": 40,
+   "grade": 5,
+   "words": [
+    {
+     "n": 976,
+     "word": "total",
+     "pos": "noun",
+     "meaning": "The whole amount.",
+     "sentence": "The total is ten dollars."
+    },
+    {
+     "n": 977,
+     "word": "deal",
+     "pos": "noun",
+     "meaning": "An agreement.",
+     "sentence": "Let's make a deal."
+    },
+    {
+     "n": 978,
+     "word": "determine",
+     "pos": "verb",
+     "meaning": "To find out or decide.",
+     "sentence": "Let's determine who goes first."
+    },
+    {
+     "n": 979,
+     "word": "evening",
+     "pos": "noun",
+     "meaning": "The end of the day.",
+     "sentence": "We eat dinner in the evening."
+    },
+    {
+     "n": 980,
+     "word": "hoe",
+     "pos": "noun",
+     "meaning": "A garden tool for digging.",
+     "sentence": "Use the hoe to dig up weeds."
+    },
+    {
+     "n": 981,
+     "word": "rope",
+     "pos": "noun",
+     "meaning": "A thick cord.",
+     "sentence": "Climb the rope."
+    },
+    {
+     "n": 982,
+     "word": "cotton",
+     "pos": "noun",
+     "meaning": "A soft material from a plant.",
+     "sentence": "My shirt is made of cotton."
+    },
+    {
+     "n": 983,
+     "word": "apple",
+     "pos": "noun",
+     "meaning": "A round red or green fruit.",
+     "sentence": "An apple a day is healthy."
+    },
+    {
+     "n": 984,
+     "word": "details",
+     "pos": "noun",
+     "meaning": "Small facts or parts.",
+     "sentence": "Add details to your drawing."
+    },
+    {
+     "n": 985,
+     "word": "entire",
+     "pos": "adjective",
+     "meaning": "Whole.",
+     "sentence": "I read the entire book."
+    },
+    {
+     "n": 986,
+     "word": "corn",
+     "pos": "noun",
+     "meaning": "A yellow vegetable on a cob.",
+     "sentence": "We ate corn at the picnic."
+    },
+    {
+     "n": 987,
+     "word": "substances",
+     "pos": "noun",
+     "meaning": "Kinds of matter or material.",
+     "sentence": "Water and salt are substances."
+    },
+    {
+     "n": 988,
+     "word": "smell",
+     "pos": "verb",
+     "meaning": "To notice with your nose.",
+     "sentence": "I smell cookies baking."
+    },
+    {
+     "n": 989,
+     "word": "tools",
+     "pos": "noun",
+     "meaning": "Things that help you work.",
+     "sentence": "A hammer and saw are tools."
+    },
+    {
+     "n": 990,
+     "word": "conditions",
+     "pos": "noun",
+     "meaning": "How things are.",
+     "sentence": "The weather conditions were stormy."
+    },
+    {
+     "n": 991,
+     "word": "cows",
+     "pos": "noun",
+     "meaning": "Farm animals that give milk.",
+     "sentence": "The cows are in the barn."
+    },
+    {
+     "n": 992,
+     "word": "track",
+     "pos": "noun",
+     "meaning": "A path; or rails for a train.",
+     "sentence": "We ran around the track."
+    },
+    {
+     "n": 993,
+     "word": "arrived",
+     "pos": "verb",
+     "meaning": "Got to a place.",
+     "sentence": "We arrived at the beach."
+    },
+    {
+     "n": 994,
+     "word": "located",
+     "pos": "verb",
+     "meaning": "Found in a place.",
+     "sentence": "The school is located on Main Street."
+    },
+    {
+     "n": 995,
+     "word": "sir",
+     "pos": "noun",
+     "meaning": "Polite word for a man.",
+     "sentence": "Thank you, sir."
+    },
+    {
+     "n": 996,
+     "word": "seat",
+     "pos": "noun",
+     "meaning": "Something to sit on.",
+     "sentence": "Please take a seat."
+    },
+    {
+     "n": 997,
+     "word": "division",
+     "pos": "noun",
+     "meaning": "Splitting into equal groups.",
+     "sentence": "10 ÷ 2 is a division problem."
+    },
+    {
+     "n": 998,
+     "word": "effect",
+     "pos": "noun",
+     "meaning": "A result; what happens because of something.",
+     "sentence": "Rain has an effect on plants."
+    },
+    {
+     "n": 999,
+     "word": "underline",
+     "pos": "verb",
+     "meaning": "To draw a line under.",
+     "sentence": "Underline the main idea."
+    },
+    {
+     "n": 1000,
+     "word": "view",
+     "pos": "noun",
+     "meaning": "What you can see from a place.",
+     "sentence": "The view from the top is amazing."
+    }
+   ]
+  }
+ ]
+}

@@ -5,6 +5,7 @@ import { BorrowSubtraction } from './BorrowSubtraction';
 import { Callout } from './Callout';
 import { CarryAddition, TensOnes } from './CarryAddition';
 import { Counters } from './Counters';
+import { FryWordList } from './FryWordList';
 import { HeartWords } from './HeartWords';
 import { HundredChart } from './HundredChart';
 import { NumberLine } from './NumberLine';
@@ -19,6 +20,7 @@ export const mdxComponents: MDXComponents = {
   WordFamilyList,
   WordChart,
   HeartWords,
+  FryWordList,
   NumberLine,
   Counters,
   HundredChart,

@@ -51,3 +51,19 @@ Defined in `src/theme/ageThemes.ts`:
 4. **Grow the block list.** When you remove an inappropriate word, add it to `src/data/blocked-words.json` so it can't come back.
 5. **When unsure, ask the user** rather than shipping it.
 6. **In your summary of the change,** say that content was checked for the target age group, and list any words or items you removed.
+
+---
+
+## Rule 2: No repeats in a practice round
+
+A practice round (a deck of 10 cards, or 10 questions) never shows the same item twice. A child should see 10 different things, not the same word or question again.
+
+- **Cards:** no word appears twice in one deck, even when it comes from two lessons.
+- **Questions:** no question appears twice: the same prompt, picture and choices. For spelling questions, the same word to write counts as a repeat even if the prompt differs.
+- If a set has fewer than 10 different items, the round is shorter rather than repeating one.
+- Worksheets follow the same rule: no question or word-box word appears twice on a sheet.
+
+### How to comply
+
+1. Build practice rounds with `buildPracticeRound` and card decks with `dealCards` (both in `src/lib/questions.ts`), and worksheets with `buildPrintableRound`. Don't slice or shuffle cards and questions by hand.
+2. Run `npm test`. `src/lib/content.test.ts` checks every practice set and deck for repeats.

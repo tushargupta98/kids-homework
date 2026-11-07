@@ -119,12 +119,44 @@ export function buildPrintableRound(bank: QuestionBank, count: number): Question
 /** Sets that can make a worksheet: ones with printable questions (card-only decks and listening-only sets can't). */
 export const hasPrintable = (bank: QuestionBank) => buildRound(bank, 30).some(isPrintable);
 
-/** A practice round. Sets marked noTyping leave out write-in questions (they stay on worksheets). */
+/**
+ * The same question in a practice round: the same prompt, picture and choices (two "Count the apples"
+ * with different pictures are different), or, for spelling questions, the same word to write.
+ */
+const practiceKeys = (q: Question) => [
+  `q:${q.prompt}|${q.visual ?? ''}|${q.type === 'multiple-choice' ? [...q.choices].sort().join('/') : ''}`,
+  ...(q.inWordBank ? [`word:${String(q.answer).toLowerCase()}`] : []),
+];
+
+/**
+ * A practice round with no repeats (CONSTITUTION.md, Rule 2). Sets marked noTyping leave out write-in
+ * questions (they stay on worksheets). It can be shorter than `count` when a set has fewer different questions.
+ */
 export function buildPracticeRound(bank: QuestionBank, count: number): Question[] {
-  if (!bank.noTyping) return buildRound(bank, count);
   const out: Question[] = [];
-  for (let tries = 0; out.length < count && tries < 20; tries++) out.push(...buildRound(bank, count).filter((q) => q.type !== 'fill-in'));
-  return out.slice(0, count);
+  const seen = new Set<string>();
+  for (let tries = 0; out.length < count && tries < 30; tries++) {
+    for (const q of buildRound(bank, count)) {
+      const keys = practiceKeys(q);
+      if (out.length >= count || (bank.noTyping && q.type === 'fill-in') || keys.some((k) => seen.has(k))) continue;
+      keys.forEach((k) => seen.add(k));
+      out.push(q);
+    }
+  }
+  return out;
+}
+
+/** A deck of flash cards with no word twice (CONSTITUTION.md, Rule 2). */
+export function dealCards<C extends { word: string }>(cards: C[], count = cards.length): C[] {
+  const seen = new Set<string>();
+  return shuffle(cards)
+    .filter((c) => {
+      const key = c.word.toLowerCase();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .slice(0, count);
 }
 
 export function checkAnswer(q: Question, given: string | boolean): boolean {

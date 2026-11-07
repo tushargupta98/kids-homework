@@ -37,9 +37,9 @@ export const grades: Grade[] = [
   { id: 'kindergarten', levelId: 'elementary', name: 'Kindergarten', badge: 'K', emoji: '⭐', ages: 'Ages 5–6' },
   { id: 'grade-1', levelId: 'elementary', name: 'Grade 1', badge: '1', emoji: '🚀', ages: 'Ages 6–7' },
   { id: 'grade-2', levelId: 'elementary', name: 'Grade 2', badge: '2', emoji: '🌈', ages: 'Ages 7–8' },
-  { id: 'grade-3', levelId: 'elementary', name: 'Grade 3', badge: '3', emoji: '🦊', ages: 'Ages 8–9', comingSoon: true },
-  { id: 'grade-4', levelId: 'elementary', name: 'Grade 4', badge: '4', emoji: '🐢', ages: 'Ages 9–10', comingSoon: true },
-  { id: 'grade-5', levelId: 'elementary', name: 'Grade 5', badge: '5', emoji: '🦉', ages: 'Ages 10–11', comingSoon: true },
+  { id: 'grade-3', levelId: 'elementary', name: 'Grade 3', badge: '3', emoji: '🦊', ages: 'Ages 8–9' },
+  { id: 'grade-4', levelId: 'elementary', name: 'Grade 4', badge: '4', emoji: '🐢', ages: 'Ages 9–10' },
+  { id: 'grade-5', levelId: 'elementary', name: 'Grade 5', badge: '5', emoji: '🦉', ages: 'Ages 10–11' },
   { id: 'grade-6', levelId: 'middle', name: 'Grade 6', badge: '6', emoji: '🧭', ages: 'Ages 11–12', comingSoon: true },
   { id: 'grade-7', levelId: 'middle', name: 'Grade 7', badge: '7', emoji: '🔭', ages: 'Ages 12–13', comingSoon: true },
   { id: 'grade-8', levelId: 'middle', name: 'Grade 8', badge: '8', emoji: '🧪', ages: 'Ages 13–14', comingSoon: true },
@@ -59,6 +59,9 @@ const PK: GradeId = 'pre-k';
 const K: GradeId = 'kindergarten';
 const G1: GradeId = 'grade-1';
 const G2: GradeId = 'grade-2';
+const G3: GradeId = 'grade-3';
+const G4: GradeId = 'grade-4';
+const G5: GradeId = 'grade-5';
 
 export const classifications: Classification[] = [
   // Math
@@ -75,7 +78,7 @@ export const classifications: Classification[] = [
   { id: 'reading', subjectId: 'ela', name: 'Reading', emoji: '📚', description: 'Read stories and understand them', grades: [PK, K, G1, G2] },
   { id: 'writing', subjectId: 'ela', name: 'Writing', emoji: '✏️', description: 'Write letters, words and sentences', grades: [PK, K, G1, G2] },
   { id: 'grammar', subjectId: 'ela', name: 'Grammar', emoji: '🧠', description: 'Nouns, verbs and building sentences', grades: [K, G1, G2] },
-  { id: 'vocabulary', subjectId: 'ela', name: 'Vocabulary & Sight Words', emoji: '💬', description: 'Learn new words and read them fast', grades: [PK, K, G1, G2] },
+  { id: 'vocabulary', subjectId: 'ela', name: 'Vocabulary & Sight Words', emoji: '💬', description: 'Learn new words and read them fast', grades: [PK, K, G1, G2, G3, G4, G5] },
 
   // Science
   { id: 'explore-world', subjectId: 'science', name: 'Explore the World', emoji: '🌍', description: 'Look, touch, wonder and ask why', grades: [PK] },

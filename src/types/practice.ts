@@ -75,6 +75,8 @@ export interface QuestionBank {
     meaning?: string;
     /** Text on the front of a prompt card: a meaning, "Write the first letter: __at", and so on. */
     front?: string;
+    /** Answer cards: what the flip shows when the answer isn't the word, e.g. "noun". */
+    back?: string;
     /** Small clue under the front, e.g. "4 letters, starts with d". */
     clue?: string;
     /** A spelling-pattern hint shown on the front of a gap card, e.g. "short e" or "ck". */
@@ -87,7 +89,7 @@ export interface QuestionBank {
     sentence?: string;
   }[];
   /** listen (default): hear the word, then flip to see it. read: see the word, then tap to hear it. spell: hear it, write it, tap to check. gap: say the missing word, tap to see the whole sentence. prompt: read the front (a meaning, a picture), say or write the word, tap to see it. */
-  cardMode?: 'listen' | 'read' | 'spell' | 'gap' | 'prompt';
+  cardMode?: 'listen' | 'read' | 'spell' | 'gap' | 'prompt' | 'answer';
   /** For a big deck, how many cards one round deals (default: the whole deck). */
   cardsPerRound?: number;
   /**
